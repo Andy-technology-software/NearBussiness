@@ -1,0 +1,85 @@
+//
+//  PrefixHeader.pch
+//  NearBusiness
+//
+//  Created by lingnet on 2017/6/9.
+//  Copyright © 2017年 YouCanCallMeAndy. All rights reserved.
+//
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+//分栏
+#import "RDVTabBarController.h"
+#import "RDVTabBarItem.h"
+
+#import "Masonry.h"
+#import <IQKeyboardManager.h>
+#import <IQKeyboardReturnKeyHandler.h>
+#import <IQUIView+IQKeyboardToolbar.h>
+#import "MJRefresh.h"
+#import "AFNetworking.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "HMSegmentedControl.h"
+#import "MJExtension.h"
+#import "DBManager.h"
+#import "LoginDataBaseModel.h"
+#import "MyController.h"
+#import "RegularExpressions.h"
+#import "HUD.h"
+#import "AppDelegate.h"
+//环信
+#import <Foundation/Foundation.h>
+#import <Hyphenate/Hyphenate.h>
+#import "EaseUI.h"
+#import "EaseSDKHelper.h"
+#define DEMO_CALL 1
+#import "WJDropdownMenu.h"
+//请求
+#import "requestURL.h"
+#import "requestService.h"
+#import "XRQRequestClient.h"
+
+//分享airdrop
+#import "TTOpenInAppActivity.h"
+
+//获取唯一标识
+#import "XRQGetOnlyUUID.h"
+
+//获取当前设备ip
+#import "XRQGetIP.h"
+
+// 引入JPush功能所需头文件
+#import "JPUSHService.h"
+// iOS10注册APNs所需头文件
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
+
+//仿钉钉弹出毛玻璃菜单
+#import "BlurEffectMenu.h"
+
+//计算cell行高
+#import "Masonry/View+MASAdditions.h"
+#import "UITableViewCell+HYBMasonryAutoCellHeight.h"
+//无限轮滚
+#import "CycleScrollView.h"
+
+//看图片、视频
+#import "MWPhotoBrowser.h"
+
+//浮动  登录用了
+#import "JVFloatLabeledTextField.h"
+#import "JVFloatLabeledTextView.h"
+
+//图表
+#import "EColumnChart.h"
+
+//支付宝
+#import "AlipayHeader.h"
+//银联
+#import "UPPaymentControl.h"
+//微信
+#import "MXWechatConfig.h"
+
+
+#endif /* PrefixHeader_pch */
