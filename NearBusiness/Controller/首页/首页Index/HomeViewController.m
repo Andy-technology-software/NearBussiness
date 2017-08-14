@@ -21,6 +21,8 @@
 #import "BussinessRecommendationTableViewCell.h"
 
 #import "BussinessSearchViewController.h"
+
+#import "BussinessDetailViewController.h"
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate,IndexViewCellDelegate,MWPhotoBrowserDelegate,Index1TableViewCellDelegate>{
     UITableView* _tableView;
 }
@@ -168,7 +170,10 @@
 
 #pragma mark - tableVie点击cell
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    if (2 == indexPath.section || 3 == indexPath.section) {
+        BussinessDetailViewController* vc = [[BussinessDetailViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 #pragma mark - 自定义tableView
