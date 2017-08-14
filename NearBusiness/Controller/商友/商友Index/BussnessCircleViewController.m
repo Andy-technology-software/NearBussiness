@@ -24,9 +24,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    
-    [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+
 }
 
 - (void)viewDidLoad {
