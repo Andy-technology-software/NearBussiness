@@ -62,6 +62,7 @@
     
     self.jieshaoLable = [MyController createLabelWithFrame:self.contentView.frame Font:12 Text:nil];
     self.jieshaoLable.numberOfLines = 0;
+    self.jieshaoLable.textColor = [MyController colorWithHexString:SUBTITLECOLOR];
     [self.contentView addSubview:self.jieshaoLable];
     
     [self.jieshaoLable mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -95,6 +96,7 @@
     
     self.addLable = [MyController createLabelWithFrame:self.contentView.frame Font:14 Text:nil];
     self.addLable.numberOfLines = 0;
+    self.addLable.textColor = [MyController colorWithHexString:SUBTITLECOLOR];
     [self.contentView addSubview:self.addLable];
     
     [self.addLable mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -129,6 +131,7 @@
     
     self.telLable = [MyController createLabelWithFrame:self.contentView.frame Font:14 Text:nil];
     self.telLable.numberOfLines = 0;
+    self.telLable.textColor = [MyController colorWithHexString:SUBTITLECOLOR];
     [self.contentView addSubview:self.telLable];
     
     [self.telLable mas_makeConstraints:^(MASConstraintMaker *make) {

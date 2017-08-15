@@ -61,6 +61,7 @@
     
     self.nameLable = [MyController createLabelWithFrame:self.contentView.frame Font:14 Text:nil];
     self.nameLable.lineBreakMode = NSLineBreakByTruncatingTail;
+    self.nameLable.textColor = [MyController colorWithHexString:TITLECOLOR];
     [self.contentView addSubview:self.nameLable];
     
     [self.nameLable mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -93,6 +94,7 @@
     
     self.zhuyingLable = [MyController createLabelWithFrame:self.contentView.frame Font:12 Text:nil];
     self.zhuyingLable.lineBreakMode = NSLineBreakByTruncatingTail;
+    self.zhuyingLable.textColor = [MyController colorWithHexString:SUBTITLECOLOR];
     [self.contentView addSubview:self.zhuyingLable];
     
     [self.zhuyingLable mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -103,6 +105,7 @@
     
     self.distanceLable = [MyController createLabelWithFrame:self.contentView.frame Font:12 Text:nil];
     self.distanceLable.textAlignment = NSTextAlignmentRight;
+    self.distanceLable.textColor = [MyController colorWithHexString:@"9f9f9f"];
     [self.contentView addSubview:self.distanceLable];
     
     [self.distanceLable mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -123,6 +126,7 @@
     
     self.telLable = [MyController createLabelWithFrame:self.contentView.frame Font:12 Text:nil];
     self.telLable.numberOfLines = 1;
+    self.telLable.textColor = [MyController colorWithHexString:SUBTITLECOLOR];
     [self.contentView addSubview:self.telLable];
     
     [self.telLable mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -133,6 +137,7 @@
     
     self.addressLable = [MyController createLabelWithFrame:self.contentView.frame Font:12 Text:nil];
     self.addressLable.lineBreakMode = NSLineBreakByTruncatingTail;
+    self.addressLable.textColor = [MyController colorWithHexString:SUBTITLECOLOR];
     [self.contentView addSubview:self.addressLable];
     
     [self.addressLable mas_makeConstraints:^(MASConstraintMaker *make) {

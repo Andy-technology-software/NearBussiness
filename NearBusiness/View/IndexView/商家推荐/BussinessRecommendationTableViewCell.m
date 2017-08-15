@@ -47,6 +47,7 @@
     
     self.nameLable = [MyController createLabelWithFrame:self.contentView.frame Font:14 Text:nil];
     self.nameLable.lineBreakMode = NSLineBreakByTruncatingTail;
+    self.nameLable.textColor = [MyController colorWithHexString:TITLECOLOR];
     [self.contentView addSubview:self.nameLable];
     
     [self.nameLable mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -69,6 +70,7 @@
     self.desLable = [MyController createLabelWithFrame:self.contentView.frame Font:12 Text:nil];
     self.desLable.numberOfLines = 2;
     self.desLable.lineBreakMode = NSLineBreakByTruncatingTail;
+    self.desLable.textColor = [MyController colorWithHexString:SUBTITLECOLOR];
     [self.contentView addSubview:self.desLable];
     
     [self.desLable mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -79,6 +81,7 @@
     
     self.distanceLable = [MyController createLabelWithFrame:self.contentView.frame Font:12 Text:nil];
     self.distanceLable.textAlignment = NSTextAlignmentRight;
+    self.distanceLable.textColor = [MyController colorWithHexString:@"9f9f9f"];
     [self.contentView addSubview:self.distanceLable];
     
     [self.distanceLable mas_makeConstraints:^(MASConstraintMaker *make) {

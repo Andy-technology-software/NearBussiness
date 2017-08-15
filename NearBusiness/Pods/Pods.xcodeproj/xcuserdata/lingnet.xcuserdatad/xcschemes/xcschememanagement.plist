@@ -14,11 +14,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>EChart.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>HMSegmentedControl.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -107,12 +102,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>13C8E74C60DD28E13F10CFF2D5FB32F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>175B076ED45EB1A3E40F58BA14036467</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>179CE03B9FB0546ABB548686F8AAC170</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1857A4483117B37D92743F84F0D9D6CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -127,7 +132,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3A0E7DFCADADBE957F0FE169AC0AB8B4</key>
+		<key>5647814B3648318BD30E410F4AE294B4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -142,7 +147,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7CCD487F6379BC40AB55B57B12C3E3F9</key>
+		<key>7B88242DC282E7CE83D960E4528B2471</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -153,11 +158,6 @@
 			<true/>
 		</dict>
 		<key>9650B5ADCE86F1A055FAFC635284BDB5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>98086ED63D8F7B12C0B4BC32E020C539</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -177,22 +177,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C068197890593646627E9DFFD1810FEE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>C791F0A928C1A8FE97074DFC9ACF4E75</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>D31F2E1140FD881D5FEB76F35D954576</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D6BE4BF7366088AE7DCCB92577FCB8E2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

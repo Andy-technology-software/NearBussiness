@@ -23,7 +23,9 @@
 #import "BussinessSearchViewController.h"
 
 #import "BussinessDetailViewController.h"
-@interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate,IndexViewCellDelegate,MWPhotoBrowserDelegate,Index1TableViewCellDelegate>{
+
+#import "LocationMapViewController.h"
+@interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate,IndexViewCellDelegate,MWPhotoBrowserDelegate,Index1TableViewCellDelegate,YBPopupMenuDelegate>{
     UITableView* _tableView;
 }
 @property (strong, nonatomic) UINavigationController *photoNavigationController;
@@ -37,6 +39,15 @@
 @property(nonatomic,retain)NSMutableArray* dataSource1;
 @property(nonatomic,retain)NSMutableArray* dataSource2;
 @property(nonatomic,retain)NSMutableArray* dataSource3;
+
+@property (nonatomic, strong) UIImageView *addIV;
+@property (nonatomic, strong) UILabel *addLable;
+@property (nonatomic, strong) UILabel *titleLable;
+@property (nonatomic, strong) UIButton *seleBtn;
+@property (nonatomic, strong) UIButton *locationBtn;
+
+@property (nonatomic, strong) YBPopupMenu *popupMenu;
+
 @end
 
 @implementation HomeViewController
@@ -70,6 +81,91 @@
     [self getClassType];
     
     [self makeData];
+    
+    [self makeTopView];
+}
+
+#pragma mark - 创建顶部视图
+- (void)makeTopView{
+    UIView* titleView = [MyController viewWithFrame:CGRectMake(0, 0, [MyController getScreenWidth], [MyController isIOS7])];
+    titleView.backgroundColor = [MyController colorWithHexString:@"ee4737"];
+    [self.view addSubview:titleView];
+    
+    self.titleLable = [MyController createLabelWithFrame:titleView.frame Font:16 Text:@"首页"];
+    self.titleLable.textColor = [UIColor whiteColor];
+    [titleView addSubview:self.titleLable];
+    
+    [self.titleLable mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_equalTo(titleView);
+        make.centerY.mas_equalTo(titleView).mas_offset(10);
+    }];
+    
+    self.seleBtn = [MyController createButtonWithFrame:titleView.frame ImageName:@"shijian" Target:self Action:@selector(seleBtnClick) Title:nil];
+    [titleView addSubview:self.seleBtn];
+    
+    [self.seleBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(titleView).mas_offset(10);
+        make.right.mas_equalTo(-10);
+        make.width.mas_offset(20);
+        make.height.mas_offset(20);
+    }];
+    
+    self.addIV = [MyController createImageViewWithFrame:titleView.frame ImageName:@"shijian"];
+    [titleView addSubview:self.addIV];
+    
+    [self.addIV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(titleView).mas_offset(10);
+        make.left.mas_equalTo(10);
+        make.width.mas_offset(20);
+        make.height.mas_offset(20);
+    }];
+    
+    self.addLable = [MyController createLabelWithFrame:titleView.frame Font:14 Text:@"青岛"];
+    self.addLable.textColor = [UIColor whiteColor];
+    self.addLable.numberOfLines = 1;
+    self.addLable.lineBreakMode = NSLineBreakByTruncatingTail;
+    [titleView addSubview:self.addLable];
+    
+    [self.addLable mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(titleView).mas_offset(10);
+        make.left.mas_equalTo(self.addIV.mas_right).mas_offset(3);
+        make.width.mas_offset(100);
+    }];
+    
+    self.locationBtn = [MyController createButtonWithFrame:titleView.frame ImageName:nil Target:self Action:@selector(locationBtnClick) Title:nil];
+    [titleView addSubview:self.locationBtn];
+    
+    [self.locationBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(0);
+        make.top.mas_equalTo(0);
+        make.height.mas_offset([MyController isIOS7]);
+        make.right.mas_equalTo(self.addLable.mas_right);
+    }];
+}
+
+#pragma mark - 选择弹出
+- (void)seleBtnClick{
+    UITouch *t;
+    CGPoint p = [t locationInView: self.view];
+    //推荐用这种写法
+    [YBPopupMenu showAtPoint:p titles:TITLES icons:nil menuWidth:110 otherSettings:^(YBPopupMenu *popupMenu) {
+        popupMenu.dismissOnSelected = NO;
+        popupMenu.isShowShadow = YES;
+        popupMenu.delegate = self;
+        popupMenu.offset = 10;
+        popupMenu.type = YBPopupMenuTypeDark;
+        popupMenu.rectCorner = UIRectCornerBottomLeft | UIRectCornerBottomRight;
+    }];
+}
+
+#pragma mark - YBPopupMenuDelegate
+- (void)ybPopupMenuDidSelectedAtIndex:(NSInteger)index ybPopupMenu:(YBPopupMenu *)ybPopupMenu {
+    NSLog(@"点击了 %@ 选项",TITLES[index]);
+}
+#pragma mark - 选位置
+- (void)locationBtnClick{
+    LocationMapViewController* vc = [[LocationMapViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)makeData{
@@ -139,7 +235,7 @@
 #pragma mark - 初始化tableView
 - (void)createTableView{
     self.automaticallyAdjustsScrollViewInsets = NO;
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 49) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, [MyController isIOS7], self.view.frame.size.width, self.view.frame.size.height - 49 - [MyController isIOS7]) style:UITableViewStylePlain];
     _tableView.dataSource = self;
     _tableView.delegate = self;
     UIImageView *tableBg = [[UIImageView alloc] initWithImage:nil];

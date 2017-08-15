@@ -68,7 +68,7 @@
     [shareView addSubview:shareIV];
     
     [shareIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(4);
+        make.top.mas_equalTo(6);
         make.width.mas_offset(20);
         make.height.mas_offset(20);
         make.centerX.mas_equalTo(shareView);
@@ -109,7 +109,7 @@
     [foView addSubview:foIV];
     
     [foIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(4);
+        make.top.mas_equalTo(6);
         make.width.mas_offset(20);
         make.height.mas_offset(20);
         make.centerX.mas_equalTo(foView);
@@ -193,7 +193,7 @@
     _tableView.dataSource = self;
     _tableView.delegate = self;
     UIImageView *tableBg = [[UIImageView alloc] initWithImage:nil];
-    tableBg.backgroundColor = [MyController colorWithHexString:@"f4f6fa"];
+    tableBg.backgroundColor = [UIColor clearColor];
     [_tableView setBackgroundView:tableBg];
     //分割线类型
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;

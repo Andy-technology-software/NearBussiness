@@ -28,7 +28,6 @@ PODS:
   - AMapSearch (5.0.0):
     - AMapFoundation (~> 1.2)
   - DACircularProgress (2.3.1)
-  - EChart (0.1.1)
   - HMSegmentedControl (1.5.3)
   - ImagePickerSheetViewController (1.0.1):
     - LFImagePickerController
@@ -58,7 +57,6 @@ DEPENDENCIES:
   - AMap2DMap
   - AMapLocation
   - AMapSearch
-  - EChart
   - HMSegmentedControl
   - ImagePickerSheetViewController
   - IQKeyboardManager
@@ -80,7 +78,6 @@ SPEC CHECKSUMS:
   AMapLocation: 6016f0e09c127461c9c8e36945f34c0f037ad962
   AMapSearch: cf7fd100d533995822d92c22586abfaf7cdf6eef
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
-  EChart: 2c23edc06e72c396d283732c2338711c33d7644d
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
   ImagePickerSheetViewController: 0eb1fe0ecea4b8e973b76642bb6800756769e47a
   IQKeyboardManager: 322c7405df3eb5f7e50dede32ea937bf3d4364e0
@@ -98,6 +95,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 26527d0f2edf96453359d4f0a8cddeb74430c5e0
+PODFILE CHECKSUM: 472d5dc74dfccda59241dbac4bddd4281b46ff40
 
 COCOAPODS: 1.2.0

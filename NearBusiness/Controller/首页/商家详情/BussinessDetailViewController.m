@@ -39,7 +39,7 @@
     [[self.navigationController.navigationBar subviews] objectAtIndex:0].alpha = 1;
     //去掉导航栏底部的黑线
     self.navigationController.navigationBar.shadowImage = [UIImage new];
-    self.view.backgroundColor = [MyController colorWithHexString:@"ffffff"];
+    self.view.backgroundColor = [MyController colorWithHexString:DEFAULTBGCOLOR];
     [self createLeftNvc];
     self.view.backgroundColor = [UIColor whiteColor];
 }

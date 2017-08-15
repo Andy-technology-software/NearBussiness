@@ -15,10 +15,6 @@ pod 'MJRefresh'
 pod 'MWPhotoBrowser'
 #一个浮动tf、tv
 pod 'JVFloatLabeledTextField'
-#图表框架 10.3以后才行
-#pod 'XJYChart'
-
-pod 'EChart'
 
 pod 'AMapSearch'
 pod 'AMapLocation'

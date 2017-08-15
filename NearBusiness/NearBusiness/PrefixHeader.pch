@@ -71,9 +71,6 @@
 #import "JVFloatLabeledTextField.h"
 #import "JVFloatLabeledTextView.h"
 
-//图表
-#import "EColumnChart.h"
-
 //支付宝
 #import "AlipayHeader.h"
 //银联
@@ -81,5 +78,11 @@
 //微信
 #import "MXWechatConfig.h"
 
+#import "YBPopupMenu.h"
+#define TITLES @[@"修改", @"删除", @"扫一扫",@"付款"]
+#define ICONS  @[@"motify",@"delete",@"saoyisao",@"pay"]
 
+#define TITLECOLOR @"393939"
+#define SUBTITLECOLOR @"636363"
+#define DEFAULTBGCOLOR @"f4faf6"
 #endif /* PrefixHeader_pch */
