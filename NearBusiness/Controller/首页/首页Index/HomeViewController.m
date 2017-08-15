@@ -22,9 +22,9 @@
 
 #import "BussinessSearchViewController.h"
 
-#import "BussinessDetailViewController.h"
-
 #import "LocationMapViewController.h"
+
+#import "ZCZBarViewController.h"
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate,IndexViewCellDelegate,MWPhotoBrowserDelegate,Index1TableViewCellDelegate,YBPopupMenuDelegate>{
     UITableView* _tableView;
 }
@@ -44,6 +44,7 @@
 @property (nonatomic, strong) UILabel *addLable;
 @property (nonatomic, strong) UILabel *titleLable;
 @property (nonatomic, strong) UIButton *seleBtn;
+@property (nonatomic, strong) UIButton *seleBtn1;
 @property (nonatomic, strong) UIButton *locationBtn;
 
 @property (nonatomic, strong) YBPopupMenu *popupMenu;
@@ -100,7 +101,7 @@
         make.centerY.mas_equalTo(titleView).mas_offset(10);
     }];
     
-    self.seleBtn = [MyController createButtonWithFrame:titleView.frame ImageName:@"shijian" Target:self Action:@selector(seleBtnClick) Title:nil];
+    self.seleBtn = [MyController createButtonWithFrame:titleView.frame ImageName:@"shijian" Target:self Action:@selector(seleBtnClick:) Title:nil];
     [titleView addSubview:self.seleBtn];
     
     [self.seleBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -108,6 +109,16 @@
         make.right.mas_equalTo(-10);
         make.width.mas_offset(20);
         make.height.mas_offset(20);
+    }];
+    
+    self.seleBtn1 = [MyController createButtonWithFrame:titleView.frame ImageName:nil Target:self Action:@selector(seleBtnClick:) Title:nil];
+    [titleView addSubview:self.seleBtn1];
+    
+    [self.seleBtn1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(0);
+        make.right.mas_equalTo(0);
+        make.width.mas_offset(50);
+        make.height.mas_offset([MyController isIOS7]);
     }];
     
     self.addIV = [MyController createImageViewWithFrame:titleView.frame ImageName:@"shijian"];
@@ -144,23 +155,25 @@
 }
 
 #pragma mark - 选择弹出
-- (void)seleBtnClick{
-    UITouch *t;
-    CGPoint p = [t locationInView: self.view];
-    //推荐用这种写法
-    [YBPopupMenu showAtPoint:p titles:TITLES icons:nil menuWidth:110 otherSettings:^(YBPopupMenu *popupMenu) {
-        popupMenu.dismissOnSelected = NO;
-        popupMenu.isShowShadow = YES;
-        popupMenu.delegate = self;
-        popupMenu.offset = 10;
-        popupMenu.type = YBPopupMenuTypeDark;
-        popupMenu.rectCorner = UIRectCornerBottomLeft | UIRectCornerBottomRight;
-    }];
+- (void)seleBtnClick:(UIButton *)sender{
+    [YBPopupMenu showRelyOnView:sender titles:TITLES icons:ICONS menuWidth:120 delegate:self];
+
 }
 
 #pragma mark - YBPopupMenuDelegate
 - (void)ybPopupMenuDidSelectedAtIndex:(NSInteger)index ybPopupMenu:(YBPopupMenu *)ybPopupMenu {
     NSLog(@"点击了 %@ 选项",TITLES[index]);
+    if (1 == index) {
+        ZCZBarViewController*vc=[[ZCZBarViewController alloc]initWithIsQRCode:NO Block:^(NSString *result, BOOL isFinish) {
+            if (isFinish) {
+                NSLog(@"最后的结果%@",result);
+                
+            }
+        }];
+        
+        [self presentViewController:vc animated:YES completion:nil];
+    }
+
 }
 #pragma mark - 选位置
 - (void)locationBtnClick{

@@ -79,10 +79,16 @@
 #import "MXWechatConfig.h"
 
 #import "YBPopupMenu.h"
-#define TITLES @[@"修改", @"删除", @"扫一扫",@"付款"]
-#define ICONS  @[@"motify",@"delete",@"saoyisao",@"pay"]
+#define TITLES @[@"入驻", @"扫码付", @"通讯录"]
+#define ICONS  @[@"motify",@"saoyisao",@"pay"]
 
 #define TITLECOLOR @"393939"
 #define SUBTITLECOLOR @"636363"
 #define DEFAULTBGCOLOR @"f4faf6"
+
+//单聊
+#import "SingleChatViewController.h"
+//商家详情
+#import "BussinessDetailViewController.h"
+
 #endif /* PrefixHeader_pch */

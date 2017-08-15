@@ -124,7 +124,15 @@
         make.centerX.mas_equalTo(foView);
     }];
     
+    UIButton* zixunBtn = [MyController createButtonWithFrame:foView.frame ImageName:nil Target:self Action:@selector(zixunBtnClick) Title:nil];
+    [bottomView addSubview:zixunBtn];
     
+    [zixunBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(lineView.mas_right);
+        make.top.mas_equalTo(0);
+        make.height.mas_offset(50);
+        make.width.mas_offset(60);
+    }];
     
     UIView* chatView = [MyController viewWithFrame:bottomView.frame];
     chatView.backgroundColor = [MyController colorWithHexString:@"ee4737"];
@@ -173,6 +181,11 @@
 #pragma mark - 购买响应
 - (void)buyBtnClick{
     NSLog(@"购买");
+}
+
+- (void)zixunBtnClick{
+    SingleChatViewController* vc = [[SingleChatViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - 初始化tableView

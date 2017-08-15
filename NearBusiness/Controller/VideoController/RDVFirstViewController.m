@@ -12,10 +12,6 @@
 
 #import "VideoTableViewCell.h"
 
-#import "MyXJYChartViewController.h"
-
-#import "EChartViewController.h"
-
 #import "GoodsListViewController.h"
 @interface RDVFirstViewController ()<UITableViewDataSource,UITableViewDelegate,MWPhotoBrowserDelegate>{
     UITableView* _tableView;
@@ -81,13 +77,9 @@
         UIViewController *rootController = [self.keyWindow rootViewController];
         [rootController presentViewController:self.photoNavigationController animated:YES completion:nil];
     }else if (1 == indexPath.row){
-        MyXJYChartViewController* vc = [[MyXJYChartViewController alloc] init];
-        vc.title = @"XJYChart";
-        [self.navigationController pushViewController:vc animated:YES];
+        
     }else if (2 == indexPath.row){
-        EChartViewController* vc = [[EChartViewController alloc] init];
-        vc.title = @"EChart";
-        [self.navigationController pushViewController:vc animated:YES];
+        
     }else if (3 == indexPath.row){
         GoodsListViewController* vc = [[GoodsListViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];

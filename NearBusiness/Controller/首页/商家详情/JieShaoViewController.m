@@ -156,6 +156,21 @@
         make.height.mas_offset(50);
         make.left.mas_equalTo(chatIV.mas_right).mas_offset(10);
     }];
+    
+    UIButton* zixunBtn = [MyController createButtonWithFrame:chatView.frame ImageName:nil Target:self Action:@selector(zixunBtnClick) Title:nil];
+    [bottomView addSubview:zixunBtn];
+    
+    [zixunBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.mas_equalTo(foView.mas_left);
+        make.left.mas_equalTo(0);
+        make.top.mas_equalTo(0);
+        make.height.mas_offset(50);
+    }];
+}
+
+- (void)zixunBtnClick{
+    SingleChatViewController* vc = [[SingleChatViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - 创建数据
