@@ -281,6 +281,13 @@
 		217482A11F418D80004B5769 /* BussinessDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 217482A01F418D80004B5769 /* BussinessDetailTableViewCell.m */; };
 		217482A51F418ECD004B5769 /* BussinessDetail1Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 217482A41F418ECD004B5769 /* BussinessDetail1Model.m */; };
 		217482A81F418EFF004B5769 /* BussinessDetail1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 217482A71F418EFF004B5769 /* BussinessDetail1TableViewCell.m */; };
+		21B4A0551F46972100EE3BE6 /* MineIndex0Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B4A0541F46972100EE3BE6 /* MineIndex0Model.m */; };
+		21B4A0581F46973400EE3BE6 /* MineIndex0TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B4A0571F46973400EE3BE6 /* MineIndex0TableViewCell.m */; };
+		21B4A05B1F46D3E500EE3BE6 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B4A05A1F46D3E500EE3BE6 /* InfoViewController.m */; };
+		21B4A05E1F46D3EF00EE3BE6 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B4A05D1F46D3EF00EE3BE6 /* VideoViewController.m */; };
+		21B4A0611F46D3FA00EE3BE6 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B4A0601F46D3FA00EE3BE6 /* ActivityViewController.m */; };
+		21B4A0641F46D40100EE3BE6 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B4A0631F46D40100EE3BE6 /* GroupViewController.m */; };
+		21B4A0671F46D70F00EE3BE6 /* NearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B4A0661F46D70F00EE3BE6 /* NearViewController.m */; };
 		21B9501C1EEA99430089CF9B /* libPods-NearBusiness.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DED2CE6F96F9DBC99F3BE6 /* libPods-NearBusiness.a */; };
 		21C2369E1F3D348100DDA92B /* Hyphenate.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 21C2369C1F3D348100DDA92B /* Hyphenate.podspec */; };
 		21C236A01F3D360200DDA92B /* Hyphenate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 21C2369B1F3D348100DDA92B /* Hyphenate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -870,6 +877,20 @@
 		217482A71F418EFF004B5769 /* BussinessDetail1TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BussinessDetail1TableViewCell.m; sourceTree = "<group>"; };
 		21ABF4451F42C8E5009572DE /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		21ABF4471F42C905009572DE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		21B4A0531F46972100EE3BE6 /* MineIndex0Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineIndex0Model.h; sourceTree = "<group>"; };
+		21B4A0541F46972100EE3BE6 /* MineIndex0Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineIndex0Model.m; sourceTree = "<group>"; };
+		21B4A0561F46973400EE3BE6 /* MineIndex0TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineIndex0TableViewCell.h; sourceTree = "<group>"; };
+		21B4A0571F46973400EE3BE6 /* MineIndex0TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineIndex0TableViewCell.m; sourceTree = "<group>"; };
+		21B4A0591F46D3E500EE3BE6 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		21B4A05A1F46D3E500EE3BE6 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		21B4A05C1F46D3EF00EE3BE6 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		21B4A05D1F46D3EF00EE3BE6 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		21B4A05F1F46D3FA00EE3BE6 /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
+		21B4A0601F46D3FA00EE3BE6 /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
+		21B4A0621F46D40100EE3BE6 /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupViewController.h; sourceTree = "<group>"; };
+		21B4A0631F46D40100EE3BE6 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
+		21B4A0651F46D70F00EE3BE6 /* NearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearViewController.h; sourceTree = "<group>"; };
+		21B4A0661F46D70F00EE3BE6 /* NearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearViewController.m; sourceTree = "<group>"; };
 		21C2369B1F3D348100DDA92B /* Hyphenate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hyphenate.framework; sourceTree = "<group>"; };
 		21C2369C1F3D348100DDA92B /* Hyphenate.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hyphenate.podspec; sourceTree = "<group>"; };
 		21C236A21F3D3B2600DDA92B /* requestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = requestService.h; sourceTree = "<group>"; };
@@ -1860,6 +1881,7 @@
 		21434D3B1EEA91300024FE96 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				21B4A0491F4695A200EE3BE6 /* MineModel */,
 				21434D3C1EEA91300024FE96 /* Goods */,
 				21434D401EEA91300024FE96 /* IndexModel */,
 				21434D431EEA91300024FE96 /* VideoModel */,
@@ -1911,6 +1933,7 @@
 		21434D461EEA91300024FE96 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				21B4A04B1F4695C900EE3BE6 /* MineView */,
 				21434D471EEA91300024FE96 /* Goods */,
 				21434D4B1EEA91300024FE96 /* IndexView */,
 				21434D4E1EEA91300024FE96 /* VideoView */,
@@ -2181,6 +2204,16 @@
 			children = (
 				215F1D6A1F0B466400DD4AEE /* NearCircleViewController.h */,
 				215F1D6B1F0B466400DD4AEE /* NearCircleViewController.m */,
+				21B4A0591F46D3E500EE3BE6 /* InfoViewController.h */,
+				21B4A05A1F46D3E500EE3BE6 /* InfoViewController.m */,
+				21B4A05C1F46D3EF00EE3BE6 /* VideoViewController.h */,
+				21B4A05D1F46D3EF00EE3BE6 /* VideoViewController.m */,
+				21B4A05F1F46D3FA00EE3BE6 /* ActivityViewController.h */,
+				21B4A0601F46D3FA00EE3BE6 /* ActivityViewController.m */,
+				21B4A0621F46D40100EE3BE6 /* GroupViewController.h */,
+				21B4A0631F46D40100EE3BE6 /* GroupViewController.m */,
+				21B4A0651F46D70F00EE3BE6 /* NearViewController.h */,
+				21B4A0661F46D70F00EE3BE6 /* NearViewController.m */,
 			);
 			path = "附近Index";
 			sourceTree = "<group>";
@@ -2300,6 +2333,40 @@
 				21ED758F1F42734700D91E2C /* ShangPinModel.m */,
 			);
 			path = "商家详情";
+			sourceTree = "<group>";
+		};
+		21B4A0491F4695A200EE3BE6 /* MineModel */ = {
+			isa = PBXGroup;
+			children = (
+				21B4A04A1F4695B700EE3BE6 /* 我的首页 */,
+			);
+			path = MineModel;
+			sourceTree = "<group>";
+		};
+		21B4A04A1F4695B700EE3BE6 /* 我的首页 */ = {
+			isa = PBXGroup;
+			children = (
+				21B4A0531F46972100EE3BE6 /* MineIndex0Model.h */,
+				21B4A0541F46972100EE3BE6 /* MineIndex0Model.m */,
+			);
+			path = "我的首页";
+			sourceTree = "<group>";
+		};
+		21B4A04B1F4695C900EE3BE6 /* MineView */ = {
+			isa = PBXGroup;
+			children = (
+				21B4A04C1F4695DC00EE3BE6 /* 我的首页 */,
+			);
+			path = MineView;
+			sourceTree = "<group>";
+		};
+		21B4A04C1F4695DC00EE3BE6 /* 我的首页 */ = {
+			isa = PBXGroup;
+			children = (
+				21B4A0561F46973400EE3BE6 /* MineIndex0TableViewCell.h */,
+				21B4A0571F46973400EE3BE6 /* MineIndex0TableViewCell.m */,
+			);
+			path = "我的首页";
 			sourceTree = "<group>";
 		};
 		21C2369A1F3D348100DDA92B /* HyphenateFullSDK */ = {
@@ -2739,6 +2806,7 @@
 				21434CAB1EEA91160024FE96 /* EMCDDeviceManager+Microphone.m in Sources */,
 				21434CC31EEA91170024FE96 /* EaseEmotionManager.m in Sources */,
 				21434D541EEA91300024FE96 /* FMDatabasePool.m in Sources */,
+				21B4A0551F46972100EE3BE6 /* MineIndex0Model.m in Sources */,
 				21434CEB1EEA91170024FE96 /* base64.m in Sources */,
 				21434CE21EEA91170024FE96 /* XRQGetIP.m in Sources */,
 				21434D071EEA91170024FE96 /* XMLDictionary.m in Sources */,
@@ -2760,6 +2828,7 @@
 				21434CED1EEA91170024FE96 /* DataVerifier.m in Sources */,
 				215F1D721F0B46BC00DD4AEE /* FriendCircleViewController.m in Sources */,
 				21ED75A21F427DAB00D91E2C /* ProductDetails2Model.m in Sources */,
+				21B4A05E1F46D3EF00EE3BE6 /* VideoViewController.m in Sources */,
 				21434CCD1EEA91170024FE96 /* EaseCustomMessageCell.m in Sources */,
 				21434CDF1EEA91170024FE96 /* EaseRecordView.m in Sources */,
 				21434CD21EEA91170024FE96 /* EaseBubbleView+Image.m in Sources */,
@@ -2776,6 +2845,7 @@
 				21434D7B1EEA91300024FE96 /* VideoModel.m in Sources */,
 				21434DB71EEA91480024FE96 /* RDVTabBarItem.m in Sources */,
 				21ED75901F42734700D91E2C /* ShangPinModel.m in Sources */,
+				21B4A0611F46D3FA00EE3BE6 /* ActivityViewController.m in Sources */,
 				21434CC81EEA91170024FE96 /* EaseRefreshTableViewController.m in Sources */,
 				21545B761F42D41500CA7C3F /* ZCZBarViewController.mm in Sources */,
 				21434CD41EEA91170024FE96 /* EaseBubbleView+Text.m in Sources */,
@@ -2809,12 +2879,14 @@
 				21C236AE1F3D433000DDA92B /* Index1TableViewCell.m in Sources */,
 				21434CDB1EEA91170024FE96 /* EaseTextView.m in Sources */,
 				21434D7D1EEA91300024FE96 /* IndexViewTableViewCell.m in Sources */,
+				21B4A0581F46973400EE3BE6 /* MineIndex0TableViewCell.m in Sources */,
 				21434DBE1EEA91480024FE96 /* RDVFirstViewController.m in Sources */,
 				2120EE5F1F3D859100661EBE /* BussinessSearchViewController.m in Sources */,
 				21ED759F1F427DA200D91E2C /* ProductDetails1Model.m in Sources */,
 				21434CDA1EEA91170024FE96 /* EaseImageView.m in Sources */,
 				21434CC11EEA91170024FE96 /* EaseEmojiEmoticons.m in Sources */,
 				21434DB31EEA91480024FE96 /* SingleChatViewController.m in Sources */,
+				21B4A05B1F46D3E500EE3BE6 /* InfoViewController.m in Sources */,
 				21434D051EEA91170024FE96 /* MXWechatSignAdaptor.m in Sources */,
 				21434CDC1EEA91170024FE96 /* EaseFaceView.m in Sources */,
 				21434CCF1EEA91170024FE96 /* EaseMessageTimeCell.m in Sources */,
@@ -2830,6 +2902,7 @@
 				21434CEA1EEA91170024FE96 /* Order.m in Sources */,
 				2120EE671F3D914700661EBE /* BussinessSearchTableViewCell.m in Sources */,
 				21434CCE1EEA91170024FE96 /* EaseMessageCell.m in Sources */,
+				21B4A0671F46D70F00EE3BE6 /* NearViewController.m in Sources */,
 				217482A51F418ECD004B5769 /* BussinessDetail1Model.m in Sources */,
 				21434DB01EEA91480024FE96 /* ChatListIMViewController.m in Sources */,
 				21434DBA1EEA91480024FE96 /* GoodsDetailViewController.m in Sources */,
@@ -2852,6 +2925,7 @@
 				21434CBD1EEA91170024FE96 /* EaseChineseToPinyin.m in Sources */,
 				21434CC41EEA91170024FE96 /* FixFopen.c in Sources */,
 				21434DB51EEA91480024FE96 /* RDVTabBar.m in Sources */,
+				21B4A0641F46D40100EE3BE6 /* GroupViewController.m in Sources */,
 				21C236A81F3D3B2600DDA92B /* XRQRequestClient.m in Sources */,
 				21434CB91EEA91170024FE96 /* NSDateFormatter+Category.m in Sources */,
 				21434CC71EEA91170024FE96 /* EaseMessageViewController.m in Sources */,

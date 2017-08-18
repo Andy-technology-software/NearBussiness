@@ -85,6 +85,7 @@
 #define TITLECOLOR @"393939"
 #define SUBTITLECOLOR @"636363"
 #define DEFAULTBGCOLOR @"f4faf6"
+#define DEFTNAVCOLOR @"ee4737"
 
 //单聊
 #import "SingleChatViewController.h"

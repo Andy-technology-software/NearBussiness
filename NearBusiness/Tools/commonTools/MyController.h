@@ -78,4 +78,5 @@
 + (NSString*)getUserid;
 + (UIImage *)fixOrientation:(UIImage *)aImage;
 + (BOOL)stringContainsEmoji:(NSString *)string;
++ (UIImage *)blurryImage:(UIImage *)image withBlurLevel:(CGFloat)blur;
 @end
