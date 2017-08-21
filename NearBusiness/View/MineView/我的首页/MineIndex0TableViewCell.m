@@ -250,6 +250,7 @@
     
     float bviewWidth = [MyController getScreenWidth] / 2;
     float bviewHeight = [MyController getScreenWidth]*3/8/2;
+    NSArray* tB = [[NSArray alloc] initWithObjects:@"资金管理",@"通讯录",@"设置中心",@"联系我们", nil];
     
     for (int i = 0; i < 4; i++) {
         UIView* bView = [MyController viewWithFrame:CGRectMake((i % 2) * bviewWidth, (i / 2) * bviewHeight, bviewWidth, bviewHeight)];

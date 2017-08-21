@@ -94,7 +94,7 @@
     [[EMClient sharedClient] addDelegate:self delegateQueue:nil];
     
     NSArray* dataArr = [[DBManager shareManager] getAllLoginModel];
-    if (!dataArr.count) {
+    if (dataArr.count) {
         LoginDataBaseModel* model = [dataArr lastObject];
         NSLog(@"设备唯一标识：%@",[XRQGetOnlyUUID getUUID]);
         NSLog(@"当前设备ip：%@",[XRQGetIP deviceIPAdress]);
@@ -197,23 +197,23 @@
 - (void)setupViewControllers {
     HomeViewController *homevc = [[HomeViewController alloc] init];
     UIViewController *homevcNavigationController = [[UINavigationController alloc]
-                                                initWithRootViewController:homevc];
+                                                    initWithRootViewController:homevc];
     
     NearCircleViewController *nearvc = [[NearCircleViewController alloc] init];
     UIViewController *nearNavigationController = [[UINavigationController alloc]
-                                                   initWithRootViewController:nearvc];
+                                                  initWithRootViewController:nearvc];
     
     BussnessCircleViewController *bussinessvcViewController = [[BussnessCircleViewController alloc] init];
     UIViewController *bussinessvcNavigationController = [[UINavigationController alloc]
-                                                    initWithRootViewController:bussinessvcViewController];
+                                                         initWithRootViewController:bussinessvcViewController];
     
     FriendCircleViewController *friendvc = [[FriendCircleViewController alloc] init];
     UIViewController *friendNavigationController = [[UINavigationController alloc]
-                                                   initWithRootViewController:friendvc];
+                                                    initWithRootViewController:friendvc];
     
     MineViewController *minevc = [[MineViewController alloc] init];
     UIViewController *mineNavigationController = [[UINavigationController alloc]
-                                                    initWithRootViewController:minevc];
+                                                  initWithRootViewController:minevc];
     
     RDVTabBarController *tabBarController = [[RDVTabBarController alloc] init];
     [tabBarController setViewControllers:@[homevcNavigationController,nearNavigationController, bussinessvcNavigationController,friendNavigationController,mineNavigationController]];

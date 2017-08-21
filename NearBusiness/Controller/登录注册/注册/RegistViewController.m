@@ -1,31 +1,18 @@
-
 //
-//  FriendCircleViewController.m
+//  RegistViewController.m
 //  NearBusiness
 //
-//  Created by lingnet on 2017/7/4.
+//  Created by 徐仁强 on 2017/8/20.
 //  Copyright © 2017年 YouCanCallMeAndy. All rights reserved.
 //
 
-#import "FriendCircleViewController.h"
+#import "RegistViewController.h"
 
-@interface FriendCircleViewController ()
+@interface RegistViewController ()
 
 @end
 
-@implementation FriendCircleViewController
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-    [[self rdv_tabBarController] setTabBarHidden:NO animated:YES];
-}
-
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-
-}
+@implementation RegistViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

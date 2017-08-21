@@ -78,6 +78,10 @@
 		2120EE5F1F3D859100661EBE /* BussinessSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2120EE5E1F3D859100661EBE /* BussinessSearchViewController.m */; };
 		2120EE641F3D8CAC00661EBE /* BussinessSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2120EE631F3D8CAC00661EBE /* BussinessSearchModel.m */; };
 		2120EE671F3D914700661EBE /* BussinessSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2120EE661F3D914700661EBE /* BussinessSearchTableViewCell.m */; };
+		212F8D5F1F4AAB8400832B38 /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D5B1F4AAB8400832B38 /* RegistViewController.m */; };
+		212F8D601F4AAB8400832B38 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D5E1F4AAB8400832B38 /* LoginViewController.m */; };
+		212F8D641F4AAB9700832B38 /* LoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D631F4AAB9700832B38 /* LoginTableViewCell.m */; };
+		212F8D681F4AABA700832B38 /* LoginAndRegistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D671F4AABA700832B38 /* LoginAndRegistModel.m */; };
 		21434B0E1EEA8B470024FE96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21434B0D1EEA8B470024FE96 /* main.m */; };
 		21434B111EEA8B470024FE96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21434B101EEA8B470024FE96 /* AppDelegate.m */; };
 		21434B191EEA8B470024FE96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21434B181EEA8B470024FE96 /* Assets.xcassets */; };
@@ -209,7 +213,6 @@
 		21434DB51EEA91480024FE96 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 21434D911EEA91480024FE96 /* RDVTabBar.m */; };
 		21434DB61EEA91480024FE96 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21434D931EEA91480024FE96 /* RDVTabBarController.m */; };
 		21434DB71EEA91480024FE96 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 21434D951EEA91480024FE96 /* RDVTabBarItem.m */; };
-		21434DB81EEA91480024FE96 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21434D981EEA91480024FE96 /* LoginViewController.m */; };
 		21434DBA1EEA91480024FE96 /* GoodsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21434D9F1EEA91480024FE96 /* GoodsDetailViewController.m */; };
 		21434DBB1EEA91480024FE96 /* GoodsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21434DA21EEA91480024FE96 /* GoodsListViewController.m */; };
 		21434DBC1EEA91480024FE96 /* MyXJYChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21434DA51EEA91480024FE96 /* MyXJYChartViewController.m */; };
@@ -418,6 +421,14 @@
 		2120EE631F3D8CAC00661EBE /* BussinessSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BussinessSearchModel.m; sourceTree = "<group>"; };
 		2120EE651F3D914700661EBE /* BussinessSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BussinessSearchTableViewCell.h; sourceTree = "<group>"; };
 		2120EE661F3D914700661EBE /* BussinessSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BussinessSearchTableViewCell.m; sourceTree = "<group>"; };
+		212F8D5A1F4AAB8400832B38 /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		212F8D5B1F4AAB8400832B38 /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		212F8D5D1F4AAB8400832B38 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		212F8D5E1F4AAB8400832B38 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		212F8D621F4AAB9700832B38 /* LoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableViewCell.h; sourceTree = "<group>"; };
+		212F8D631F4AAB9700832B38 /* LoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewCell.m; sourceTree = "<group>"; };
+		212F8D661F4AABA700832B38 /* LoginAndRegistModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAndRegistModel.h; sourceTree = "<group>"; };
+		212F8D671F4AABA700832B38 /* LoginAndRegistModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAndRegistModel.m; sourceTree = "<group>"; };
 		21434B091EEA8B470024FE96 /* NearBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21434B0D1EEA8B470024FE96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21434B0F1EEA8B470024FE96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -762,8 +773,6 @@
 		21434D931EEA91480024FE96 /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarController.m; sourceTree = "<group>"; };
 		21434D941EEA91480024FE96 /* RDVTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarItem.h; sourceTree = "<group>"; };
 		21434D951EEA91480024FE96 /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
-		21434D971EEA91480024FE96 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		21434D981EEA91480024FE96 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		21434D9E1EEA91480024FE96 /* GoodsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsDetailViewController.h; sourceTree = "<group>"; };
 		21434D9F1EEA91480024FE96 /* GoodsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsDetailViewController.m; sourceTree = "<group>"; };
 		21434DA11EEA91480024FE96 /* GoodsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsListViewController.h; sourceTree = "<group>"; };
@@ -1095,6 +1104,51 @@
 				2120EE661F3D914700661EBE /* BussinessSearchTableViewCell.m */,
 			);
 			path = "商家搜索";
+			sourceTree = "<group>";
+		};
+		212F8D581F4AAB8400832B38 /* 登录注册 */ = {
+			isa = PBXGroup;
+			children = (
+				212F8D591F4AAB8400832B38 /* 注册 */,
+				212F8D5C1F4AAB8400832B38 /* 登录 */,
+			);
+			path = "登录注册";
+			sourceTree = "<group>";
+		};
+		212F8D591F4AAB8400832B38 /* 注册 */ = {
+			isa = PBXGroup;
+			children = (
+				212F8D5A1F4AAB8400832B38 /* RegistViewController.h */,
+				212F8D5B1F4AAB8400832B38 /* RegistViewController.m */,
+			);
+			path = "注册";
+			sourceTree = "<group>";
+		};
+		212F8D5C1F4AAB8400832B38 /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				212F8D5D1F4AAB8400832B38 /* LoginViewController.h */,
+				212F8D5E1F4AAB8400832B38 /* LoginViewController.m */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
+		212F8D611F4AAB9700832B38 /* LoginAndRegist */ = {
+			isa = PBXGroup;
+			children = (
+				212F8D621F4AAB9700832B38 /* LoginTableViewCell.h */,
+				212F8D631F4AAB9700832B38 /* LoginTableViewCell.m */,
+			);
+			path = LoginAndRegist;
+			sourceTree = "<group>";
+		};
+		212F8D651F4AABA700832B38 /* LoginAndRegist */ = {
+			isa = PBXGroup;
+			children = (
+				212F8D661F4AABA700832B38 /* LoginAndRegistModel.h */,
+				212F8D671F4AABA700832B38 /* LoginAndRegistModel.m */,
+			);
+			path = LoginAndRegist;
 			sourceTree = "<group>";
 		};
 		21434B001EEA8B470024FE96 = {
@@ -1881,6 +1935,7 @@
 		21434D3B1EEA91300024FE96 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				212F8D651F4AABA700832B38 /* LoginAndRegist */,
 				21B4A0491F4695A200EE3BE6 /* MineModel */,
 				21434D3C1EEA91300024FE96 /* Goods */,
 				21434D401EEA91300024FE96 /* IndexModel */,
@@ -1933,6 +1988,7 @@
 		21434D461EEA91300024FE96 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				212F8D611F4AAB9700832B38 /* LoginAndRegist */,
 				21B4A04B1F4695C900EE3BE6 /* MineView */,
 				21434D471EEA91300024FE96 /* Goods */,
 				21434D4B1EEA91300024FE96 /* IndexView */,
@@ -1986,6 +2042,7 @@
 		21434D7F1EEA91480024FE96 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				212F8D581F4AAB8400832B38 /* 登录注册 */,
 				215F1D651F0B430600DD4AEE /* 我的 */,
 				215F1D631F0B42E000DD4AEE /* 朋友圈 */,
 				215F1D611F0B42B900DD4AEE /* 商友 */,
@@ -1993,7 +2050,6 @@
 				215F1D5A1F0B41C400DD4AEE /* 首页 */,
 				21434D801EEA91480024FE96 /* IMController */,
 				21434D8F1EEA91480024FE96 /* RDVTabBarController */,
-				21434D961EEA91480024FE96 /* UserInfoController */,
 				21434D991EEA91480024FE96 /* VideoController */,
 			);
 			path = Controller;
@@ -2027,15 +2083,6 @@
 				21434D951EEA91480024FE96 /* RDVTabBarItem.m */,
 			);
 			path = RDVTabBarController;
-			sourceTree = "<group>";
-		};
-		21434D961EEA91480024FE96 /* UserInfoController */ = {
-			isa = PBXGroup;
-			children = (
-				21434D971EEA91480024FE96 /* LoginViewController.h */,
-				21434D981EEA91480024FE96 /* LoginViewController.m */,
-			);
-			path = UserInfoController;
 			sourceTree = "<group>";
 		};
 		21434D991EEA91480024FE96 /* VideoController */ = {
@@ -2787,7 +2834,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				21ED75BD1F42A90A00D91E2C /* YBRectConst.m in Sources */,
-				21434DB81EEA91480024FE96 /* LoginViewController.m in Sources */,
 				21434CBC1EEA91170024FE96 /* UIViewController+HUD.m in Sources */,
 				21434CA11EEA91160024FE96 /* CycleScrollView.m in Sources */,
 				21434D7A1EEA91300024FE96 /* IndexModel.m in Sources */,
@@ -2815,8 +2861,10 @@
 				21434CD31EEA91170024FE96 /* EaseBubbleView+Location.m in Sources */,
 				217482A11F418D80004B5769 /* BussinessDetailTableViewCell.m in Sources */,
 				21434CBE1EEA91170024FE96 /* EaseConvertToCommonEmoticonsHelper.m in Sources */,
+				212F8D5F1F4AAB8400832B38 /* RegistViewController.m in Sources */,
 				21ED759C1F427D9000D91E2C /* ProductDetails0Model.m in Sources */,
 				21434CD01EEA91170024FE96 /* EaseBubbleView+File.m in Sources */,
+				212F8D601F4AAB8400832B38 /* LoginViewController.m in Sources */,
 				21434CB81EEA91170024FE96 /* NSDate+Category.m in Sources */,
 				21434CBB1EEA91170024FE96 /* UIViewController+DismissKeyboard.m in Sources */,
 				21434DBD1EEA91480024FE96 /* PayViewController.mm in Sources */,
@@ -2856,6 +2904,7 @@
 				21434DB61EEA91480024FE96 /* RDVTabBarController.m in Sources */,
 				21434CB51EEA91170024FE96 /* EaseConversationModel.m in Sources */,
 				21434C9D1EEA91160024FE96 /* HUD.m in Sources */,
+				212F8D641F4AAB9700832B38 /* LoginTableViewCell.m in Sources */,
 				21434CE31EEA91170024FE96 /* XRQGetOnlyUUID.m in Sources */,
 				21434CC61EEA91170024FE96 /* EaseLocationViewController.m in Sources */,
 				21ED75971F427C9A00D91E2C /* ProductDetailsViewController.m in Sources */,
@@ -2918,6 +2967,7 @@
 				215F1D691F0B463F00DD4AEE /* MineViewController.m in Sources */,
 				21434CE61EEA91170024FE96 /* UITableViewCell+HYBMasonryAutoCellHeight.m in Sources */,
 				21434CCC1EEA91170024FE96 /* EaseBaseMessageCell.m in Sources */,
+				212F8D681F4AABA700832B38 /* LoginAndRegistModel.m in Sources */,
 				2120EDD31F3D5A6000661EBE /* BussinessRecommendationModel.m in Sources */,
 				21434CF21EEA91170024FE96 /* RSADataVerifier.m in Sources */,
 				21434D7E1EEA91300024FE96 /* VideoTableViewCell.m in Sources */,

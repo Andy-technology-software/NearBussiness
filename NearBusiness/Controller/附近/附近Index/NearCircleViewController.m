@@ -17,7 +17,7 @@
 @implementation NearCircleViewController
 
 - (void)viewWillAppear:(BOOL)animated{
-    [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
+    [[self rdv_tabBarController] setTabBarHidden:NO animated:YES];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
