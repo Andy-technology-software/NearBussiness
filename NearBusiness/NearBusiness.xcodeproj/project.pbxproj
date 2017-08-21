@@ -82,6 +82,12 @@
 		212F8D601F4AAB8400832B38 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D5E1F4AAB8400832B38 /* LoginViewController.m */; };
 		212F8D641F4AAB9700832B38 /* LoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D631F4AAB9700832B38 /* LoginTableViewCell.m */; };
 		212F8D681F4AABA700832B38 /* LoginAndRegistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D671F4AABA700832B38 /* LoginAndRegistModel.m */; };
+		212F8D6C1F4AD43700832B38 /* SDWeiXinPhotoContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D6B1F4AD43700832B38 /* SDWeiXinPhotoContainerView.m */; };
+		212F8D751F4AD47A00832B38 /* SDBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D6F1F4AD47A00832B38 /* SDBrowserImageView.m */; };
+		212F8D761F4AD47A00832B38 /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D711F4AD47A00832B38 /* SDPhotoBrowser.m */; };
+		212F8D771F4AD47A00832B38 /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D741F4AD47A00832B38 /* SDWaitingView.m */; };
+		212F8D7F1F4AD57800832B38 /* ZiXunModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D7E1F4AD57800832B38 /* ZiXunModel.m */; };
+		212F8D821F4AD60200832B38 /* ZiXunTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D811F4AD60200832B38 /* ZiXunTableViewCell.m */; };
 		21434B0E1EEA8B470024FE96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21434B0D1EEA8B470024FE96 /* main.m */; };
 		21434B111EEA8B470024FE96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21434B101EEA8B470024FE96 /* AppDelegate.m */; };
 		21434B191EEA8B470024FE96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21434B181EEA8B470024FE96 /* Assets.xcassets */; };
@@ -429,6 +435,19 @@
 		212F8D631F4AAB9700832B38 /* LoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewCell.m; sourceTree = "<group>"; };
 		212F8D661F4AABA700832B38 /* LoginAndRegistModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAndRegistModel.h; sourceTree = "<group>"; };
 		212F8D671F4AABA700832B38 /* LoginAndRegistModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAndRegistModel.m; sourceTree = "<group>"; };
+		212F8D6A1F4AD43700832B38 /* SDWeiXinPhotoContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWeiXinPhotoContainerView.h; sourceTree = "<group>"; };
+		212F8D6B1F4AD43700832B38 /* SDWeiXinPhotoContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWeiXinPhotoContainerView.m; sourceTree = "<group>"; };
+		212F8D6E1F4AD47A00832B38 /* SDBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBrowserImageView.h; sourceTree = "<group>"; };
+		212F8D6F1F4AD47A00832B38 /* SDBrowserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBrowserImageView.m; sourceTree = "<group>"; };
+		212F8D701F4AD47A00832B38 /* SDPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowser.h; sourceTree = "<group>"; };
+		212F8D711F4AD47A00832B38 /* SDPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPhotoBrowser.m; sourceTree = "<group>"; };
+		212F8D721F4AD47A00832B38 /* SDPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		212F8D731F4AD47A00832B38 /* SDWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWaitingView.h; sourceTree = "<group>"; };
+		212F8D741F4AD47A00832B38 /* SDWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWaitingView.m; sourceTree = "<group>"; };
+		212F8D7D1F4AD57800832B38 /* ZiXunModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZiXunModel.h; sourceTree = "<group>"; };
+		212F8D7E1F4AD57800832B38 /* ZiXunModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZiXunModel.m; sourceTree = "<group>"; };
+		212F8D801F4AD60200832B38 /* ZiXunTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZiXunTableViewCell.h; sourceTree = "<group>"; };
+		212F8D811F4AD60200832B38 /* ZiXunTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZiXunTableViewCell.m; sourceTree = "<group>"; };
 		21434B091EEA8B470024FE96 /* NearBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21434B0D1EEA8B470024FE96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21434B0F1EEA8B470024FE96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1151,6 +1170,63 @@
 			path = LoginAndRegist;
 			sourceTree = "<group>";
 		};
+		212F8D691F4AD43700832B38 /* PhotoContainer */ = {
+			isa = PBXGroup;
+			children = (
+				212F8D6A1F4AD43700832B38 /* SDWeiXinPhotoContainerView.h */,
+				212F8D6B1F4AD43700832B38 /* SDWeiXinPhotoContainerView.m */,
+			);
+			path = PhotoContainer;
+			sourceTree = "<group>";
+		};
+		212F8D6D1F4AD47A00832B38 /* SDPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				212F8D6E1F4AD47A00832B38 /* SDBrowserImageView.h */,
+				212F8D6F1F4AD47A00832B38 /* SDBrowserImageView.m */,
+				212F8D701F4AD47A00832B38 /* SDPhotoBrowser.h */,
+				212F8D711F4AD47A00832B38 /* SDPhotoBrowser.m */,
+				212F8D721F4AD47A00832B38 /* SDPhotoBrowserConfig.h */,
+				212F8D731F4AD47A00832B38 /* SDWaitingView.h */,
+				212F8D741F4AD47A00832B38 /* SDWaitingView.m */,
+			);
+			path = SDPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		212F8D781F4AD51F00832B38 /* Near */ = {
+			isa = PBXGroup;
+			children = (
+				212F8D791F4AD52800832B38 /* 资讯 */,
+			);
+			path = Near;
+			sourceTree = "<group>";
+		};
+		212F8D791F4AD52800832B38 /* 资讯 */ = {
+			isa = PBXGroup;
+			children = (
+				212F8D801F4AD60200832B38 /* ZiXunTableViewCell.h */,
+				212F8D811F4AD60200832B38 /* ZiXunTableViewCell.m */,
+			);
+			path = "资讯";
+			sourceTree = "<group>";
+		};
+		212F8D7A1F4AD53500832B38 /* Near */ = {
+			isa = PBXGroup;
+			children = (
+				212F8D7C1F4AD55B00832B38 /* 资讯 */,
+			);
+			path = Near;
+			sourceTree = "<group>";
+		};
+		212F8D7C1F4AD55B00832B38 /* 资讯 */ = {
+			isa = PBXGroup;
+			children = (
+				212F8D7D1F4AD57800832B38 /* ZiXunModel.h */,
+				212F8D7E1F4AD57800832B38 /* ZiXunModel.m */,
+			);
+			path = "资讯";
+			sourceTree = "<group>";
+		};
 		21434B001EEA8B470024FE96 = {
 			isa = PBXGroup;
 			children = (
@@ -1221,6 +1297,8 @@
 		21434B3F1EEA91160024FE96 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				212F8D6D1F4AD47A00832B38 /* SDPhotoBrowser */,
+				212F8D691F4AD43700832B38 /* PhotoContainer */,
 				21545B371F42D41500CA7C3F /* ZBarSDK */,
 				21ED75B41F42A90A00D91E2C /* YBPopupMenu */,
 				21C236A11F3D3B2600DDA92B /* RequestAPI */,
@@ -1935,6 +2013,7 @@
 		21434D3B1EEA91300024FE96 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				212F8D7A1F4AD53500832B38 /* Near */,
 				212F8D651F4AABA700832B38 /* LoginAndRegist */,
 				21B4A0491F4695A200EE3BE6 /* MineModel */,
 				21434D3C1EEA91300024FE96 /* Goods */,
@@ -1988,6 +2067,7 @@
 		21434D461EEA91300024FE96 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				212F8D781F4AD51F00832B38 /* Near */,
 				212F8D611F4AAB9700832B38 /* LoginAndRegist */,
 				21B4A04B1F4695C900EE3BE6 /* MineView */,
 				21434D471EEA91300024FE96 /* Goods */,
@@ -2847,6 +2927,7 @@
 				21434DBC1EEA91480024FE96 /* MyXJYChartViewController.m in Sources */,
 				21434D551EEA91300024FE96 /* FMDatabaseQueue.m in Sources */,
 				21434CC51EEA91170024FE96 /* EaseConversationListViewController.m in Sources */,
+				212F8D7F1F4AD57800832B38 /* ZiXunModel.m in Sources */,
 				21434DB21EEA91480024FE96 /* SelfInfoViewController.m in Sources */,
 				21434D081EEA91170024FE96 /* WJDropdownMenu.m in Sources */,
 				21434CAB1EEA91160024FE96 /* EMCDDeviceManager+Microphone.m in Sources */,
@@ -2872,6 +2953,7 @@
 				21434CEF1EEA91170024FE96 /* NSDataEx.m in Sources */,
 				21434CC01EEA91170024FE96 /* EaseEmoji.m in Sources */,
 				21434CA41EEA91160024FE96 /* DotView.m in Sources */,
+				212F8D751F4AD47A00832B38 /* SDBrowserImageView.m in Sources */,
 				217482A81F418EFF004B5769 /* BussinessDetail1TableViewCell.m in Sources */,
 				21434CED1EEA91170024FE96 /* DataVerifier.m in Sources */,
 				215F1D721F0B46BC00DD4AEE /* FriendCircleViewController.m in Sources */,
@@ -2891,6 +2973,7 @@
 				21434DBB1EEA91480024FE96 /* GoodsListViewController.m in Sources */,
 				21434CA61EEA91160024FE96 /* EaseUI.m in Sources */,
 				21434D7B1EEA91300024FE96 /* VideoModel.m in Sources */,
+				212F8D821F4AD60200832B38 /* ZiXunTableViewCell.m in Sources */,
 				21434DB71EEA91480024FE96 /* RDVTabBarItem.m in Sources */,
 				21ED75901F42734700D91E2C /* ShangPinModel.m in Sources */,
 				21B4A0611F46D3FA00EE3BE6 /* ActivityViewController.m in Sources */,
@@ -2946,6 +3029,7 @@
 				21434CB11EEA91160024FE96 /* EMVoiceConverter.mm in Sources */,
 				21434CD11EEA91170024FE96 /* EaseBubbleView+Gif.m in Sources */,
 				21ED75A81F427EE500D91E2C /* ProductDetails1TableViewCell.m in Sources */,
+				212F8D761F4AD47A00832B38 /* SDPhotoBrowser.m in Sources */,
 				21434CAC1EEA91160024FE96 /* EMCDDeviceManager+ProximitySensor.m in Sources */,
 				21434C9B1EEA91160024FE96 /* BlurEffectMenu.m in Sources */,
 				21434CEA1EEA91170024FE96 /* Order.m in Sources */,
@@ -2971,6 +3055,7 @@
 				2120EDD31F3D5A6000661EBE /* BussinessRecommendationModel.m in Sources */,
 				21434CF21EEA91170024FE96 /* RSADataVerifier.m in Sources */,
 				21434D7E1EEA91300024FE96 /* VideoTableViewCell.m in Sources */,
+				212F8D771F4AD47A00832B38 /* SDWaitingView.m in Sources */,
 				2120EE641F3D8CAC00661EBE /* BussinessSearchModel.m in Sources */,
 				21434CBD1EEA91170024FE96 /* EaseChineseToPinyin.m in Sources */,
 				21434CC41EEA91170024FE96 /* FixFopen.c in Sources */,
@@ -2983,6 +3068,7 @@
 				21434CD81EEA91170024FE96 /* EaseChatToolbar.m in Sources */,
 				21434DC01EEA91480024FE96 /* VideoPlayViewController.m in Sources */,
 				21434CA81EEA91160024FE96 /* EMAudioPlayerUtil.m in Sources */,
+				212F8D6C1F4AD43700832B38 /* SDWeiXinPhotoContainerView.m in Sources */,
 				2174829A1F4182B9004B5769 /* JieShaoViewController.m in Sources */,
 				21434CAA1EEA91160024FE96 /* EMCDDeviceManager+Media.m in Sources */,
 				21434CAD1EEA91160024FE96 /* EMCDDeviceManager+Remind.m in Sources */,
