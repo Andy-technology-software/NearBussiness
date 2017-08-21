@@ -9,7 +9,7 @@
 #import "NearCircleViewController.h"
 
 #import "NearViewController.h"
-@interface NearCircleViewController ()
+@interface NearCircleViewController ()<YBPopupMenuDelegate>
 @property (nonatomic, strong) UISegmentedControl *segment;
 
 @end
@@ -56,7 +56,7 @@
     [rightButton1 setImage:[UIImage imageNamed:@"shijian"]forState:UIControlStateNormal];
     [rightButton1 setImage:[UIImage imageNamed:@"shijian"]forState:UIControlStateHighlighted];
     
-    [rightButton1 addTarget:self action:@selector(sendBtnClick)forControlEvents:UIControlEventTouchUpInside];
+    [rightButton1 addTarget:self action:@selector(sendBtnClick:)forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem*rightItem1 = [[UIBarButtonItem alloc]initWithCustomView:rightButton1];
     rightItem1.tintColor = [UIColor whiteColor];
     self.navigationItem.rightBarButtonItem= rightItem1;
@@ -66,7 +66,18 @@
     
 }
 
-- (void)sendBtnClick{
+- (void)sendBtnClick:(UIButton*)sender{
+    
+    [YBPopupMenu showRelyOnView:sender titles:TITLES icons:ICONS menuWidth:120 delegate:self];
+    
+}
+
+#pragma mark - YBPopupMenuDelegate
+- (void)ybPopupMenuDidSelectedAtIndex:(NSInteger)index ybPopupMenu:(YBPopupMenu *)ybPopupMenu {
+    NSLog(@"点击了 %@ 选项",TITLES[index]);
+    if (1 == index) {
+        
+    }
     
 }
 

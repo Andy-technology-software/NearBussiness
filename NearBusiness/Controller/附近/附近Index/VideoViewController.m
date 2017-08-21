@@ -9,11 +9,8 @@
 #import "VideoViewController.h"
 
 #import "SDTimeLineCell.h"
+
 #import "SDTimeLineCellModel.h"
-
-#import "UITableView+SDAutoTableViewCellHeight.h"
-#import "UIView+SDAutoLayout.h"
-
 #define kTimeLineTableViewCellId @"SDTimeLineCell"
 @interface VideoViewController ()<SDTimeLineCellDelegate,UITableViewDataSource,UITableViewDelegate>{
     UITableView* _tableView;

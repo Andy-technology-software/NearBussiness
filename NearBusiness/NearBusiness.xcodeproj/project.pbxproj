@@ -1046,6 +1046,7 @@
 		ECB7D69C1F4B04C300CD7DA7 /* icon2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon2.jpg; sourceTree = "<group>"; };
 		ECB7D69D1F4B04C300CD7DA7 /* icon3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon3.jpg; sourceTree = "<group>"; };
 		ECB7D69E1F4B04C300CD7DA7 /* icon4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon4.jpg; sourceTree = "<group>"; };
+		ECB7D6BC1F4B0ACF00CD7DA7 /* NearBusiness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NearBusiness.entitlements; sourceTree = "<group>"; };
 		F8DED2CE6F96F9DBC99F3BE6 /* libPods-NearBusiness.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NearBusiness.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1350,6 +1351,7 @@
 		21434B0B1EEA8B470024FE96 /* NearBusiness */ = {
 			isa = PBXGroup;
 			children = (
+				ECB7D6BC1F4B0ACF00CD7DA7 /* NearBusiness.entitlements */,
 				21434B0F1EEA8B470024FE96 /* AppDelegate.h */,
 				21434B101EEA8B470024FE96 /* AppDelegate.m */,
 				21434B181EEA8B470024FE96 /* Assets.xcassets */,
@@ -2857,6 +2859,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = HB2432K9P2;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					21434B211EEA8B470024FE96 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -3421,6 +3428,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NearBusiness/NearBusiness.entitlements;
 				DEVELOPMENT_TEAM = HB2432K9P2;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3476,6 +3484,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NearBusiness/NearBusiness.entitlements;
 				DEVELOPMENT_TEAM = HB2432K9P2;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
