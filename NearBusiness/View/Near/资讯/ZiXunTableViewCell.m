@@ -170,9 +170,10 @@
     self.desLable.text = model._des;
     
     CGFloat picContainerTopMargin = 0;
-    if (model._imageArr.count) {
+    if (model.picNamesArray.count) {
         picContainerTopMargin = 10;
     }
+    self.picContainerView.sd_layout.topSpaceToView(self.desLable, picContainerTopMargin);
     self.picContainerView.picPathStringsArray = [[NSMutableArray alloc] initWithObjects:@"https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=625627471,1863247749&fm=175&s=DCC0C303507A599E981DBBD80300D087&w=558&h=351&img.JPEG",@"https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=625627471,1863247749&fm=175&s=DCC0C303507A599E981DBBD80300D087&w=558&h=351&img.JPEG",@"https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=625627471,1863247749&fm=175&s=DCC0C303507A599E981DBBD80300D087&w=558&h=351&img.JPEG", nil];//model._imageArr;
     
     self.timeLable.text = model._time;

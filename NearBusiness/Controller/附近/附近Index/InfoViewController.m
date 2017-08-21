@@ -87,7 +87,7 @@
         model._headImg = @"https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=100547500,2169487315&fm=175&s=A7DB33D743605D175BD9F06A03007071&w=600&h=352&img.JPEG";
         model._name = @"陈伟霆03年以歌手身份入行陈";
         model._des = @"美甲、大保健、美甲、大保健、美甲、大保健、美甲、大保健、美甲、大保健、美甲、大保健、美甲、大保健、美甲、大保健、美甲、大保健、美甲、大保健、美甲、大保健、美甲、大保健、美甲、大保健、美甲、大保健、美甲、大保健";
-        model._imageArr = [[NSMutableArray alloc] initWithObjects:@"https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=841788587,434442241&fm=173&s=F7A09B09342B790D73888DC10300A0B4&w=218&h=146&img.JPEG",@"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1108770861,611962082&fm=173&s=32931DCD404213515EA1613E0300D051&w=218&h=146&img.JPG",@"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=711436137,425390484&fm=173&s=F9E68B5440D14DC242AC3C610300B070&w=218&h=146&img.JPG", nil];
+        model.picNamesArray = [[NSMutableArray alloc] initWithObjects:@"https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=841788587,434442241&fm=173&s=F7A09B09342B790D73888DC10300A0B4&w=218&h=146&img.JPEG",@"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1108770861,611962082&fm=173&s=32931DCD404213515EA1613E0300D051&w=218&h=146&img.JPG",@"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=711436137,425390484&fm=173&s=F9E68B5440D14DC242AC3C610300B070&w=218&h=146&img.JPG", nil];
         model._isRed = YES;
         model._time = @"上周";
         model._comment = @"2";

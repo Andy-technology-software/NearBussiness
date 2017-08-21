@@ -15,6 +15,6 @@
 @property(nonatomic,copy)NSString* _time;
 @property(nonatomic,copy)NSString* _comment;
 @property(nonatomic,assign)BOOL _isRed;
-@property(nonatomic,strong)NSMutableArray* _imageArr;
+@property (nonatomic, strong) NSArray *picNamesArray;
 
 @end

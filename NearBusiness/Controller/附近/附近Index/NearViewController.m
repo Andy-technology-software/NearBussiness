@@ -93,12 +93,12 @@
 #pragma mark - 创建滑动跟下拉菜单
 - (void)createSliderView{
     infoViewController = [[InfoViewController alloc] init];
-    infoViewController.view.frame = CGRectMake([MyController getScreenWidth] * 0, 0, [MyController getScreenWidth], [MyController getScreenHeight] - [MyController isIOS7] - 40);
+    infoViewController.view.frame = CGRectMake([MyController getScreenWidth] * 1, 0, [MyController getScreenWidth], [MyController getScreenHeight] - [MyController isIOS7] - 40);
     [self addChildViewController:infoViewController];
     [self.scrollView addSubview:infoViewController.view];
     
     videoViewController = [[VideoViewController alloc] init];
-    videoViewController.view.frame = CGRectMake([MyController getScreenWidth] * 1, 0, [MyController getScreenWidth], [MyController getScreenHeight] - [MyController isIOS7] - 40);
+    videoViewController.view.frame = CGRectMake([MyController getScreenWidth] * 0, 0, [MyController getScreenWidth], [MyController getScreenHeight] - [MyController isIOS7] - 40);
     [self addChildViewController:videoViewController];
     [self.scrollView addSubview:videoViewController.view];
     
