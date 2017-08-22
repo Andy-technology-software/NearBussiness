@@ -31,6 +31,7 @@
 @class SDTimeLineCellLikeItemModel, SDTimeLineCellCommentItemModel;
 
 @interface SDTimeLineCellModel : NSObject
+@property (nonatomic, copy) NSString *videoImg;
 
 @property (nonatomic, copy) NSString *iconName;
 @property (nonatomic, copy) NSString *name;

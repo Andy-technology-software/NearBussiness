@@ -11,7 +11,6 @@
 #import "SDTimeLineCell.h"
 
 #import "SDTimeLineCellModel.h"
-#define kTimeLineTableViewCellId @"SDTimeLineCell"
 @interface VideoViewController ()<SDTimeLineCellDelegate,UITableViewDataSource,UITableViewDelegate>{
     UITableView* _tableView;
 }
@@ -156,7 +155,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    SDTimeLineCell *cell = [tableView dequeueReusableCellWithIdentifier:kTimeLineTableViewCellId];
+    SDTimeLineCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SDTimeLineCell"];
     cell.indexPath = indexPath;
     __weak typeof(self) weakSelf = self;
     [cell setMoreButtonClickedBlock:^(NSIndexPath *indexPath) {

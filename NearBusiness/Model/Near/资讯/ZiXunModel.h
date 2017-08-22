@@ -15,6 +15,12 @@
 @property(nonatomic,copy)NSString* _time;
 @property(nonatomic,copy)NSString* _comment;
 @property(nonatomic,assign)BOOL _isRed;
+@property(nonatomic,copy)NSString* _videoImage;
+
+
+@property (nonatomic, assign, readonly) BOOL shouldShowMoreButton;
+@property (nonatomic, assign) BOOL isOpening;
 @property (nonatomic, strong) NSArray *picNamesArray;
+
 
 @end

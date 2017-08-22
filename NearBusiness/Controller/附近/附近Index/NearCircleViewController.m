@@ -9,6 +9,9 @@
 #import "NearCircleViewController.h"
 
 #import "NearViewController.h"
+
+#define SENDTITLES @[@"发布资讯", @"发布视频", @"发布活动", @"创建群组"]
+#define SENDICONS  @[@"motify",@"saoyisao",@"pay",@"pay"]
 @interface NearCircleViewController ()<YBPopupMenuDelegate>
 @property (nonatomic, strong) UISegmentedControl *segment;
 
@@ -67,8 +70,7 @@
 }
 
 - (void)sendBtnClick:(UIButton*)sender{
-    
-    [YBPopupMenu showRelyOnView:sender titles:TITLES icons:ICONS menuWidth:120 delegate:self];
+    [YBPopupMenu showRelyOnView:sender titles:SENDTITLES icons:SENDICONS menuWidth:140 delegate:self];
     
 }
 

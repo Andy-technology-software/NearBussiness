@@ -2,189 +2,258 @@
 //  ZiXunTableViewCell.m
 //  NearBusiness
 //
-//  Created by lingnet on 2017/8/21.
+//  Created by lingnet on 2017/8/22.
 //  Copyright © 2017年 YouCanCallMeAndy. All rights reserved.
 //
 
 #import "ZiXunTableViewCell.h"
 
-#import "ZiXunModel.h"
+#import "SDTimeLineCellModel.h"
 
 #import "SDWeiXinPhotoContainerView.h"
-@interface ZiXunTableViewCell()
-@property (nonatomic, strong) UIImageView* headIV;
-@property (nonatomic, strong) UIImageView* timeIV;
-@property (nonatomic, strong) UIImageView* commentIV;
-@property (nonatomic, strong) UIImageView* redPackIV;
+CGFloat maxContentLabelHeight2 = 0; // 根据具体font而定
+@implementation ZiXunTableViewCell{
+    UIView* _topLineView;
+    UIView* _bottomLineView;
+    UIImageView *_redPackImageView;
+    UIImageView *_iconView;
+    UILabel *_nameLable;
+    UILabel *_contentLabel;
+    SDWeiXinPhotoContainerView *_picContainerView;
+    UIImageView *_timeImageView;
+    UILabel *_timeLabel;
+    UIButton *_moreButton;
+    UILabel *_commentLabel;
+    UIImageView *_commentImageView;
+}
 
-@property (nonatomic, strong) UILabel* nameLable;
-@property (nonatomic, strong) UILabel* desLable;
-@property (nonatomic, strong) UILabel* timeLable;
-@property (nonatomic, strong) UILabel* commentLable;
 
-@property (nonatomic, strong) UIView* lineView;
-@property (nonatomic, strong) UIView* lineView1;
-
-@property (nonatomic, strong) SDWeiXinPhotoContainerView* picContainerView;
-@end
-@implementation ZiXunTableViewCell
-
-- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style
-                      reuseIdentifier:(nullable NSString *)reuseIdentifier {
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        [self makeUI];
+        
+        [self setup];
+        
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    
     return self;
 }
-- (void)makeUI{
-    self.lineView = [[UIView alloc] init];
-    self.lineView.backgroundColor = [MyController colorWithHexString:@"f4f6fa"];
-    [self.contentView addSubview:self.lineView];
+
+- (void)setup{
     
-    [self.lineView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(0);
-        make.right.mas_equalTo(0);
-        make.top.mas_equalTo(0);
-        make.height.mas_offset(5);
-    }];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveOperationButtonClickedNotification:) name:@"SDTimeLineCell" object:nil];
     
-    self.headIV = [MyController createImageViewWithFrame:self.contentView.frame ImageName:nil];
+    _topLineView = [UIView new];
+    _topLineView.backgroundColor = [MyController colorWithHexString:@"f4f6fa"];
+    
+    _iconView = [UIImageView new];
+    
+    _nameLable = [UILabel new];
+    _nameLable.font = [UIFont systemFontOfSize:14];
+    _nameLable.textColor = [MyController colorWithHexString:TITLECOLOR];
+    
+    _contentLabel = [UILabel new];
+    _contentLabel.font = [UIFont systemFontOfSize:12];
+    _contentLabel.textColor = [MyController colorWithHexString:@"797979"];
+    _contentLabel.numberOfLines = 0;
+    if (maxContentLabelHeight2 == 0) {
+        maxContentLabelHeight2 = _contentLabel.font.lineHeight * 3;
+    }
+    
+    _redPackImageView = [UIImageView new];
+    
+    _moreButton = [UIButton new];
+    [_moreButton setTitle:@"全文" forState:UIControlStateNormal];
+    [_moreButton setTitleColor:[UIColor colorWithRed:92/255.0 green:140/255.0 blue:193/255.0 alpha:1.0] forState:UIControlStateNormal];
+    [_moreButton addTarget:self action:@selector(moreButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    _moreButton.titleLabel.font = [UIFont systemFontOfSize:14];
+    
+    _commentImageView = [UIImageView new];
+    _commentImageView.image = [UIImage imageNamed:@"shijian"];
+    
+    _commentLabel = [UILabel new];
+    _commentLabel.font = [UIFont systemFontOfSize:12];
+    _commentLabel.textColor = [MyController colorWithHexString:@"888888"];
+    
+    _picContainerView = [SDWeiXinPhotoContainerView new];
+    
+    _timeImageView = [UIImageView new];
+    _timeImageView.image = [UIImage imageNamed:@"shijian"];
+    
+    _timeLabel = [UILabel new];
+    _timeLabel.font = [UIFont systemFontOfSize:12];
+    _timeLabel.textColor = [MyController colorWithHexString:@"888888"];
+    
+    _bottomLineView = [UIView new];
+    _bottomLineView.backgroundColor = [MyController colorWithHexString:@"e2e4e8"];
+    
+    NSArray *views = @[_topLineView, _iconView, _nameLable, _redPackImageView, _contentLabel, _moreButton, _picContainerView, _timeImageView, _timeLabel, _commentLabel, _commentImageView, _bottomLineView];
+    
+    [self.contentView sd_addSubviews:views];
+    
+    UIView *contentView = self.contentView;
+    
+    _topLineView.sd_layout
+    .leftSpaceToView(contentView,0)
+    .rightSpaceToView(contentView,0)
+    .topSpaceToView(contentView, 0)
+    .heightIs(5);
+    
+    _iconView.sd_layout
+    .leftSpaceToView(contentView, 10)
+    .topSpaceToView(_topLineView, 10)
+    .widthIs(60)
+    .heightIs(60);
     //将图层的边框设置为圆脚
-    self.headIV.layer.cornerRadius = 30;
-    self.headIV.layer.masksToBounds = YES;
-    [self.headIV setContentMode:UIViewContentModeScaleAspectFill];
-    self.headIV.clipsToBounds = YES;
-    [self.contentView addSubview:self.headIV];
-    
-    [self.headIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(10);
-        make.top.mas_equalTo(self.lineView.mas_bottom).mas_offset(10);
-        make.height.mas_offset(60);
-        make.width.mas_offset(60);
-    }];
-    
-    self.nameLable = [MyController createLabelWithFrame:self.contentView.frame Font:14 Text:nil];
-//    self.nameLable.lineBreakMode = NSLineBreakByTruncatingTail;
-    self.nameLable.numberOfLines = 0;
-    self.nameLable.textColor = [MyController colorWithHexString:TITLECOLOR];
-    [self.contentView addSubview:self.nameLable];
-    
-    [self.nameLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.headIV.mas_right).mas_offset(12);
-        make.right.mas_equalTo(-30);
-        make.top.mas_equalTo(self.headIV);
-    }];
-    
-    self.redPackIV = [MyController createImageViewWithFrame:self.contentView.frame ImageName:nil];
-//    self.redPackIV.backgroundColor = [UIColor redColor];
-    [self.contentView addSubview:self.redPackIV];
-    
-    [self.redPackIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.mas_equalTo(-10);
-        make.top.mas_equalTo(self.nameLable);
-        make.height.mas_offset(15);
-        make.width.mas_offset(15);
-    }];
-    
-    self.desLable = [MyController createLabelWithFrame:self.contentView.frame Font:12 Text:nil];
-    self.desLable.numberOfLines = 0;
-    self.desLable.textColor = [MyController colorWithHexString:@"797979"];
-    [self.contentView addSubview:self.desLable];
-    
-    [self.desLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.nameLable);
-        make.right.mas_equalTo(self.redPackIV);
-        make.top.mas_equalTo(self.nameLable.mas_bottom).mas_offset(10);
-    }];
-    
-     self.picContainerView = [[SDWeiXinPhotoContainerView alloc] initWithFrame:self.contentView.frame];
-    [self.contentView addSubview:self.picContainerView];
-    
-    [self.picContainerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.desLable);
-        make.right.mas_equalTo(self.desLable);
-        make.top.mas_equalTo(self.desLable.mas_bottom).mas_offset(10);
-        make.height.mas_offset(100);
-    }];
-    
-    self.timeIV = [MyController createImageViewWithFrame:self.contentView.frame ImageName:@"shijian"];
-    [self.contentView addSubview:self.timeIV];
-    
-    [self.timeIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.picContainerView);
-        make.top.mas_equalTo(self.picContainerView.mas_bottom).mas_offset(10);
-        make.width.mas_offset(15);
-        make.height.mas_offset(15);
-    }];
-    
-    self.timeLable = [MyController createLabelWithFrame:self.contentView.frame Font:12 Text:nil];
-    self.timeLable.textColor = [MyController colorWithHexString:@"888888"];
-    [self.contentView addSubview:self.timeLable];
-    
-    [self.timeLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.timeIV.mas_right).mas_offset(3);
-        make.top.mas_equalTo(self.timeIV);
-    }];
-    
-    self.commentLable = [MyController createLabelWithFrame:self.contentView.frame Font:12 Text:nil];
-    self.commentLable.textColor = [MyController colorWithHexString:@"888888"];
-    [self.contentView addSubview:self.commentLable];
-    
-    [self.commentLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.mas_equalTo(-10);
-        make.top.mas_equalTo(self.timeLable);
-    }];
-    
-    self.commentIV = [MyController createImageViewWithFrame:self.contentView.frame ImageName:@"shijian"];
-    [self.contentView addSubview:self.commentIV];
-    
-    [self.commentIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.mas_equalTo(self.commentLable.mas_left).mas_offset(-3);
-        make.top.mas_equalTo(self.commentLable);
-        make.width.mas_offset(15);
-        make.height.mas_offset(15);
-    }];
+    _iconView.layer.cornerRadius = 30;
+    _iconView.layer.masksToBounds = YES;
+    [_iconView setContentMode:UIViewContentModeScaleAspectFill];
+    _iconView.clipsToBounds = YES;
     
     
-    self.lineView1 = [[UIView alloc] init];
-    self.lineView1.backgroundColor = [MyController colorWithHexString:@"e2e4e8"];
-    [self.contentView addSubview:self.lineView1];
+    _nameLable.sd_layout
+    .leftSpaceToView(_iconView, 15)
+    .topEqualToView(_iconView)
+    .rightSpaceToView(contentView, 30);
+    _nameLable.numberOfLines = 0;
     
-    [self.lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(0);
-        make.right.mas_equalTo(0);
-        make.top.mas_equalTo(self.commentLable.mas_bottom).mas_offset(15);
-        make.height.mas_offset(0.5);
-    }];
+    _redPackImageView.sd_layout
+    .rightSpaceToView(contentView, 10)
+    .topEqualToView(_nameLable)
+    .widthIs(15)
+    .heightIs(15);
     
-    // 必须加上这句
-    self.hyb_lastViewInCell = self.lineView1;
-    self.hyb_bottomOffsetToCell = 0;
+    _contentLabel.sd_layout
+    .leftEqualToView(_nameLable)
+    .topSpaceToView(_nameLable, 10)
+    .rightSpaceToView(contentView, 10)
+    .autoHeightRatio(0);
+    
+    // morebutton的高度在setmodel里面设置
+    _moreButton.sd_layout
+    .leftEqualToView(_contentLabel)
+    .topSpaceToView(_contentLabel, 0)
+    .widthIs(30);
+    
+    
+    _picContainerView.sd_layout
+    .leftEqualToView(_contentLabel); // 已经在内部实现宽度和高度自适应所以不需要再设置宽度高度，top值是具体有无图片在setModel方法中设置
+    
+    _timeImageView.sd_layout
+    .leftEqualToView(_contentLabel)
+    .topSpaceToView(_picContainerView, 10)
+    .heightIs(15)
+    .widthIs(15);
+    
+    
+    _timeLabel.sd_layout
+    .leftSpaceToView(_timeImageView, 3)
+    .topEqualToView(_timeImageView)
+    .heightIs(15);
+    [_timeLabel setSingleLineAutoResizeWithMaxWidth:200];
+    
+    _commentLabel.sd_layout
+    .rightSpaceToView(contentView, 10)
+    .topSpaceToView(_picContainerView, 10)
+    .heightIs(15);
+    [_commentLabel setSingleLineAutoResizeWithMaxWidth:200];
+    
+    _commentImageView.sd_layout
+    .rightSpaceToView(_commentLabel, 3)
+    .topEqualToView(_timeImageView)
+    .heightIs(15)
+    .widthIs(15);
+    
+    _bottomLineView.sd_layout
+    .leftSpaceToView(contentView,0)
+    .rightSpaceToView(contentView,0)
+    .topSpaceToView(_commentImageView, 15)
+    .heightIs(0.5);
 }
-- (void)configCellWithModel:(ZiXunModel *)model {
-    [self.headIV sd_setImageWithURL:[NSURL URLWithString:model._headImg] placeholderImage:[UIImage imageNamed:@""]];
+
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)setModel:(SDTimeLineCellModel *)model{
+    _model = model;
     
-    self.nameLable.text = model._name;
+    _iconView.image = [UIImage imageNamed:model.iconName];
+    _nameLable.text = model.name;
+    _contentLabel.text = model.msgContent;
+    _picContainerView.picPathStringsArray = model.picNamesArray;
     
-    self.desLable.text = model._des;
+    if (model.shouldShowMoreButton) { // 如果文字高度超过60
+        _moreButton.sd_layout.heightIs(20);
+        _moreButton.hidden = NO;
+        if (model.isOpening) { // 如果需要展开
+            _contentLabel.sd_layout.maxHeightIs(MAXFLOAT);
+            [_moreButton setTitle:@"收起" forState:UIControlStateNormal];
+        } else {
+            _contentLabel.sd_layout.maxHeightIs(maxContentLabelHeight2);
+            [_moreButton setTitle:@"全文" forState:UIControlStateNormal];
+        }
+    } else {
+        _moreButton.sd_layout.heightIs(0);
+        _moreButton.hidden = YES;
+    }
     
     CGFloat picContainerTopMargin = 0;
     if (model.picNamesArray.count) {
         picContainerTopMargin = 10;
     }
+    _picContainerView.sd_layout.topSpaceToView(_moreButton, picContainerTopMargin);
     
-    self.picContainerView.picPathStringsArray = [[NSArray alloc] initWithObjects:@"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=4277297124,5903202&fm=173&s=57F27ADA10000D5B8737221D0300C0DE&w=543&h=247&img.JPEG",@"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3004953567,2595473912&fm=173&s=F9004F9E1FA26290D4FC587F0300D0F1&w=598&h=378&img.JPEG",@"https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3472407373,2955588891&fm=173&s=E0535F94450366E41AC001C50300F0F2&w=500&h=411&img.JPEG", nil];//model._imageArr;
+    UIView *bottomView;
     
-    self.timeLable.text = model._time;
+    bottomView = _bottomLineView;
     
-    self.commentLable.text = model._comment;
+    [self setupAutoHeightWithBottomView:bottomView bottomMargin:0];
     
-    if (model._isRed) {
-        self.redPackIV.image = [UIImage imageNamed:@"shijian"];
-    }else{
-        self.redPackIV.image = [UIImage imageNamed:@""];
+    _timeLabel.text = @"1分钟前";
+    
+    _redPackImageView.image = [UIImage imageNamed:@"shijian"];
+    
+    _commentLabel.text = @"2";
+}
+
+- (void)setFrame:(CGRect)frame{
+    [super setFrame:frame];
+    //    if (_operationMenu.isShowing) {
+    //        _operationMenu.show = NO;
+    //    }
+}
+
+#pragma mark - private actions
+
+- (void)moreButtonClicked{
+    if (self.moreButtonClickedBlock) {
+        self.moreButtonClickedBlock(self.indexPath);
     }
+}
+
+- (void)operationButtonClicked{
+    //    _operationMenu.show = !_operationMenu.isShowing;
+}
+
+- (void)receiveOperationButtonClickedNotification:(NSNotification *)notification{
+    UIButton *btn = [notification object];
+    
+    //    if (btn != _operationButton && _operationMenu.isShowing) {
+    //        _operationMenu.show = NO;
+    //    }
+}
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [super touchesBegan:touches withEvent:event];
+    //    if (_operationMenu.isShowing) {
+    //        _operationMenu.show = NO;
+    //    }
+}
+
+- (void)postOperationButtonClickedNotification
+{
+    //    [[NSNotificationCenter defaultCenter] postNotificationName:kSDTimeLineCellOperationButtonClickedNotification object:_operationButton];
 }
 
 

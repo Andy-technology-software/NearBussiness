@@ -1,26 +1,25 @@
 //
-//  SDTimeLineCell.m
-//  GSD_WeiXin(wechat)
+//  InfoTableViewCell.m
+//  NearBusiness
 //
-//  Created by gsd on 16/2/25.
-//  Copyright © 2016年 GSD. All rights reserved.
+//  Created by lingnet on 2017/8/22.
+//  Copyright © 2017年 YouCanCallMeAndy. All rights reserved.
 //
 
-#import "SDTimeLineCell.h"
+#import "InfoTableViewCell.h"
 
-#import "SDTimeLineCellModel.h"
+#import "ZiXunModel.h"
 
 #import "SDWeiXinPhotoContainerView.h"
-CGFloat maxContentLabelHeight = 0; // 根据具体font而定
-@implementation SDTimeLineCell{
+CGFloat maxContentLabelHeight1 = 0; // 根据具体font而定
+@interface InfoTableViewCell(){
     UIView* _topLineView;
     UIView* _bottomLineView;
     UIImageView *_redPackImageView;
     UIImageView *_iconView;
     UILabel *_nameLable;
     UILabel *_contentLabel;
-    UIImageView *_videoImageView;
-    UIButton *_videoButton;
+    SDWeiXinPhotoContainerView *_picContainerView;
     UIImageView *_timeImageView;
     UILabel *_timeLabel;
     UIButton *_moreButton;
@@ -28,20 +27,19 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     UIImageView *_commentImageView;
 }
 
+@end
+@implementation InfoTableViewCell
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style
+                      reuseIdentifier:(nullable NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        
-        [self setup];
-        
-        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        [self makeUI];
     }
+    
     return self;
 }
-
-- (void)setup{
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveOperationButtonClickedNotification:) name:@"SDTimeLineCell" object:nil];
+- (void)makeUI{
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveOperationButtonClickedNotification:) name:@"SDTimeLineCell" object:nil];
     
     _topLineView = [UIView new];
     _topLineView.backgroundColor = [MyController colorWithHexString:@"f4f6fa"];
@@ -56,8 +54,8 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     _contentLabel.font = [UIFont systemFontOfSize:12];
     _contentLabel.textColor = [MyController colorWithHexString:@"797979"];
     _contentLabel.numberOfLines = 0;
-    if (maxContentLabelHeight == 0) {
-        maxContentLabelHeight = _contentLabel.font.lineHeight * 3;
+    if (maxContentLabelHeight1 == 0) {
+        maxContentLabelHeight1 = _contentLabel.font.lineHeight * 3;
     }
     
     _redPackImageView = [UIImageView new];
@@ -75,9 +73,7 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     _commentLabel.font = [UIFont systemFontOfSize:12];
     _commentLabel.textColor = [MyController colorWithHexString:@"888888"];
     
-    _videoImageView = [UIImageView new];
-    
-    _videoButton = [MyController createButtonWithFrame:self.contentView.frame ImageName:@"视频" Target:self Action:@selector(_videoButtonClick) Title:nil];
+    _picContainerView = [SDWeiXinPhotoContainerView new];
     
     _timeImageView = [UIImageView new];
     _timeImageView.image = [UIImage imageNamed:@"shijian"];
@@ -85,11 +81,11 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     _timeLabel = [UILabel new];
     _timeLabel.font = [UIFont systemFontOfSize:12];
     _timeLabel.textColor = [MyController colorWithHexString:@"888888"];
-
+    
     _bottomLineView = [UIView new];
     _bottomLineView.backgroundColor = [MyController colorWithHexString:@"e2e4e8"];
     
-    NSArray *views = @[_topLineView, _iconView, _nameLable, _redPackImageView, _contentLabel, _moreButton, _videoImageView, _videoButton, _timeImageView, _timeLabel, _commentLabel, _commentImageView, _bottomLineView];
+    NSArray *views = @[_topLineView, _iconView, _nameLable, _redPackImageView, _contentLabel, _moreButton, _picContainerView, _timeImageView, _timeLabel, _commentLabel, _commentImageView, _bottomLineView];
     
     [self.contentView sd_addSubviews:views];
     
@@ -138,21 +134,12 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     .widthIs(30);
     
     
-    _videoImageView.sd_layout
-    .leftEqualToView(_contentLabel)
-    .topSpaceToView(_moreButton, 10)
-    .widthIs(100)
-    .heightIs(100);
-    
-    _videoButton.sd_layout
-    .leftEqualToView(_contentLabel)
-    .topSpaceToView(_moreButton, 10)
-    .widthIs(100)
-    .heightIs(100);
+    _picContainerView.sd_layout
+    .leftEqualToView(_contentLabel); // 已经在内部实现宽度和高度自适应所以不需要再设置宽度高度，top值是具体有无图片在setModel方法中设置
     
     _timeImageView.sd_layout
     .leftEqualToView(_contentLabel)
-    .topSpaceToView(_videoImageView, 10)
+    .topSpaceToView(_picContainerView, 10)
     .heightIs(15)
     .widthIs(15);
     
@@ -165,7 +152,7 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     
     _commentLabel.sd_layout
     .rightSpaceToView(contentView, 10)
-    .topSpaceToView(_videoImageView, 10)
+    .topSpaceToView(_picContainerView, 10)
     .heightIs(15);
     [_commentLabel setSingleLineAutoResizeWithMaxWidth:200];
     
@@ -180,20 +167,20 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     .rightSpaceToView(contentView,0)
     .topSpaceToView(_commentImageView, 15)
     .heightIs(0.5);
+    
 }
+
 
 - (void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (void)setModel:(SDTimeLineCellModel *)model{
-    _model = model;
 
-    _iconView.image = [UIImage imageNamed:model.iconName];
-    _nameLable.text = model.name;
-    _contentLabel.text = model.msgContent;
-    
-    [_videoImageView sd_setImageWithURL:[NSURL URLWithString:model.videoImg] placeholderImage:[UIImage imageNamed:@"icon0.jpg"]];
+- (void)configCellWithModel:(ZiXunModel *)model{
+    [_iconView sd_setImageWithURL:[NSURL URLWithString:model._headImg] placeholderImage:[UIImage imageNamed:@""]];
+    _nameLable.text = model._name;
+    _contentLabel.text = model._des;
+    _picContainerView.picPathStringsArray = model.picNamesArray;
     
     if (model.shouldShowMoreButton) { // 如果文字高度超过60
         _moreButton.sd_layout.heightIs(20);
@@ -202,7 +189,7 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
             _contentLabel.sd_layout.maxHeightIs(MAXFLOAT);
             [_moreButton setTitle:@"收起" forState:UIControlStateNormal];
         } else {
-            _contentLabel.sd_layout.maxHeightIs(maxContentLabelHeight);
+            _contentLabel.sd_layout.maxHeightIs(maxContentLabelHeight1);
             [_moreButton setTitle:@"全文" forState:UIControlStateNormal];
         }
     } else {
@@ -214,6 +201,7 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     if (model.picNamesArray.count) {
         picContainerTopMargin = 10;
     }
+    _picContainerView.sd_layout.topSpaceToView(_moreButton, picContainerTopMargin);
     
     UIView *bottomView;
     
@@ -228,50 +216,4 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     _commentLabel.text = @"2";
 }
 
-- (void)setFrame:(CGRect)frame{
-    [super setFrame:frame];
-//    if (_operationMenu.isShowing) {
-//        _operationMenu.show = NO;
-//    }
-}
-
-#pragma mark - private actions
-
-- (void)moreButtonClicked{
-    if (self.moreButtonClickedBlock) {
-        self.moreButtonClickedBlock(self.indexPath);
-    }
-}
-
-- (void)operationButtonClicked{
-//    _operationMenu.show = !_operationMenu.isShowing;
-}
-
-- (void)receiveOperationButtonClickedNotification:(NSNotification *)notification{
-    UIButton *btn = [notification object];
-    
-//    if (btn != _operationButton && _operationMenu.isShowing) {
-//        _operationMenu.show = NO;
-//    }
-}
-
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [super touchesBegan:touches withEvent:event];
-//    if (_operationMenu.isShowing) {
-//        _operationMenu.show = NO;
-//    }
-}
-
-- (void)postOperationButtonClickedNotification
-{
-//    [[NSNotificationCenter defaultCenter] postNotificationName:kSDTimeLineCellOperationButtonClickedNotification object:_operationButton];
-}
-
-- (void)_videoButtonClick{
-    NSLog(@"放视频");
-}
-
-
 @end
-

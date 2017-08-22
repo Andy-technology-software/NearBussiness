@@ -87,7 +87,6 @@
 		212F8D761F4AD47A00832B38 /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D711F4AD47A00832B38 /* SDPhotoBrowser.m */; };
 		212F8D771F4AD47A00832B38 /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D741F4AD47A00832B38 /* SDWaitingView.m */; };
 		212F8D7F1F4AD57800832B38 /* ZiXunModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D7E1F4AD57800832B38 /* ZiXunModel.m */; };
-		212F8D821F4AD60200832B38 /* ZiXunTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D811F4AD60200832B38 /* ZiXunTableViewCell.m */; };
 		21434B0E1EEA8B470024FE96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21434B0D1EEA8B470024FE96 /* main.m */; };
 		21434B111EEA8B470024FE96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21434B101EEA8B470024FE96 /* AppDelegate.m */; };
 		21434B191EEA8B470024FE96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21434B181EEA8B470024FE96 /* Assets.xcassets */; };
@@ -298,6 +297,9 @@
 		21B4A0641F46D40100EE3BE6 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B4A0631F46D40100EE3BE6 /* GroupViewController.m */; };
 		21B4A0671F46D70F00EE3BE6 /* NearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B4A0661F46D70F00EE3BE6 /* NearViewController.m */; };
 		21B9501C1EEA99430089CF9B /* libPods-NearBusiness.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DED2CE6F96F9DBC99F3BE6 /* libPods-NearBusiness.a */; };
+		21BE22DA1F4C1EEE00C2387D /* InfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BE22D91F4C1EEE00C2387D /* InfoTableViewCell.m */; };
+		21BE22DD1F4C226700C2387D /* ZiXunTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BE22DC1F4C226700C2387D /* ZiXunTableViewCell.m */; };
+		21BE22DF1F4C244900C2387D /* 视频@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21BE22DE1F4C244900C2387D /* 视频@2x.png */; };
 		21C236A71F3D3B2600DDA92B /* requestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C236A31F3D3B2600DDA92B /* requestService.m */; };
 		21C236A81F3D3B2600DDA92B /* XRQRequestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C236A61F3D3B2600DDA92B /* XRQRequestClient.m */; };
 		21C236AB1F3D430400DDA92B /* Index1Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C236AA1F3D430400DDA92B /* Index1Model.m */; };
@@ -489,8 +491,6 @@
 		212F8D741F4AD47A00832B38 /* SDWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWaitingView.m; sourceTree = "<group>"; };
 		212F8D7D1F4AD57800832B38 /* ZiXunModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZiXunModel.h; sourceTree = "<group>"; };
 		212F8D7E1F4AD57800832B38 /* ZiXunModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZiXunModel.m; sourceTree = "<group>"; };
-		212F8D801F4AD60200832B38 /* ZiXunTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZiXunTableViewCell.h; sourceTree = "<group>"; };
-		212F8D811F4AD60200832B38 /* ZiXunTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZiXunTableViewCell.m; sourceTree = "<group>"; };
 		21434B091EEA8B470024FE96 /* NearBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21434B0D1EEA8B470024FE96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21434B0F1EEA8B470024FE96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -962,6 +962,11 @@
 		21B4A0631F46D40100EE3BE6 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
 		21B4A0651F46D70F00EE3BE6 /* NearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearViewController.h; sourceTree = "<group>"; };
 		21B4A0661F46D70F00EE3BE6 /* NearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearViewController.m; sourceTree = "<group>"; };
+		21BE22D81F4C1EEE00C2387D /* InfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTableViewCell.h; sourceTree = "<group>"; };
+		21BE22D91F4C1EEE00C2387D /* InfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewCell.m; sourceTree = "<group>"; };
+		21BE22DB1F4C226700C2387D /* ZiXunTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZiXunTableViewCell.h; sourceTree = "<group>"; };
+		21BE22DC1F4C226700C2387D /* ZiXunTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZiXunTableViewCell.m; sourceTree = "<group>"; };
+		21BE22DE1F4C244900C2387D /* 视频@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "视频@2x.png"; sourceTree = "<group>"; };
 		21C236A21F3D3B2600DDA92B /* requestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = requestService.h; sourceTree = "<group>"; };
 		21C236A31F3D3B2600DDA92B /* requestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = requestService.m; sourceTree = "<group>"; };
 		21C236A41F3D3B2600DDA92B /* requestURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = requestURL.h; sourceTree = "<group>"; };
@@ -1294,8 +1299,10 @@
 		212F8D791F4AD52800832B38 /* 资讯 */ = {
 			isa = PBXGroup;
 			children = (
-				212F8D801F4AD60200832B38 /* ZiXunTableViewCell.h */,
-				212F8D811F4AD60200832B38 /* ZiXunTableViewCell.m */,
+				21BE22D81F4C1EEE00C2387D /* InfoTableViewCell.h */,
+				21BE22D91F4C1EEE00C2387D /* InfoTableViewCell.m */,
+				21BE22DB1F4C226700C2387D /* ZiXunTableViewCell.h */,
+				21BE22DC1F4C226700C2387D /* ZiXunTableViewCell.m */,
 			);
 			path = "资讯";
 			sourceTree = "<group>";
@@ -2491,6 +2498,7 @@
 		215F21AB1F0B662100DD4AEE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				21BE22DE1F4C244900C2387D /* 视频@2x.png */,
 				ECB7D6811F4B04C300CD7DA7 /* cell_icons */,
 				ECB7D66A1F4B04A700CD7DA7 /* TimeLineImages */,
 				2120EDD71F3D7D8D00661EBE /* Images */,
@@ -2937,6 +2945,7 @@
 				21545B6F1F42D41500CA7C3F /* qrcode_scan_light_green@2x.png in Resources */,
 				21545B741F42D41500CA7C3F /* zbar-helpicons.png in Resources */,
 				ECB7D6B21F4B04C300CD7DA7 /* 5.jpg in Resources */,
+				21BE22DF1F4C244900C2387D /* 视频@2x.png in Resources */,
 				2120EE381F3D7D8D00661EBE /* rili@3x.png in Resources */,
 				21545B671F42D41500CA7C3F /* qrcode_scan_bg_Green_iphone5@2x.png in Resources */,
 				ECB7D6A61F4B04C300CD7DA7 /* 15.jpg in Resources */,
@@ -3133,6 +3142,7 @@
 				21ED75BC1F42A90A00D91E2C /* YBPopupMenuPath.m in Sources */,
 				21434DAF1EEA91480024FE96 /* AddressBookIMViewController.m in Sources */,
 				2120EDD61F3D5AB800661EBE /* BussinessRecommendationTableViewCell.m in Sources */,
+				21BE22DA1F4C1EEE00C2387D /* InfoTableViewCell.m in Sources */,
 				21434CD91EEA91170024FE96 /* EaseChatToolbarItem.m in Sources */,
 				21434D791EEA91300024FE96 /* GoodsListModel.m in Sources */,
 				21434DBC1EEA91480024FE96 /* MyXJYChartViewController.m in Sources */,
@@ -3185,7 +3195,6 @@
 				21434DBB1EEA91480024FE96 /* GoodsListViewController.m in Sources */,
 				21434CA61EEA91160024FE96 /* EaseUI.m in Sources */,
 				21434D7B1EEA91300024FE96 /* VideoModel.m in Sources */,
-				212F8D821F4AD60200832B38 /* ZiXunTableViewCell.m in Sources */,
 				21434DB71EEA91480024FE96 /* RDVTabBarItem.m in Sources */,
 				21ED75901F42734700D91E2C /* ShangPinModel.m in Sources */,
 				21B4A0611F46D3FA00EE3BE6 /* ActivityViewController.m in Sources */,
@@ -3272,6 +3281,7 @@
 				2120EE641F3D8CAC00661EBE /* BussinessSearchModel.m in Sources */,
 				21434CBD1EEA91170024FE96 /* EaseChineseToPinyin.m in Sources */,
 				21434CC41EEA91170024FE96 /* FixFopen.c in Sources */,
+				21BE22DD1F4C226700C2387D /* ZiXunTableViewCell.m in Sources */,
 				21434DB51EEA91480024FE96 /* RDVTabBar.m in Sources */,
 				21B4A0641F46D40100EE3BE6 /* GroupViewController.m in Sources */,
 				21C236A81F3D3B2600DDA92B /* XRQRequestClient.m in Sources */,
