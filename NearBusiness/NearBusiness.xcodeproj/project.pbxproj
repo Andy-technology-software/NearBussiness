@@ -315,7 +315,6 @@
 		21ED75BB1F42A90A00D91E2C /* YBPopupMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ED75B61F42A90A00D91E2C /* YBPopupMenu.m */; };
 		21ED75BC1F42A90A00D91E2C /* YBPopupMenuPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ED75B81F42A90A00D91E2C /* YBPopupMenuPath.m */; };
 		21ED75BD1F42A90A00D91E2C /* YBRectConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ED75BA1F42A90A00D91E2C /* YBRectConst.m */; };
-		ECB7D65E1F4AF55100CD7DA7 /* Hyphenate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB7D65C1F4AF55100CD7DA7 /* Hyphenate.framework */; };
 		ECB7D65F1F4AF55100CD7DA7 /* Hyphenate.podspec in Resources */ = {isa = PBXBuildFile; fileRef = ECB7D65D1F4AF55100CD7DA7 /* Hyphenate.podspec */; };
 		ECB7D6601F4AF55800CD7DA7 /* Hyphenate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB7D65C1F4AF55100CD7DA7 /* Hyphenate.framework */; };
 		ECB7D6611F4AF55800CD7DA7 /* Hyphenate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECB7D65C1F4AF55100CD7DA7 /* Hyphenate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -1078,7 +1077,6 @@
 				21434DC51EEA92A30024FE96 /* libstdc++.6.0.9.tbd in Frameworks */,
 				21434CF71EEA91170024FE96 /* libPaymentControl.a in Frameworks */,
 				21434D021EEA91170024FE96 /* libWeChatSDK.a in Frameworks */,
-				ECB7D65E1F4AF55100CD7DA7 /* Hyphenate.framework in Frameworks */,
 				21B9501C1EEA99430089CF9B /* libPods-NearBusiness.a in Frameworks */,
 				21434CF61EEA91170024FE96 /* libssl.a in Frameworks */,
 				21434CF51EEA91170024FE96 /* libcrypto.a in Frameworks */,

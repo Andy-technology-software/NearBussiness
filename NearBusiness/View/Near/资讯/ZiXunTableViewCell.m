@@ -173,13 +173,8 @@
     if (model.picNamesArray.count) {
         picContainerTopMargin = 10;
     }
-<<<<<<< HEAD
     
     self.picContainerView.picPathStringsArray = [[NSArray alloc] initWithObjects:@"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=4277297124,5903202&fm=173&s=57F27ADA10000D5B8737221D0300C0DE&w=543&h=247&img.JPEG",@"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3004953567,2595473912&fm=173&s=F9004F9E1FA26290D4FC587F0300D0F1&w=598&h=378&img.JPEG",@"https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3472407373,2955588891&fm=173&s=E0535F94450366E41AC001C50300F0F2&w=500&h=411&img.JPEG", nil];//model._imageArr;
-=======
-    self.picContainerView.sd_layout.topSpaceToView(self.desLable, picContainerTopMargin);
-    self.picContainerView.picPathStringsArray = [[NSMutableArray alloc] initWithObjects:@"https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=625627471,1863247749&fm=175&s=DCC0C303507A599E981DBBD80300D087&w=558&h=351&img.JPEG",@"https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=625627471,1863247749&fm=175&s=DCC0C303507A599E981DBBD80300D087&w=558&h=351&img.JPEG",@"https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=625627471,1863247749&fm=175&s=DCC0C303507A599E981DBBD80300D087&w=558&h=351&img.JPEG", nil];//model._imageArr;
->>>>>>> 76c8d539c8ef87dbe77b71586e6b825404e10e80
     
     self.timeLable.text = model._time;
     
