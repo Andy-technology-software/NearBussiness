@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210808A31F4D523900E347E3 /* OrderYiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 210808A21F4D523900E347E3 /* OrderYiModel.m */; };
+		210808A91F4D526300E347E3 /* OrderYi1Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 210808A81F4D526300E347E3 /* OrderYi1Model.m */; };
+		210808AC1F4D52F200E347E3 /* OrderYiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 210808AB1F4D52F200E347E3 /* OrderYiTableViewCell.m */; };
+		210808AF1F4D52FC00E347E3 /* OrderYi1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 210808AE1F4D52FC00E347E3 /* OrderYi1TableViewCell.m */; };
 		2120EDD31F3D5A6000661EBE /* BussinessRecommendationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2120EDD21F3D5A6000661EBE /* BussinessRecommendationModel.m */; };
 		2120EDD61F3D5AB800661EBE /* BussinessRecommendationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2120EDD51F3D5AB800661EBE /* BussinessRecommendationTableViewCell.m */; };
 		2120EE1A1F3D7D8D00661EBE /* atta@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2120EDD81F3D7D8D00661EBE /* atta@2x.png */; };
@@ -78,6 +82,10 @@
 		2120EE5F1F3D859100661EBE /* BussinessSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2120EE5E1F3D859100661EBE /* BussinessSearchViewController.m */; };
 		2120EE641F3D8CAC00661EBE /* BussinessSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2120EE631F3D8CAC00661EBE /* BussinessSearchModel.m */; };
 		2120EE671F3D914700661EBE /* BussinessSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2120EE661F3D914700661EBE /* BussinessSearchTableViewCell.m */; };
+		2127372C1F4D160C0067F571 /* MyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2127372B1F4D160C0067F571 /* MyOrderViewController.m */; };
+		212737311F4D16BF0067F571 /* OrderYiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212737301F4D16BF0067F571 /* OrderYiViewController.m */; };
+		212737341F4D16CB0067F571 /* OrderDaifuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212737331F4D16CB0067F571 /* OrderDaifuViewController.m */; };
+		212737371F4D16D70067F571 /* OrderDaishouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212737361F4D16D70067F571 /* OrderDaishouViewController.m */; };
 		212F8D5F1F4AAB8400832B38 /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D5B1F4AAB8400832B38 /* RegistViewController.m */; };
 		212F8D601F4AAB8400832B38 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D5E1F4AAB8400832B38 /* LoginViewController.m */; };
 		212F8D641F4AAB9700832B38 /* LoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8D631F4AAB9700832B38 /* LoginTableViewCell.m */; };
@@ -396,6 +404,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		210808A11F4D523900E347E3 /* OrderYiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderYiModel.h; sourceTree = "<group>"; };
+		210808A21F4D523900E347E3 /* OrderYiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderYiModel.m; sourceTree = "<group>"; };
+		210808A71F4D526300E347E3 /* OrderYi1Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderYi1Model.h; sourceTree = "<group>"; };
+		210808A81F4D526300E347E3 /* OrderYi1Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderYi1Model.m; sourceTree = "<group>"; };
+		210808AA1F4D52F200E347E3 /* OrderYiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderYiTableViewCell.h; sourceTree = "<group>"; };
+		210808AB1F4D52F200E347E3 /* OrderYiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderYiTableViewCell.m; sourceTree = "<group>"; };
+		210808AD1F4D52FC00E347E3 /* OrderYi1TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderYi1TableViewCell.h; sourceTree = "<group>"; };
+		210808AE1F4D52FC00E347E3 /* OrderYi1TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderYi1TableViewCell.m; sourceTree = "<group>"; };
 		2120EDD11F3D5A6000661EBE /* BussinessRecommendationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BussinessRecommendationModel.h; sourceTree = "<group>"; };
 		2120EDD21F3D5A6000661EBE /* BussinessRecommendationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BussinessRecommendationModel.m; sourceTree = "<group>"; };
 		2120EDD41F3D5AB800661EBE /* BussinessRecommendationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BussinessRecommendationTableViewCell.h; sourceTree = "<group>"; };
@@ -472,6 +488,14 @@
 		2120EE631F3D8CAC00661EBE /* BussinessSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BussinessSearchModel.m; sourceTree = "<group>"; };
 		2120EE651F3D914700661EBE /* BussinessSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BussinessSearchTableViewCell.h; sourceTree = "<group>"; };
 		2120EE661F3D914700661EBE /* BussinessSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BussinessSearchTableViewCell.m; sourceTree = "<group>"; };
+		2127372A1F4D160C0067F571 /* MyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderViewController.h; sourceTree = "<group>"; };
+		2127372B1F4D160C0067F571 /* MyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderViewController.m; sourceTree = "<group>"; };
+		2127372F1F4D16BF0067F571 /* OrderYiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderYiViewController.h; sourceTree = "<group>"; };
+		212737301F4D16BF0067F571 /* OrderYiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderYiViewController.m; sourceTree = "<group>"; };
+		212737321F4D16CB0067F571 /* OrderDaifuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDaifuViewController.h; sourceTree = "<group>"; };
+		212737331F4D16CB0067F571 /* OrderDaifuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDaifuViewController.m; sourceTree = "<group>"; };
+		212737351F4D16D70067F571 /* OrderDaishouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDaishouViewController.h; sourceTree = "<group>"; };
+		212737361F4D16D70067F571 /* OrderDaishouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDaishouViewController.m; sourceTree = "<group>"; };
 		212F8D5A1F4AAB8400832B38 /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
 		212F8D5B1F4AAB8400832B38 /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
 		212F8D5D1F4AAB8400832B38 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -1217,6 +1241,91 @@
 				2120EE661F3D914700661EBE /* BussinessSearchTableViewCell.m */,
 			);
 			path = "商家搜索";
+			sourceTree = "<group>";
+		};
+		212737231F4D15A30067F571 /* 我的订单 */ = {
+			isa = PBXGroup;
+			children = (
+				2127372E1F4D16B10067F571 /* 待收货 */,
+				2127372D1F4D16A70067F571 /* 待付款 */,
+				212737291F4D15F30067F571 /* 我的订单首页 */,
+				212737281F4D15D20067F571 /* 已完成 */,
+			);
+			path = "我的订单";
+			sourceTree = "<group>";
+		};
+		212737241F4D15AD0067F571 /* 我的订单 */ = {
+			isa = PBXGroup;
+			children = (
+				212737271F4D15CA0067F571 /* 已完成 */,
+			);
+			path = "我的订单";
+			sourceTree = "<group>";
+		};
+		212737251F4D15B40067F571 /* 我的订单 */ = {
+			isa = PBXGroup;
+			children = (
+				212737261F4D15C30067F571 /* 已完成 */,
+			);
+			path = "我的订单";
+			sourceTree = "<group>";
+		};
+		212737261F4D15C30067F571 /* 已完成 */ = {
+			isa = PBXGroup;
+			children = (
+				210808A11F4D523900E347E3 /* OrderYiModel.h */,
+				210808A21F4D523900E347E3 /* OrderYiModel.m */,
+				210808A71F4D526300E347E3 /* OrderYi1Model.h */,
+				210808A81F4D526300E347E3 /* OrderYi1Model.m */,
+			);
+			path = "已完成";
+			sourceTree = "<group>";
+		};
+		212737271F4D15CA0067F571 /* 已完成 */ = {
+			isa = PBXGroup;
+			children = (
+				210808AA1F4D52F200E347E3 /* OrderYiTableViewCell.h */,
+				210808AB1F4D52F200E347E3 /* OrderYiTableViewCell.m */,
+				210808AD1F4D52FC00E347E3 /* OrderYi1TableViewCell.h */,
+				210808AE1F4D52FC00E347E3 /* OrderYi1TableViewCell.m */,
+			);
+			path = "已完成";
+			sourceTree = "<group>";
+		};
+		212737281F4D15D20067F571 /* 已完成 */ = {
+			isa = PBXGroup;
+			children = (
+				2127372F1F4D16BF0067F571 /* OrderYiViewController.h */,
+				212737301F4D16BF0067F571 /* OrderYiViewController.m */,
+			);
+			path = "已完成";
+			sourceTree = "<group>";
+		};
+		212737291F4D15F30067F571 /* 我的订单首页 */ = {
+			isa = PBXGroup;
+			children = (
+				2127372A1F4D160C0067F571 /* MyOrderViewController.h */,
+				2127372B1F4D160C0067F571 /* MyOrderViewController.m */,
+			);
+			path = "我的订单首页";
+			sourceTree = "<group>";
+		};
+		2127372D1F4D16A70067F571 /* 待付款 */ = {
+			isa = PBXGroup;
+			children = (
+				212737321F4D16CB0067F571 /* OrderDaifuViewController.h */,
+				212737331F4D16CB0067F571 /* OrderDaifuViewController.m */,
+			);
+			path = "待付款";
+			sourceTree = "<group>";
+		};
+		2127372E1F4D16B10067F571 /* 待收货 */ = {
+			isa = PBXGroup;
+			children = (
+				212737351F4D16D70067F571 /* OrderDaishouViewController.h */,
+				212737361F4D16D70067F571 /* OrderDaishouViewController.m */,
+			);
+			path = "待收货";
 			sourceTree = "<group>";
 		};
 		212F8D581F4AAB8400832B38 /* 登录注册 */ = {
@@ -2481,6 +2590,7 @@
 		215F1D651F0B430600DD4AEE /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				212737231F4D15A30067F571 /* 我的订单 */,
 				215F1D661F0B431500DD4AEE /* 我的Index */,
 			);
 			path = "我的";
@@ -2567,6 +2677,7 @@
 		21B4A0491F4695A200EE3BE6 /* MineModel */ = {
 			isa = PBXGroup;
 			children = (
+				212737251F4D15B40067F571 /* 我的订单 */,
 				21B4A04A1F4695B700EE3BE6 /* 我的首页 */,
 			);
 			path = MineModel;
@@ -2584,6 +2695,7 @@
 		21B4A04B1F4695C900EE3BE6 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				212737241F4D15AD0067F571 /* 我的订单 */,
 				21B4A04C1F4695DC00EE3BE6 /* 我的首页 */,
 			);
 			path = MineView;
@@ -3178,15 +3290,18 @@
 				212F8D751F4AD47A00832B38 /* SDBrowserImageView.m in Sources */,
 				217482A81F418EFF004B5769 /* BussinessDetail1TableViewCell.m in Sources */,
 				21434CED1EEA91170024FE96 /* DataVerifier.m in Sources */,
+				212737341F4D16CB0067F571 /* OrderDaifuViewController.m in Sources */,
 				215F1D721F0B46BC00DD4AEE /* FriendCircleViewController.m in Sources */,
 				21ED75A21F427DAB00D91E2C /* ProductDetails2Model.m in Sources */,
 				21B4A05E1F46D3EF00EE3BE6 /* VideoViewController.m in Sources */,
 				21434CCD1EEA91170024FE96 /* EaseCustomMessageCell.m in Sources */,
 				21434CDF1EEA91170024FE96 /* EaseRecordView.m in Sources */,
 				21434CD21EEA91170024FE96 /* EaseBubbleView+Image.m in Sources */,
+				212737311F4D16BF0067F571 /* OrderYiViewController.m in Sources */,
 				21434D531EEA91300024FE96 /* FMDatabaseAdditions.m in Sources */,
 				21434DBF1EEA91480024FE96 /* RDVSecondViewController.m in Sources */,
 				21434CEE1EEA91170024FE96 /* MD5DataSigner.m in Sources */,
+				210808AF1F4D52FC00E347E3 /* OrderYi1TableViewCell.m in Sources */,
 				21434CB01EEA91160024FE96 /* wav.mm in Sources */,
 				21434C9C1EEA91160024FE96 /* BaseViewController.m in Sources */,
 				21434B111EEA8B470024FE96 /* AppDelegate.m in Sources */,
@@ -3221,6 +3336,7 @@
 				215F1D5E1F0B421500DD4AEE /* HomeViewController.m in Sources */,
 				21434CF01EEA91170024FE96 /* openssl_wrapper.m in Sources */,
 				21434CDE1EEA91170024FE96 /* EaseChatBarMoreView.m in Sources */,
+				210808A91F4D526300E347E3 /* OrderYi1Model.m in Sources */,
 				21434CB71EEA91170024FE96 /* EaseUserModel.m in Sources */,
 				21C236AB1F3D430400DDA92B /* Index1Model.m in Sources */,
 				21434CBF1EEA91170024FE96 /* EaseMessageReadManager.m in Sources */,
@@ -3232,6 +3348,7 @@
 				21C236AE1F3D433000DDA92B /* Index1TableViewCell.m in Sources */,
 				21434CDB1EEA91170024FE96 /* EaseTextView.m in Sources */,
 				ECB7D6691F4B028900CD7DA7 /* SDTimeLineCell.m in Sources */,
+				210808AC1F4D52F200E347E3 /* OrderYiTableViewCell.m in Sources */,
 				21434D7D1EEA91300024FE96 /* IndexViewTableViewCell.m in Sources */,
 				21B4A0581F46973400EE3BE6 /* MineIndex0TableViewCell.m in Sources */,
 				21434DBE1EEA91480024FE96 /* RDVFirstViewController.m in Sources */,
@@ -3242,6 +3359,7 @@
 				21434DB31EEA91480024FE96 /* SingleChatViewController.m in Sources */,
 				21B4A05B1F46D3E500EE3BE6 /* InfoViewController.m in Sources */,
 				21434D051EEA91170024FE96 /* MXWechatSignAdaptor.m in Sources */,
+				212737371F4D16D70067F571 /* OrderDaishouViewController.m in Sources */,
 				21434CDC1EEA91170024FE96 /* EaseFaceView.m in Sources */,
 				21434CCF1EEA91170024FE96 /* EaseMessageTimeCell.m in Sources */,
 				21434D521EEA91300024FE96 /* FMDatabase.m in Sources */,
@@ -3250,6 +3368,7 @@
 				21434CEC1EEA91170024FE96 /* DataSigner.m in Sources */,
 				21434CB11EEA91160024FE96 /* EMVoiceConverter.mm in Sources */,
 				21434CD11EEA91170024FE96 /* EaseBubbleView+Gif.m in Sources */,
+				210808A31F4D523900E347E3 /* OrderYiModel.m in Sources */,
 				21ED75A81F427EE500D91E2C /* ProductDetails1TableViewCell.m in Sources */,
 				212F8D761F4AD47A00832B38 /* SDPhotoBrowser.m in Sources */,
 				21434CAC1EEA91160024FE96 /* EMCDDeviceManager+ProximitySensor.m in Sources */,
@@ -3302,6 +3421,7 @@
 				21ED75BB1F42A90A00D91E2C /* YBPopupMenu.m in Sources */,
 				21434CA21EEA91160024FE96 /* AbstractDotView.m in Sources */,
 				21434CD61EEA91170024FE96 /* EaseBubbleView+Voice.m in Sources */,
+				2127372C1F4D160C0067F571 /* MyOrderViewController.m in Sources */,
 				21434D561EEA91300024FE96 /* FMResultSet.m in Sources */,
 				21434CE91EEA91170024FE96 /* AlipayRequestConfig.m in Sources */,
 				21434D511EEA91300024FE96 /* DBManager.m in Sources */,

@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.view.backgroundColor = [MyController colorWithHexString:@"f4f6fa"];
     self.dataArray = [[NSMutableArray alloc] init];
     [self.dataArray addObjectsFromArray:[self creatModelsWithCount:10]];
     [self createTableView];
@@ -34,7 +35,7 @@
     _tableView.dataSource = self;
     _tableView.delegate = self;
     UIImageView *tableBg = [[UIImageView alloc] initWithImage:nil];
-    tableBg.backgroundColor = [UIColor clearColor];
+    tableBg.backgroundColor = [MyController colorWithHexString:@"f4f6fa"];
     [_tableView setBackgroundView:tableBg];
     //分割线类型
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;

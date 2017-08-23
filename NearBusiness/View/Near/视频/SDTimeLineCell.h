@@ -41,12 +41,14 @@
 
 @property (nonatomic, weak) id<SDTimeLineCellDelegate> delegate;
 
-@property (nonatomic, strong) SDTimeLineCellModel *model;
+//@property (nonatomic, strong) SDTimeLineCellModel *model;
 
 @property (nonatomic, strong) NSIndexPath *indexPath;
 
 @property (nonatomic, copy) void (^moreButtonClickedBlock)(NSIndexPath *indexPath);
 
 @property (nonatomic, copy) void (^didClickCommentLabelBlock)(NSString *commentId, CGRect rectInWindow, NSIndexPath *indexPath);
+
+- (void)setModel:(SDTimeLineCellModel *)model;
 
 @end

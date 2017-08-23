@@ -39,6 +39,7 @@ CGFloat maxContentLabelHeight2 = 0; // 根据具体font而定
 }
 
 - (void)setup{
+    self.contentView.backgroundColor = [UIColor whiteColor];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveOperationButtonClickedNotification:) name:@"SDTimeLineCell" object:nil];
     

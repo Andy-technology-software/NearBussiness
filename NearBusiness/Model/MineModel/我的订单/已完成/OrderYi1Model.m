@@ -1,0 +1,13 @@
+//
+//  OrderYi1Model.m
+//  NearBusiness
+//
+//  Created by lingnet on 2017/8/23.
+//  Copyright © 2017年 YouCanCallMeAndy. All rights reserved.
+//
+
+#import "OrderYi1Model.h"
+
+@implementation OrderYi1Model
+
+@end

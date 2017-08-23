@@ -11,6 +11,8 @@
 #import "MineIndex0Model.h"
 
 #import "MineIndex0TableViewCell.h"
+
+#import "MyOrderViewController.h"
 @interface MineViewController ()<UITableViewDataSource,UITableViewDelegate,MineIndex0TableViewCellDelegate>{
     UITableView* _tableView;
 }
@@ -99,6 +101,10 @@
 
 - (void)sendBackTopIndex:(NSInteger)itemIndex{
     NSLog(@"顶部---%ld",itemIndex);
+    if(2 == itemIndex){
+        MyOrderViewController* vc = [[MyOrderViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (void)didselectBuycar{

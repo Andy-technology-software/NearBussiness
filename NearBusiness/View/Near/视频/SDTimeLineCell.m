@@ -40,7 +40,8 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
 }
 
 - (void)setup{
-    
+    self.contentView.backgroundColor = [UIColor whiteColor];
+
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveOperationButtonClickedNotification:) name:@"SDTimeLineCell" object:nil];
     
     _topLineView = [UIView new];
@@ -187,7 +188,7 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
 }
 
 - (void)setModel:(SDTimeLineCellModel *)model{
-    _model = model;
+//    _model = model;
 
     _iconView.image = [UIImage imageNamed:model.iconName];
     _nameLable.text = model.name;
