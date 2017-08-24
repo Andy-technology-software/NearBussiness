@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface OrderYi1Model : NSObject
+@property(nonatomic,copy)NSString* _countPrice;
 
 @end
