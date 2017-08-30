@@ -17,6 +17,8 @@
 }
 @property(nonatomic,retain)NSMutableArray* dataSource;
 
+@property(nonatomic,retain)NSMutableArray* selectArr;
+
 @property (nonatomic, strong) UIImageView* selectIV;
 @property (nonatomic, strong) UIImageView* shopIV;
 @property (nonatomic, strong) UILabel* nameLable;
@@ -29,6 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     self.title = @"购物车";
     
     self.view.backgroundColor = [MyController colorWithHexString:@"f4f6fa"];
@@ -185,10 +188,11 @@
 
 #pragma mark - 选中一组响应
 - (void)shopBtnClick:(UIButton*)btn{
+    self.selectArr[btn.tag] = [NSString stringWithFormat:@"%d",![self.selectArr[btn.tag] intValue]];
     NSArray* aa = self.dataSource[btn.tag];
     for(int i = 0; i < aa.count; i++){
         BuyCarModel* model = aa[i];
-        model._isSelect = !btn.selected;
+        model._isSelect = [self.selectArr[btn.tag] boolValue];
     }
     //一个section刷新
     NSIndexSet *indexSet=[[NSIndexSet alloc]initWithIndex:btn.tag];
@@ -203,6 +207,7 @@
 
 
 - (void)makeData{
+    self.selectArr = [[NSMutableArray alloc] init];
     self.dataSource = [[NSMutableArray alloc] init];
     for (int i = 0; i < 10; i++) {
         NSMutableArray* temA = [[NSMutableArray alloc] init];
@@ -215,7 +220,7 @@
             model._num = @"2";
             [temA addObject:model];
         }
-        
+        [self.selectArr addObject:@"0"];
         [self.dataSource addObject:temA];
     }
     [_tableView reloadData];
