@@ -15,10 +15,13 @@ pod 'MJRefresh'
 pod 'MWPhotoBrowser'
 #一个浮动tf、tv
 pod 'JVFloatLabeledTextField'
-
 pod 'AMapSearch'
 pod 'AMapLocation'
 pod 'AMap2DMap'
 pod 'ImagePickerSheetViewController'
+# 集成微信(完整版14.4M)
+pod 'UMengUShare/Social/WeChat'
+# 集成QQ/QZone/TIM(完整版7.6M)
+pod 'UMengUShare/Social/QQ'
 end
-    
+

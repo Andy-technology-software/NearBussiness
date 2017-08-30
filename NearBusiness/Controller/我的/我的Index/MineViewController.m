@@ -13,7 +13,9 @@
 #import "MineIndex0TableViewCell.h"
 
 #import "MyOrderViewController.h"
-@interface MineViewController ()<UITableViewDataSource,UITableViewDelegate,MineIndex0TableViewCellDelegate>{
+
+#import "BuyCarViewController.h"
+@interface MineViewController ()<UITableViewDataSource,UITableViewDelegate,MineIndex0TableViewCellDelegate,ImagePickerSheetViewControllerDelegate>{
     UITableView* _tableView;
 }
 @property(nonatomic,retain)NSMutableArray* dataSource;
@@ -93,6 +95,33 @@
 
 - (void)didselectHeadImg{
     NSLog(@"选头像");
+    ImagePickerSheetViewController *imagePicker = [[ImagePickerSheetViewController alloc] init];
+    imagePicker.maximumNumberOfSelection = 1;
+    imagePicker.delegate = self;
+    //使用内置相册回调使用内置相册回调
+    imagePicker.photoLabrary = ^(LFImagePickerController *lf_imagePicker) {
+        lf_imagePicker.allowTakePicture = NO;
+        lf_imagePicker.allowPickingVideo = NO;
+        lf_imagePicker.doneBtnTitleStr = @"发送";
+    };
+    
+    //发送图片block，回调回两组数组，一组压缩图片数组，一组原图数组
+    imagePicker.imagePickerSheetVCSendImageBlock = ^(NSArray *thumbnailImages, NSArray *originalImages) {
+        NSData *data = UIImageJPEGRepresentation([originalImages lastObject], 1.0f);
+        NSString *encodedImageStr = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+        [HUD loading];
+//        [self changeHeadImage:encodedImageStr];
+    };
+    
+    //拍照发送，回调回图片
+    imagePicker.imagePickerSheetVCPhotoSendImageBlock = ^(UIImage *image) {
+        NSData *_data = UIImageJPEGRepresentation(image, 0.01);
+        NSString* encodedImageStr = [_data base64EncodedStringWithOptions:NSDataBase64Encoding76CharacterLineLength];
+        [HUD loading];
+//        [self changeHeadImage:encodedImageStr];
+    };
+    
+    [imagePicker showImagePickerInController:self animated:YES];
 }
 
 - (void)sendBackBottonIndex:(NSInteger)itemIndex{
@@ -109,6 +138,8 @@
 
 - (void)didselectBuycar{
     NSLog(@"购物车");
+    BuyCarViewController* vc = [[BuyCarViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

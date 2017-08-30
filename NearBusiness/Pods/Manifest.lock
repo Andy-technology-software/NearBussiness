@@ -50,6 +50,19 @@ PODS:
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - SVProgressHUD (1.1.3)
+  - UMengUShare/Core (6.4.2):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.4.2)
+  - UMengUShare/Social/QQ (6.4.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedQQ
+  - UMengUShare/Social/ReducedQQ (6.4.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedWeChat (6.4.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/WeChat (6.4.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedWeChat
   - YYText (1.0.7)
 
 DEPENDENCIES:
@@ -69,6 +82,8 @@ DEPENDENCIES:
   - MWPhotoBrowser
   - SDAutoLayout
   - SVProgressHUD (~> 1.1.3)
+  - UMengUShare/Social/QQ
+  - UMengUShare/Social/WeChat
   - YYText
 
 SPEC CHECKSUMS:
@@ -93,8 +108,9 @@ SPEC CHECKSUMS:
   SDAutoLayout: 5a4b48d6b8a5172ae8d088d2879e40dd795e6251
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  UMengUShare: 740664d1dd5cc2fb2cc3325d61e4b35539aa9c78
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 472d5dc74dfccda59241dbac4bddd4281b46ff40
+PODFILE CHECKSUM: 106ef07787f5a3c28af4425a87ae1a02376c2ff2
 
 COCOAPODS: 1.2.0

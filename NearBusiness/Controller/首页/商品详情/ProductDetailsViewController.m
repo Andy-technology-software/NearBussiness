@@ -350,6 +350,21 @@
 #pragma mark - 选中分享
 - (void)didselectShare{
     NSLog(@"分享");
+    CLAnimationView *animationView = [[CLAnimationView alloc]initWithTitleArray:@[@"微信好友",@"朋友圈",@"QQ好友"] picarray:@[@"shijian",@"shijian",@"shijian"]];
+    [animationView selectedWithIndex:^(NSInteger index) {
+        NSLog(@"你选择的index ＝＝ %ld",(long)index);
+        if (1 == index) {
+            
+        }else if (2 == index){
+            
+        }else if (3 == index){
+            
+        }
+    }];
+    [animationView CLBtnBlock:^(UIButton *btn) {
+        NSLog(@"你点了选择/取消按钮");
+    }];
+    [animationView show];
 }
 
 #pragma mark - getter 创建一个显示图片的window

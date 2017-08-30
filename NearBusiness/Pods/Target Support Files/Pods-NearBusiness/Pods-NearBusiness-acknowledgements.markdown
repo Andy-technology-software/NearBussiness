@@ -398,6 +398,11 @@ A different license may apply to other resources included in this package,
 including Freepik Icons. Please consult their 
 respective headers for the terms of their individual licenses.
 
+## UMengUShare
+
+Copyright 2011 - 2017 UMeng.com. All rights reserved.
+
+
 ## YYText
 
 The MIT License (MIT)

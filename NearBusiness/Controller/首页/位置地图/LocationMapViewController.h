@@ -8,6 +8,12 @@
 
 #import "BaseViewController.h"
 
+@protocol LocationMapViewControllerDelegate <NSObject>
+
+- (void)sendBackSelectAddName:(NSString*)addName jingdu:(NSString*)jingdu weidu:(NSString*)weidu;
+@end
+
 @interface LocationMapViewController : BaseViewController
+@property(nonatomic,weak)id<LocationMapViewControllerDelegate>LocationMapViewControllerDelegate;
 
 @end

@@ -94,6 +94,18 @@
     }];
     
     
+    UIButton* shareBtn = [MyController createButtonWithFrame:shareView.frame ImageName:nil Target:self Action:@selector(shareBtnClick) Title:nil];
+    [shareView addSubview:shareBtn];
+    
+    [shareBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.mas_equalTo(0);
+        make.left.mas_equalTo(0);
+        make.top.mas_equalTo(0);
+        make.height.mas_offset(50);
+    }];
+    
+    
+    
     
     UIView* foView = [MyController viewWithFrame:bottomView.frame];
     [bottomView addSubview:foView];
@@ -168,9 +180,29 @@
     }];
 }
 
+#pragma mark - 资讯按钮响应
 - (void)zixunBtnClick{
     SingleChatViewController* vc = [[SingleChatViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+#pragma mark - 分享按钮响应
+- (void)shareBtnClick{
+    CLAnimationView *animationView = [[CLAnimationView alloc]initWithTitleArray:@[@"微信好友",@"朋友圈",@"QQ好友"] picarray:@[@"shijian",@"shijian",@"shijian"]];
+    [animationView selectedWithIndex:^(NSInteger index) {
+        NSLog(@"你选择的index ＝＝ %ld",(long)index);
+        if (1 == index) {
+            
+        }else if (2 == index){
+            
+        }else if (3 == index){
+            
+        }
+    }];
+    [animationView CLBtnBlock:^(UIButton *btn) {
+        NSLog(@"你点了选择/取消按钮");
+    }];
+    [animationView show];
 }
 
 #pragma mark - 创建数据

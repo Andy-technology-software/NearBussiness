@@ -291,6 +291,12 @@
 		215F21C91F0B664100DD4AEE /* 销售-选中@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 215F21B91F0B664100DD4AEE /* 销售-选中@3x.png */; };
 		215F21CA1F0B664100DD4AEE /* 销售@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 215F21BA1F0B664100DD4AEE /* 销售@2x.png */; };
 		215F21CB1F0B664100DD4AEE /* 销售@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 215F21BB1F0B664100DD4AEE /* 销售@3x.png */; };
+		216AA1D01F5643490000A19A /* LocationMapTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 216AA1CF1F5643490000A19A /* LocationMapTableViewCell.m */; };
+		216AA1D41F5643A20000A19A /* LocationMapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 216AA1D31F5643A20000A19A /* LocationMapModel.m */; };
+		216AA1DA1F5653080000A19A /* CLAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 216AA1D71F5653080000A19A /* CLAnimationView.m */; };
+		216AA1DB1F5653080000A19A /* CLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 216AA1D91F5653080000A19A /* CLView.m */; };
+		216AA1E11F568DF90000A19A /* BuyCarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 216AA1E01F568DF90000A19A /* BuyCarModel.m */; };
+		216AA1E41F5691590000A19A /* BuyCarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 216AA1E31F5691590000A19A /* BuyCarTableViewCell.m */; };
 		217482971F417F9A004B5769 /* BussinessDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217482961F417F9A004B5769 /* BussinessDetailViewController.m */; };
 		2174829A1F4182B9004B5769 /* JieShaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217482991F4182B9004B5769 /* JieShaoViewController.m */; };
 		2174829D1F4182C3004B5769 /* ShangPinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2174829C1F4182C3004B5769 /* ShangPinViewController.m */; };
@@ -312,6 +318,7 @@
 		21C236A81F3D3B2600DDA92B /* XRQRequestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C236A61F3D3B2600DDA92B /* XRQRequestClient.m */; };
 		21C236AB1F3D430400DDA92B /* Index1Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C236AA1F3D430400DDA92B /* Index1Model.m */; };
 		21C236AE1F3D433000DDA92B /* Index1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C236AD1F3D433000DDA92B /* Index1TableViewCell.m */; };
+		21E535271F56A9F600EC6BF3 /* BuyCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E535261F56A9F600EC6BF3 /* BuyCarViewController.m */; };
 		21ED75901F42734700D91E2C /* ShangPinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ED758F1F42734700D91E2C /* ShangPinModel.m */; };
 		21ED75931F4273A400D91E2C /* ShangPinTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ED75921F4273A400D91E2C /* ShangPinTableViewCell.m */; };
 		21ED75971F427C9A00D91E2C /* ProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ED75961F427C9A00D91E2C /* ProductDetailsViewController.m */; };
@@ -958,6 +965,18 @@
 		215F21B91F0B664100DD4AEE /* 销售-选中@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "销售-选中@3x.png"; sourceTree = "<group>"; };
 		215F21BA1F0B664100DD4AEE /* 销售@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "销售@2x.png"; sourceTree = "<group>"; };
 		215F21BB1F0B664100DD4AEE /* 销售@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "销售@3x.png"; sourceTree = "<group>"; };
+		216AA1CE1F5643490000A19A /* LocationMapTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationMapTableViewCell.h; sourceTree = "<group>"; };
+		216AA1CF1F5643490000A19A /* LocationMapTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationMapTableViewCell.m; sourceTree = "<group>"; };
+		216AA1D21F5643A20000A19A /* LocationMapModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationMapModel.h; sourceTree = "<group>"; };
+		216AA1D31F5643A20000A19A /* LocationMapModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationMapModel.m; sourceTree = "<group>"; };
+		216AA1D61F5653080000A19A /* CLAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAnimationView.h; sourceTree = "<group>"; };
+		216AA1D71F5653080000A19A /* CLAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAnimationView.m; sourceTree = "<group>"; };
+		216AA1D81F5653080000A19A /* CLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLView.h; sourceTree = "<group>"; };
+		216AA1D91F5653080000A19A /* CLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLView.m; sourceTree = "<group>"; };
+		216AA1DF1F568DF90000A19A /* BuyCarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyCarModel.h; sourceTree = "<group>"; };
+		216AA1E01F568DF90000A19A /* BuyCarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyCarModel.m; sourceTree = "<group>"; };
+		216AA1E21F5691580000A19A /* BuyCarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyCarTableViewCell.h; sourceTree = "<group>"; };
+		216AA1E31F5691590000A19A /* BuyCarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyCarTableViewCell.m; sourceTree = "<group>"; };
 		217482951F417F9A004B5769 /* BussinessDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BussinessDetailViewController.h; sourceTree = "<group>"; };
 		217482961F417F9A004B5769 /* BussinessDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BussinessDetailViewController.m; sourceTree = "<group>"; };
 		217482981F4182B9004B5769 /* JieShaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JieShaoViewController.h; sourceTree = "<group>"; };
@@ -1000,6 +1019,8 @@
 		21C236AA1F3D430400DDA92B /* Index1Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Index1Model.m; sourceTree = "<group>"; };
 		21C236AC1F3D433000DDA92B /* Index1TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Index1TableViewCell.h; sourceTree = "<group>"; };
 		21C236AD1F3D433000DDA92B /* Index1TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Index1TableViewCell.m; sourceTree = "<group>"; };
+		21E535251F56A9F600EC6BF3 /* BuyCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyCarViewController.h; sourceTree = "<group>"; };
+		21E535261F56A9F600EC6BF3 /* BuyCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyCarViewController.m; sourceTree = "<group>"; };
 		21ED758E1F42734700D91E2C /* ShangPinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShangPinModel.h; sourceTree = "<group>"; };
 		21ED758F1F42734700D91E2C /* ShangPinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShangPinModel.m; sourceTree = "<group>"; };
 		21ED75911F4273A400D91E2C /* ShangPinTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShangPinTableViewCell.h; sourceTree = "<group>"; };
@@ -1505,6 +1526,7 @@
 		21434B3F1EEA91160024FE96 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				216AA1D51F5653080000A19A /* popShareView */,
 				ECB7D65B1F4AF55100CD7DA7 /* HyphenateFullSDK */,
 				212F8D6D1F4AD47A00832B38 /* SDPhotoBrowser */,
 				212F8D691F4AD43700832B38 /* PhotoContainer */,
@@ -2251,6 +2273,7 @@
 		21434D401EEA91300024FE96 /* IndexModel */ = {
 			isa = PBXGroup;
 			children = (
+				216AA1D11F56438C0000A19A /* 位置地图 */,
 				21ED75981F427D6D00D91E2C /* 商品详情 */,
 				217482A21F418EBD004B5769 /* 商家详情 */,
 				2120EE601F3D8C9600661EBE /* 商家搜索 */,
@@ -2590,6 +2613,7 @@
 		215F1D651F0B430600DD4AEE /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				216AA1DC1F568DD10000A19A /* 购物车 */,
 				212737231F4D15A30067F571 /* 我的订单 */,
 				215F1D661F0B431500DD4AEE /* 我的Index */,
 			);
@@ -2637,6 +2661,53 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		216AA1D11F56438C0000A19A /* 位置地图 */ = {
+			isa = PBXGroup;
+			children = (
+				216AA1D21F5643A20000A19A /* LocationMapModel.h */,
+				216AA1D31F5643A20000A19A /* LocationMapModel.m */,
+			);
+			path = "位置地图";
+			sourceTree = "<group>";
+		};
+		216AA1D51F5653080000A19A /* popShareView */ = {
+			isa = PBXGroup;
+			children = (
+				216AA1D61F5653080000A19A /* CLAnimationView.h */,
+				216AA1D71F5653080000A19A /* CLAnimationView.m */,
+				216AA1D81F5653080000A19A /* CLView.h */,
+				216AA1D91F5653080000A19A /* CLView.m */,
+			);
+			path = popShareView;
+			sourceTree = "<group>";
+		};
+		216AA1DC1F568DD10000A19A /* 购物车 */ = {
+			isa = PBXGroup;
+			children = (
+				21E535251F56A9F600EC6BF3 /* BuyCarViewController.h */,
+				21E535261F56A9F600EC6BF3 /* BuyCarViewController.m */,
+			);
+			path = "购物车";
+			sourceTree = "<group>";
+		};
+		216AA1DD1F568DDA0000A19A /* 购物车 */ = {
+			isa = PBXGroup;
+			children = (
+				216AA1E21F5691580000A19A /* BuyCarTableViewCell.h */,
+				216AA1E31F5691590000A19A /* BuyCarTableViewCell.m */,
+			);
+			path = "购物车";
+			sourceTree = "<group>";
+		};
+		216AA1DE1F568DE30000A19A /* 购物车 */ = {
+			isa = PBXGroup;
+			children = (
+				216AA1DF1F568DF90000A19A /* BuyCarModel.h */,
+				216AA1E01F568DF90000A19A /* BuyCarModel.m */,
+			);
+			path = "购物车";
+			sourceTree = "<group>";
+		};
 		217482941F417F6F004B5769 /* 商家详情 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2677,6 +2748,7 @@
 		21B4A0491F4695A200EE3BE6 /* MineModel */ = {
 			isa = PBXGroup;
 			children = (
+				216AA1DE1F568DE30000A19A /* 购物车 */,
 				212737251F4D15B40067F571 /* 我的订单 */,
 				21B4A04A1F4695B700EE3BE6 /* 我的首页 */,
 			);
@@ -2695,6 +2767,7 @@
 		21B4A04B1F4695C900EE3BE6 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				216AA1DD1F568DDA0000A19A /* 购物车 */,
 				212737241F4D15AD0067F571 /* 我的订单 */,
 				21B4A04C1F4695DC00EE3BE6 /* 我的首页 */,
 			);
@@ -2760,6 +2833,8 @@
 		21ED75AC1F42A4FD00D91E2C /* 位置地图 */ = {
 			isa = PBXGroup;
 			children = (
+				216AA1CE1F5643490000A19A /* LocationMapTableViewCell.h */,
+				216AA1CF1F5643490000A19A /* LocationMapTableViewCell.m */,
 			);
 			path = "位置地图";
 			sourceTree = "<group>";
@@ -2978,6 +3053,9 @@
 						DevelopmentTeam = HB2432K9P2;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -3265,9 +3343,11 @@
 				21434D081EEA91170024FE96 /* WJDropdownMenu.m in Sources */,
 				21434CAB1EEA91160024FE96 /* EMCDDeviceManager+Microphone.m in Sources */,
 				21434CC31EEA91170024FE96 /* EaseEmotionManager.m in Sources */,
+				216AA1DA1F5653080000A19A /* CLAnimationView.m in Sources */,
 				21434D541EEA91300024FE96 /* FMDatabasePool.m in Sources */,
 				21B4A0551F46972100EE3BE6 /* MineIndex0Model.m in Sources */,
 				21434CEB1EEA91170024FE96 /* base64.m in Sources */,
+				216AA1D41F5643A20000A19A /* LocationMapModel.m in Sources */,
 				21434CE21EEA91170024FE96 /* XRQGetIP.m in Sources */,
 				21434D071EEA91170024FE96 /* XMLDictionary.m in Sources */,
 				21ED75AB1F427EEC00D91E2C /* ProductDetails2TableViewCell.m in Sources */,
@@ -3288,6 +3368,7 @@
 				21434CC01EEA91170024FE96 /* EaseEmoji.m in Sources */,
 				21434CA41EEA91160024FE96 /* DotView.m in Sources */,
 				212F8D751F4AD47A00832B38 /* SDBrowserImageView.m in Sources */,
+				216AA1DB1F5653080000A19A /* CLView.m in Sources */,
 				217482A81F418EFF004B5769 /* BussinessDetail1TableViewCell.m in Sources */,
 				21434CED1EEA91170024FE96 /* DataVerifier.m in Sources */,
 				212737341F4D16CB0067F571 /* OrderDaifuViewController.m in Sources */,
@@ -3342,6 +3423,7 @@
 				21434CBF1EEA91170024FE96 /* EaseMessageReadManager.m in Sources */,
 				21434C9E1EEA91160024FE96 /* MyController.m in Sources */,
 				21434CCA1EEA91170024FE96 /* EaseViewController.m in Sources */,
+				216AA1D01F5643490000A19A /* LocationMapTableViewCell.m in Sources */,
 				21434CCB1EEA91170024FE96 /* EaseUserCell.m in Sources */,
 				21434CE01EEA91170024FE96 /* EaseConversationCell.m in Sources */,
 				21434CDD1EEA91170024FE96 /* EaseFacialView.m in Sources */,
@@ -3353,6 +3435,7 @@
 				21B4A0581F46973400EE3BE6 /* MineIndex0TableViewCell.m in Sources */,
 				21434DBE1EEA91480024FE96 /* RDVFirstViewController.m in Sources */,
 				2120EE5F1F3D859100661EBE /* BussinessSearchViewController.m in Sources */,
+				21E535271F56A9F600EC6BF3 /* BuyCarViewController.m in Sources */,
 				21ED759F1F427DA200D91E2C /* ProductDetails1Model.m in Sources */,
 				21434CDA1EEA91170024FE96 /* EaseImageView.m in Sources */,
 				21434CC11EEA91170024FE96 /* EaseEmojiEmoticons.m in Sources */,
@@ -3384,10 +3467,12 @@
 				21434CA51EEA91160024FE96 /* PageControl.m in Sources */,
 				21434CAF1EEA91160024FE96 /* amrFileCodec.mm in Sources */,
 				21434CE41EEA91170024FE96 /* XRQKeyChainStore.m in Sources */,
+				216AA1E41F5691590000A19A /* BuyCarTableViewCell.m in Sources */,
 				21434CA31EEA91160024FE96 /* AnimatedDotView.m in Sources */,
 				21434CB41EEA91170024FE96 /* EaseSDKHelper.m in Sources */,
 				21434CE51EEA91170024FE96 /* UITableView+HYBCacheHeight.m in Sources */,
 				21434DB11EEA91480024FE96 /* IMViewController.m in Sources */,
+				216AA1E11F568DF90000A19A /* BuyCarModel.m in Sources */,
 				21434D041EEA91170024FE96 /* MXWechatPayHandler.m in Sources */,
 				215F1D691F0B463F00DD4AEE /* MineViewController.m in Sources */,
 				21434CE61EEA91170024FE96 /* UITableViewCell+HYBMasonryAutoCellHeight.m in Sources */,

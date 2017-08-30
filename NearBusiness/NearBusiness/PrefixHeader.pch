@@ -93,4 +93,19 @@
 //商家详情
 #import "BussinessDetailViewController.h"
 
+#import <MAMapKit/MAMapKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
+
+#define MAPKEY @"d889f38afa6749596874a123d6a07eba"
+
+#define USHARE_DEMO_APPKEY @"59a63170ae1bf86a450005dd"
+
+#import "CLAnimationView.h"
+
+#import "ImagePickerSheetViewController.h"
+#import "LFAssetManager.h"
+#import "LFImagePickerController.h"
+
 #endif /* PrefixHeader_pch */

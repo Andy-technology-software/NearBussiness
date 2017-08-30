@@ -16,12 +16,14 @@
 
 @property (nonatomic,strong) UIImageView* headIV;
 @property (nonatomic,strong) UIImageView* bgHeadIV;
+@property (nonatomic,strong) UIImageView* camerIV;
 @property (nonatomic,strong) UIImageView* VIPIV;
 
 @property (nonatomic,strong) UIButton* headBtn;
 
 @property (nonatomic,strong) UIView* btnView;
 @property (nonatomic,strong) UIView* bottomView;
+@property (nonatomic,strong) UIView* headBgView;
 
 @property (nonatomic, strong) UIView* lineView;
 @property (nonatomic, strong) UIView* lineView1;
@@ -56,6 +58,23 @@
         make.right.mas_equalTo(0);
     }];
     
+    self.headBgView = [MyController viewWithFrame:self.contentView.frame];
+    self.headBgView.backgroundColor = [UIColor whiteColor];
+    //将图层的边框设置为圆脚
+    self.headBgView.layer.cornerRadius = 45;
+    self.headBgView.layer.masksToBounds = YES;
+    [self.headBgView setContentMode:UIViewContentModeScaleAspectFill];
+    self.headBgView.clipsToBounds = YES;
+    [self.contentView addSubview:self.headBgView];
+    
+    [self.headBgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(35);
+        make.centerX.mas_equalTo(self.contentView);
+        make.width.mas_offset(90);
+        make.height.mas_offset(90);
+    }];
+
+    
     self.headIV = [MyController createImageViewWithFrame:self.contentView.frame ImageName:nil];
     //将图层的边框设置为圆脚
     self.headIV.layer.cornerRadius = 40;
@@ -65,10 +84,20 @@
     [self.contentView addSubview:self.headIV];
     
     [self.headIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(35);
-        make.centerX.mas_equalTo(self.contentView);
+        make.centerX.mas_equalTo(self.headBgView);
+        make.centerY.mas_equalTo(self.headBgView);
         make.width.mas_offset(80);
         make.height.mas_offset(80);
+    }];
+    
+    self.camerIV = [MyController createImageViewWithFrame:self.contentView.frame ImageName:@"shijian"];
+    [self.contentView addSubview:self.camerIV];
+    
+    [self.camerIV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(self.headBgView.mas_bottom);
+        make.right.mas_equalTo(self.headIV.mas_right);
+        make.width.mas_offset(20);
+        make.height.mas_offset(20);
     }];
     
     self.headBtn = [MyController createButtonWithFrame:self.contentView.frame ImageName:nil Target:self Action:@selector(headBtnClick) Title:nil];
@@ -256,7 +285,7 @@
         UIView* bView = [MyController viewWithFrame:CGRectMake((i % 2) * bviewWidth, (i / 2) * bviewHeight, bviewWidth, bviewHeight)];
         [self.bottomView addSubview:bView];
         
-        UILabel* tiL = [MyController createLabelWithFrame:bView.frame Font:14 Text:@"资金管理"];
+        UILabel* tiL = [MyController createLabelWithFrame:bView.frame Font:14 Text:tB[i]];
         [bView addSubview:tiL];
         
         [tiL mas_makeConstraints:^(MASConstraintMaker *make) {

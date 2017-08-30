@@ -173,11 +173,11 @@
 - (void)reloadImagesFromLibrary
 {
     if (![[LFAssetManager manager] authorizationStatusAuthorized]) {
-        NSString *appName = [[NSBundle mainBundle].infoDictionary valueForKey:@"CFBundleDisplayName"];
-        if (!appName) appName = [[NSBundle mainBundle].infoDictionary valueForKey:@"CFBundleName"];
-        NSString *msg = [NSString stringWithFormat:@"请在%@的\"设置-隐私-照片\"选项中，\r允许%@访问你的手机相册。",[UIDevice currentDevice].model,appName];
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"相册访问失败" message:msg delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
-        [alertView show];
+//        NSString *appName = [[NSBundle mainBundle].infoDictionary valueForKey:@"CFBundleDisplayName"];
+//        if (!appName) appName = [[NSBundle mainBundle].infoDictionary valueForKey:@"CFBundleName"];
+//        NSString *msg = [NSString stringWithFormat:@"请在%@的\"设置-隐私-照片\"选项中，\r允许%@访问你的手机相册。",[UIDevice currentDevice].model,appName];
+//        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"相册访问失败" message:msg delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+//        [alertView show];
     } else {
         WeakSelf
         long long start = [[NSDate date] timeIntervalSince1970] * 1000;
