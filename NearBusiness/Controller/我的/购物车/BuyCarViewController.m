@@ -132,8 +132,8 @@
     [self.selectIV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(10);
         make.centerY.mas_equalTo(bgView.mas_centerY);
-        make.height.mas_offset(20);
-        make.width.mas_offset(20);
+        make.height.mas_offset(16);
+        make.width.mas_offset(16);
     }];
     
     

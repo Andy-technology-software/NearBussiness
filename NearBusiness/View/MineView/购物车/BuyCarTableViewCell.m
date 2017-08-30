@@ -40,8 +40,8 @@
     [self.selectIV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(10);
         make.centerY.mas_equalTo(self.contentView.mas_centerY);
-        make.height.mas_offset(13);
-        make.width.mas_offset(13);
+        make.height.mas_offset(16);
+        make.width.mas_offset(16);
     }];
     
     self.headIV = [MyController createImageViewWithFrame:self.contentView.frame ImageName:nil];
