@@ -258,6 +258,9 @@
 		2153468B1F57BC7F006159AF /* FundManagementCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2153468A1F57BC7F006159AF /* FundManagementCardViewController.m */; };
 		215346921F57BE41006159AF /* FundManagementCashModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 215346911F57BE41006159AF /* FundManagementCashModel.m */; };
 		215346951F57BE9B006159AF /* FundManagementCashTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 215346941F57BE9B006159AF /* FundManagementCashTableViewCell.m */; };
+		215346AC1F58058F006159AF /* SeetingCenterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 215346AB1F58058F006159AF /* SeetingCenterModel.m */; };
+		215346AF1F5805B8006159AF /* SeetingCenterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 215346AE1F5805B8006159AF /* SeetingCenterTableViewCell.m */; };
+		215346B21F5807D7006159AF /* SeetingCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 215346B11F5807D7006159AF /* SeetingCenterViewController.m */; };
 		21545B641F42D41500CA7C3F /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21545B4F1F42D41500CA7C3F /* libzbar.a */; };
 		21545B651F42D41500CA7C3F /* qrcode_scan_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21545B511F42D41500CA7C3F /* qrcode_scan_bar@2x.png */; };
 		21545B661F42D41500CA7C3F /* qrcode_scan_bg_Green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21545B521F42D41500CA7C3F /* qrcode_scan_bg_Green@2x.png */; };
@@ -919,6 +922,12 @@
 		215346911F57BE41006159AF /* FundManagementCashModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundManagementCashModel.m; sourceTree = "<group>"; };
 		215346931F57BE9B006159AF /* FundManagementCashTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundManagementCashTableViewCell.h; sourceTree = "<group>"; };
 		215346941F57BE9B006159AF /* FundManagementCashTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundManagementCashTableViewCell.m; sourceTree = "<group>"; };
+		215346AA1F58058F006159AF /* SeetingCenterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeetingCenterModel.h; sourceTree = "<group>"; };
+		215346AB1F58058F006159AF /* SeetingCenterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeetingCenterModel.m; sourceTree = "<group>"; };
+		215346AD1F5805B8006159AF /* SeetingCenterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeetingCenterTableViewCell.h; sourceTree = "<group>"; };
+		215346AE1F5805B8006159AF /* SeetingCenterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeetingCenterTableViewCell.m; sourceTree = "<group>"; };
+		215346B01F5807D7006159AF /* SeetingCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeetingCenterViewController.h; sourceTree = "<group>"; };
+		215346B11F5807D7006159AF /* SeetingCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeetingCenterViewController.m; sourceTree = "<group>"; };
 		21545B3B1F42D41500CA7C3F /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
 		21545B3C1F42D41500CA7C3F /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
 		21545B3D1F42D41500CA7C3F /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
@@ -2550,6 +2559,33 @@
 			path = "资金管理现金";
 			sourceTree = "<group>";
 		};
+		215346A71F58056B006159AF /* 设置中心 */ = {
+			isa = PBXGroup;
+			children = (
+				215346B01F5807D7006159AF /* SeetingCenterViewController.h */,
+				215346B11F5807D7006159AF /* SeetingCenterViewController.m */,
+			);
+			path = "设置中心";
+			sourceTree = "<group>";
+		};
+		215346A81F580575006159AF /* 设置中心 */ = {
+			isa = PBXGroup;
+			children = (
+				215346AD1F5805B8006159AF /* SeetingCenterTableViewCell.h */,
+				215346AE1F5805B8006159AF /* SeetingCenterTableViewCell.m */,
+			);
+			path = "设置中心";
+			sourceTree = "<group>";
+		};
+		215346A91F58057D006159AF /* 设置中心 */ = {
+			isa = PBXGroup;
+			children = (
+				215346AA1F58058F006159AF /* SeetingCenterModel.h */,
+				215346AB1F58058F006159AF /* SeetingCenterModel.m */,
+			);
+			path = "设置中心";
+			sourceTree = "<group>";
+		};
 		21545B371F42D41500CA7C3F /* ZBarSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -2714,6 +2750,7 @@
 		215F1D651F0B430600DD4AEE /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				215346A71F58056B006159AF /* 设置中心 */,
 				2153467B1F57BBCF006159AF /* 资金管理 */,
 				216AA1DC1F568DD10000A19A /* 购物车 */,
 				212737231F4D15A30067F571 /* 我的订单 */,
@@ -2850,6 +2887,7 @@
 		21B4A0491F4695A200EE3BE6 /* MineModel */ = {
 			isa = PBXGroup;
 			children = (
+				215346A91F58057D006159AF /* 设置中心 */,
 				2153468E1F57BE20006159AF /* 资金管理 */,
 				216AA1DE1F568DE30000A19A /* 购物车 */,
 				212737251F4D15B40067F571 /* 我的订单 */,
@@ -2870,6 +2908,7 @@
 		21B4A04B1F4695C900EE3BE6 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				215346A81F580575006159AF /* 设置中心 */,
 				2153468C1F57BDF3006159AF /* 资金管理 */,
 				216AA1DD1F568DDA0000A19A /* 购物车 */,
 				212737241F4D15AD0067F571 /* 我的订单 */,
@@ -3427,6 +3466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21ED75BD1F42A90A00D91E2C /* YBRectConst.m in Sources */,
+				215346B21F5807D7006159AF /* SeetingCenterViewController.m in Sources */,
 				21434CBC1EEA91170024FE96 /* UIViewController+HUD.m in Sources */,
 				21434CA11EEA91160024FE96 /* CycleScrollView.m in Sources */,
 				21434D7A1EEA91300024FE96 /* IndexModel.m in Sources */,
@@ -3528,6 +3568,7 @@
 				215F1D5E1F0B421500DD4AEE /* HomeViewController.m in Sources */,
 				21434CF01EEA91170024FE96 /* openssl_wrapper.m in Sources */,
 				21434CDE1EEA91170024FE96 /* EaseChatBarMoreView.m in Sources */,
+				215346AC1F58058F006159AF /* SeetingCenterModel.m in Sources */,
 				210808A91F4D526300E347E3 /* OrderYi1Model.m in Sources */,
 				21434CB71EEA91170024FE96 /* EaseUserModel.m in Sources */,
 				21C236AB1F3D430400DDA92B /* Index1Model.m in Sources */,
@@ -3595,6 +3636,7 @@
 				212F8D771F4AD47A00832B38 /* SDWaitingView.m in Sources */,
 				2120EE641F3D8CAC00661EBE /* BussinessSearchModel.m in Sources */,
 				21434CBD1EEA91170024FE96 /* EaseChineseToPinyin.m in Sources */,
+				215346AF1F5805B8006159AF /* SeetingCenterTableViewCell.m in Sources */,
 				21434CC41EEA91170024FE96 /* FixFopen.c in Sources */,
 				21BE22DD1F4C226700C2387D /* ZiXunTableViewCell.m in Sources */,
 				21434DB51EEA91480024FE96 /* RDVTabBar.m in Sources */,

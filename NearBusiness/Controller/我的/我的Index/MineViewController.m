@@ -17,6 +17,8 @@
 #import "BuyCarViewController.h"
 
 #import "FundManagementViewController.h"
+
+#import "SeetingCenterViewController.h"
 @interface MineViewController ()<UITableViewDataSource,UITableViewDelegate,MineIndex0TableViewCellDelegate,ImagePickerSheetViewControllerDelegate>{
     UITableView* _tableView;
 }
@@ -130,6 +132,9 @@
     NSLog(@"底部---%ld",itemIndex);
     if (0 == itemIndex) {
         FundManagementViewController* vc = [[FundManagementViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (2 == itemIndex){
+        SeetingCenterViewController* vc = [[SeetingCenterViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
