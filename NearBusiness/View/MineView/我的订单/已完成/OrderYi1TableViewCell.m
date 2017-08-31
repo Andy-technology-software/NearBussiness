@@ -53,6 +53,11 @@
     [self.comBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.comBtn setBackgroundColor:[MyController colorWithHexString:@"ffad16"]];
     self.comBtn.titleLabel.font = [UIFont systemFontOfSize:12];
+    //将图层的边框设置为圆脚
+    self.comBtn.layer.cornerRadius = 6;
+    self.comBtn.layer.masksToBounds = YES;
+    [self.comBtn setContentMode:UIViewContentModeScaleAspectFill];
+    self.comBtn.clipsToBounds = YES;
     [self.contentView addSubview:self.comBtn];
     
     [self.comBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -79,7 +84,7 @@
     self.hyb_bottomOffsetToCell = 0;
 }
 - (void)configCellWithModel:(OrderYi1Model *)model {
-    self.countPriceLable.text = model._countPrice;
+    self.countPriceLable.text = [NSString stringWithFormat:@"共%@件产品，合计：%@",model._countNum ,model._countPrice];
 }
 
 - (void)comBtnClick{

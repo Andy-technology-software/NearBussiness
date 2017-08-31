@@ -15,6 +15,8 @@
 #import "MyOrderViewController.h"
 
 #import "BuyCarViewController.h"
+
+#import "FundManagementViewController.h"
 @interface MineViewController ()<UITableViewDataSource,UITableViewDelegate,MineIndex0TableViewCellDelegate,ImagePickerSheetViewControllerDelegate>{
     UITableView* _tableView;
 }
@@ -126,6 +128,10 @@
 
 - (void)sendBackBottonIndex:(NSInteger)itemIndex{
     NSLog(@"底部---%ld",itemIndex);
+    if (0 == itemIndex) {
+        FundManagementViewController* vc = [[FundManagementViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (void)sendBackTopIndex:(NSInteger)itemIndex{

@@ -198,8 +198,6 @@
 		21434CFF1EEA91170024FE96 /* TTOpenInAppActivity8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21434C831EEA91160024FE96 /* TTOpenInAppActivity8@2x.png */; };
 		21434D001EEA91170024FE96 /* TTOpenInAppActivity8@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21434C841EEA91160024FE96 /* TTOpenInAppActivity8@3x.png */; };
 		21434D011EEA91170024FE96 /* TTOpenInAppActivity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21434C851EEA91160024FE96 /* TTOpenInAppActivity@2x.png */; };
-		21434D021EEA91170024FE96 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21434C881EEA91160024FE96 /* libWeChatSDK.a */; };
-		21434D031EEA91170024FE96 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 21434C891EEA91160024FE96 /* README.txt */; };
 		21434D041EEA91170024FE96 /* MXWechatPayHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 21434C901EEA91160024FE96 /* MXWechatPayHandler.m */; };
 		21434D051EEA91170024FE96 /* MXWechatSignAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 21434C921EEA91160024FE96 /* MXWechatSignAdaptor.m */; };
 		21434D061EEA91170024FE96 /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21434C941EEA91160024FE96 /* WXApiManager.m */; };
@@ -251,6 +249,15 @@
 		21434DE31EEA93910024FE96 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21434DE21EEA93910024FE96 /* AudioToolbox.framework */; };
 		21434DE51EEA93BC0024FE96 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21434DE41EEA93BC0024FE96 /* CoreMotion.framework */; };
 		21434DE71EEA93C80024FE96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21434DE61EEA93C80024FE96 /* Foundation.framework */; };
+		215346721F57A0B5006159AF /* OrderYi2TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 215346711F57A0B5006159AF /* OrderYi2TableViewCell.m */; };
+		215346761F57AB51006159AF /* OrderDaiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 215346751F57AB51006159AF /* OrderDaiTableViewCell.m */; };
+		2153467A1F57B451006159AF /* OrderDaishouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 215346791F57B451006159AF /* OrderDaishouTableViewCell.m */; };
+		215346821F57BC4D006159AF /* FundManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 215346811F57BC4D006159AF /* FundManagementViewController.m */; };
+		215346851F57BC64006159AF /* FundManagementCashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 215346841F57BC64006159AF /* FundManagementCashViewController.m */; };
+		215346881F57BC72006159AF /* FundManagementRedPackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 215346871F57BC72006159AF /* FundManagementRedPackViewController.m */; };
+		2153468B1F57BC7F006159AF /* FundManagementCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2153468A1F57BC7F006159AF /* FundManagementCardViewController.m */; };
+		215346921F57BE41006159AF /* FundManagementCashModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 215346911F57BE41006159AF /* FundManagementCashModel.m */; };
+		215346951F57BE9B006159AF /* FundManagementCashTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 215346941F57BE9B006159AF /* FundManagementCashTableViewCell.m */; };
 		21545B641F42D41500CA7C3F /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21545B4F1F42D41500CA7C3F /* libzbar.a */; };
 		21545B651F42D41500CA7C3F /* qrcode_scan_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21545B511F42D41500CA7C3F /* qrcode_scan_bar@2x.png */; };
 		21545B661F42D41500CA7C3F /* qrcode_scan_bg_Green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21545B521F42D41500CA7C3F /* qrcode_scan_bg_Green@2x.png */; };
@@ -808,11 +815,6 @@
 		21434C831EEA91160024FE96 /* TTOpenInAppActivity8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTOpenInAppActivity8@2x.png"; sourceTree = "<group>"; };
 		21434C841EEA91160024FE96 /* TTOpenInAppActivity8@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTOpenInAppActivity8@3x.png"; sourceTree = "<group>"; };
 		21434C851EEA91160024FE96 /* TTOpenInAppActivity@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTOpenInAppActivity@2x.png"; sourceTree = "<group>"; };
-		21434C881EEA91160024FE96 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		21434C891EEA91160024FE96 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		21434C8A1EEA91160024FE96 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
-		21434C8B1EEA91160024FE96 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		21434C8C1EEA91160024FE96 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		21434C8E1EEA91160024FE96 /* MXWechatConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXWechatConfig.h; sourceTree = "<group>"; };
 		21434C8F1EEA91160024FE96 /* MXWechatPayHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXWechatPayHandler.h; sourceTree = "<group>"; };
 		21434C901EEA91160024FE96 /* MXWechatPayHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXWechatPayHandler.m; sourceTree = "<group>"; };
@@ -899,6 +901,24 @@
 		21434DE21EEA93910024FE96 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		21434DE41EEA93BC0024FE96 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		21434DE61EEA93C80024FE96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		215346701F57A0B5006159AF /* OrderYi2TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderYi2TableViewCell.h; sourceTree = "<group>"; };
+		215346711F57A0B5006159AF /* OrderYi2TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderYi2TableViewCell.m; sourceTree = "<group>"; };
+		215346741F57AB51006159AF /* OrderDaiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDaiTableViewCell.h; sourceTree = "<group>"; };
+		215346751F57AB51006159AF /* OrderDaiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDaiTableViewCell.m; sourceTree = "<group>"; };
+		215346781F57B451006159AF /* OrderDaishouTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDaishouTableViewCell.h; sourceTree = "<group>"; };
+		215346791F57B451006159AF /* OrderDaishouTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDaishouTableViewCell.m; sourceTree = "<group>"; };
+		215346801F57BC4D006159AF /* FundManagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundManagementViewController.h; sourceTree = "<group>"; };
+		215346811F57BC4D006159AF /* FundManagementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundManagementViewController.m; sourceTree = "<group>"; };
+		215346831F57BC64006159AF /* FundManagementCashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundManagementCashViewController.h; sourceTree = "<group>"; };
+		215346841F57BC64006159AF /* FundManagementCashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundManagementCashViewController.m; sourceTree = "<group>"; };
+		215346861F57BC72006159AF /* FundManagementRedPackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundManagementRedPackViewController.h; sourceTree = "<group>"; };
+		215346871F57BC72006159AF /* FundManagementRedPackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundManagementRedPackViewController.m; sourceTree = "<group>"; };
+		215346891F57BC7F006159AF /* FundManagementCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundManagementCardViewController.h; sourceTree = "<group>"; };
+		2153468A1F57BC7F006159AF /* FundManagementCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundManagementCardViewController.m; sourceTree = "<group>"; };
+		215346901F57BE41006159AF /* FundManagementCashModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundManagementCashModel.h; sourceTree = "<group>"; };
+		215346911F57BE41006159AF /* FundManagementCashModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundManagementCashModel.m; sourceTree = "<group>"; };
+		215346931F57BE9B006159AF /* FundManagementCashTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundManagementCashTableViewCell.h; sourceTree = "<group>"; };
+		215346941F57BE9B006159AF /* FundManagementCashTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundManagementCashTableViewCell.m; sourceTree = "<group>"; };
 		21545B3B1F42D41500CA7C3F /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
 		21545B3C1F42D41500CA7C3F /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
 		21545B3D1F42D41500CA7C3F /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
@@ -1126,7 +1146,6 @@
 				21434DC71EEA92B80024FE96 /* libc++.tbd in Frameworks */,
 				21434DC51EEA92A30024FE96 /* libstdc++.6.0.9.tbd in Frameworks */,
 				21434CF71EEA91170024FE96 /* libPaymentControl.a in Frameworks */,
-				21434D021EEA91170024FE96 /* libWeChatSDK.a in Frameworks */,
 				21B9501C1EEA99430089CF9B /* libPods-NearBusiness.a in Frameworks */,
 				21434CF61EEA91170024FE96 /* libssl.a in Frameworks */,
 				21434CF51EEA91170024FE96 /* libcrypto.a in Frameworks */,
@@ -1278,6 +1297,8 @@
 		212737241F4D15AD0067F571 /* 我的订单 */ = {
 			isa = PBXGroup;
 			children = (
+				215346771F57B412006159AF /* 待收货 */,
+				215346731F57AB36006159AF /* 待付款 */,
 				212737271F4D15CA0067F571 /* 已完成 */,
 			);
 			path = "我的订单";
@@ -1309,6 +1330,8 @@
 				210808AB1F4D52F200E347E3 /* OrderYiTableViewCell.m */,
 				210808AD1F4D52FC00E347E3 /* OrderYi1TableViewCell.h */,
 				210808AE1F4D52FC00E347E3 /* OrderYi1TableViewCell.m */,
+				215346701F57A0B5006159AF /* OrderYi2TableViewCell.h */,
+				215346711F57A0B5006159AF /* OrderYi2TableViewCell.m */,
 			);
 			path = "已完成";
 			sourceTree = "<group>";
@@ -1543,7 +1566,6 @@
 				21434C071EEA91160024FE96 /* IntegratedAlipay */,
 				21434C711EEA91160024FE96 /* paymentcontrol */,
 				21434C7C1EEA91160024FE96 /* TTOpenInAppActivity */,
-				21434C861EEA91160024FE96 /* Wechat */,
 				21434C8D1EEA91160024FE96 /* WechatTool */,
 				21434C981EEA91160024FE96 /* WJDropDownMenu */,
 			);
@@ -2158,26 +2180,6 @@
 			path = TTOpenInAppActivity;
 			sourceTree = "<group>";
 		};
-		21434C861EEA91160024FE96 /* Wechat */ = {
-			isa = PBXGroup;
-			children = (
-				21434C871EEA91160024FE96 /* OpenSDK1.7.4 2 */,
-			);
-			path = Wechat;
-			sourceTree = "<group>";
-		};
-		21434C871EEA91160024FE96 /* OpenSDK1.7.4 2 */ = {
-			isa = PBXGroup;
-			children = (
-				21434C881EEA91160024FE96 /* libWeChatSDK.a */,
-				21434C891EEA91160024FE96 /* README.txt */,
-				21434C8A1EEA91160024FE96 /* WechatAuthSDK.h */,
-				21434C8B1EEA91160024FE96 /* WXApi.h */,
-				21434C8C1EEA91160024FE96 /* WXApiObject.h */,
-			);
-			path = "OpenSDK1.7.4 2";
-			sourceTree = "<group>";
-		};
 		21434C8D1EEA91160024FE96 /* WechatTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -2449,6 +2451,105 @@
 			path = PayVC;
 			sourceTree = "<group>";
 		};
+		215346731F57AB36006159AF /* 待付款 */ = {
+			isa = PBXGroup;
+			children = (
+				215346741F57AB51006159AF /* OrderDaiTableViewCell.h */,
+				215346751F57AB51006159AF /* OrderDaiTableViewCell.m */,
+			);
+			path = "待付款";
+			sourceTree = "<group>";
+		};
+		215346771F57B412006159AF /* 待收货 */ = {
+			isa = PBXGroup;
+			children = (
+				215346781F57B451006159AF /* OrderDaishouTableViewCell.h */,
+				215346791F57B451006159AF /* OrderDaishouTableViewCell.m */,
+			);
+			path = "待收货";
+			sourceTree = "<group>";
+		};
+		2153467B1F57BBCF006159AF /* 资金管理 */ = {
+			isa = PBXGroup;
+			children = (
+				2153467F1F57BC16006159AF /* 资金管理购物卡 */,
+				2153467E1F57BC0C006159AF /* 资金管理红包 */,
+				2153467D1F57BC01006159AF /* 资金管理现金 */,
+				2153467C1F57BBF2006159AF /* 资金管理首页 */,
+			);
+			path = "资金管理";
+			sourceTree = "<group>";
+		};
+		2153467C1F57BBF2006159AF /* 资金管理首页 */ = {
+			isa = PBXGroup;
+			children = (
+				215346801F57BC4D006159AF /* FundManagementViewController.h */,
+				215346811F57BC4D006159AF /* FundManagementViewController.m */,
+			);
+			path = "资金管理首页";
+			sourceTree = "<group>";
+		};
+		2153467D1F57BC01006159AF /* 资金管理现金 */ = {
+			isa = PBXGroup;
+			children = (
+				215346831F57BC64006159AF /* FundManagementCashViewController.h */,
+				215346841F57BC64006159AF /* FundManagementCashViewController.m */,
+			);
+			path = "资金管理现金";
+			sourceTree = "<group>";
+		};
+		2153467E1F57BC0C006159AF /* 资金管理红包 */ = {
+			isa = PBXGroup;
+			children = (
+				215346861F57BC72006159AF /* FundManagementRedPackViewController.h */,
+				215346871F57BC72006159AF /* FundManagementRedPackViewController.m */,
+			);
+			path = "资金管理红包";
+			sourceTree = "<group>";
+		};
+		2153467F1F57BC16006159AF /* 资金管理购物卡 */ = {
+			isa = PBXGroup;
+			children = (
+				215346891F57BC7F006159AF /* FundManagementCardViewController.h */,
+				2153468A1F57BC7F006159AF /* FundManagementCardViewController.m */,
+			);
+			path = "资金管理购物卡";
+			sourceTree = "<group>";
+		};
+		2153468C1F57BDF3006159AF /* 资金管理 */ = {
+			isa = PBXGroup;
+			children = (
+				2153468D1F57BE02006159AF /* 资金管理现金 */,
+			);
+			path = "资金管理";
+			sourceTree = "<group>";
+		};
+		2153468D1F57BE02006159AF /* 资金管理现金 */ = {
+			isa = PBXGroup;
+			children = (
+				215346931F57BE9B006159AF /* FundManagementCashTableViewCell.h */,
+				215346941F57BE9B006159AF /* FundManagementCashTableViewCell.m */,
+			);
+			path = "资金管理现金";
+			sourceTree = "<group>";
+		};
+		2153468E1F57BE20006159AF /* 资金管理 */ = {
+			isa = PBXGroup;
+			children = (
+				2153468F1F57BE29006159AF /* 资金管理现金 */,
+			);
+			path = "资金管理";
+			sourceTree = "<group>";
+		};
+		2153468F1F57BE29006159AF /* 资金管理现金 */ = {
+			isa = PBXGroup;
+			children = (
+				215346901F57BE41006159AF /* FundManagementCashModel.h */,
+				215346911F57BE41006159AF /* FundManagementCashModel.m */,
+			);
+			path = "资金管理现金";
+			sourceTree = "<group>";
+		};
 		21545B371F42D41500CA7C3F /* ZBarSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -2613,6 +2714,7 @@
 		215F1D651F0B430600DD4AEE /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				2153467B1F57BBCF006159AF /* 资金管理 */,
 				216AA1DC1F568DD10000A19A /* 购物车 */,
 				212737231F4D15A30067F571 /* 我的订单 */,
 				215F1D661F0B431500DD4AEE /* 我的Index */,
@@ -2748,6 +2850,7 @@
 		21B4A0491F4695A200EE3BE6 /* MineModel */ = {
 			isa = PBXGroup;
 			children = (
+				2153468E1F57BE20006159AF /* 资金管理 */,
 				216AA1DE1F568DE30000A19A /* 购物车 */,
 				212737251F4D15B40067F571 /* 我的订单 */,
 				21B4A04A1F4695B700EE3BE6 /* 我的首页 */,
@@ -2767,6 +2870,7 @@
 		21B4A04B1F4695C900EE3BE6 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				2153468C1F57BDF3006159AF /* 资金管理 */,
 				216AA1DD1F568DDA0000A19A /* 购物车 */,
 				212737241F4D15AD0067F571 /* 我的订单 */,
 				21B4A04C1F4695DC00EE3BE6 /* 我的首页 */,
@@ -3147,7 +3251,6 @@
 				2120EE401F3D7D8D00661EBE /* shouji@3x.png in Resources */,
 				215F21BD1F0B664100DD4AEE /* 客户-选中@3x.png in Resources */,
 				ECB7D6A71F4B04C300CD7DA7 /* 16.jpg in Resources */,
-				21434D031EEA91170024FE96 /* README.txt in Resources */,
 				2120EE431F3D7D8D00661EBE /* shouyezhongdian@2x.png in Resources */,
 				ECB7D6A01F4B04C300CD7DA7 /* 1.jpg in Resources */,
 				2120EE201F3D7D8D00661EBE /* daka1@2x.png in Resources */,
@@ -3339,6 +3442,7 @@
 				21434D551EEA91300024FE96 /* FMDatabaseQueue.m in Sources */,
 				21434CC51EEA91170024FE96 /* EaseConversationListViewController.m in Sources */,
 				212F8D7F1F4AD57800832B38 /* ZiXunModel.m in Sources */,
+				2153467A1F57B451006159AF /* OrderDaishouTableViewCell.m in Sources */,
 				21434DB21EEA91480024FE96 /* SelfInfoViewController.m in Sources */,
 				21434D081EEA91170024FE96 /* WJDropdownMenu.m in Sources */,
 				21434CAB1EEA91160024FE96 /* EMCDDeviceManager+Microphone.m in Sources */,
@@ -3347,6 +3451,7 @@
 				21434D541EEA91300024FE96 /* FMDatabasePool.m in Sources */,
 				21B4A0551F46972100EE3BE6 /* MineIndex0Model.m in Sources */,
 				21434CEB1EEA91170024FE96 /* base64.m in Sources */,
+				215346851F57BC64006159AF /* FundManagementCashViewController.m in Sources */,
 				216AA1D41F5643A20000A19A /* LocationMapModel.m in Sources */,
 				21434CE21EEA91170024FE96 /* XRQGetIP.m in Sources */,
 				21434D071EEA91170024FE96 /* XMLDictionary.m in Sources */,
@@ -3361,6 +3466,7 @@
 				21434CD01EEA91170024FE96 /* EaseBubbleView+File.m in Sources */,
 				212F8D601F4AAB8400832B38 /* LoginViewController.m in Sources */,
 				21434CB81EEA91170024FE96 /* NSDate+Category.m in Sources */,
+				215346951F57BE9B006159AF /* FundManagementCashTableViewCell.m in Sources */,
 				21434CBB1EEA91170024FE96 /* UIViewController+DismissKeyboard.m in Sources */,
 				21434DBD1EEA91480024FE96 /* PayViewController.mm in Sources */,
 				21434D571EEA91300024FE96 /* LoginDataBaseModel.m in Sources */,
@@ -3384,6 +3490,7 @@
 				21434CEE1EEA91170024FE96 /* MD5DataSigner.m in Sources */,
 				210808AF1F4D52FC00E347E3 /* OrderYi1TableViewCell.m in Sources */,
 				21434CB01EEA91160024FE96 /* wav.mm in Sources */,
+				215346721F57A0B5006159AF /* OrderYi2TableViewCell.m in Sources */,
 				21434C9C1EEA91160024FE96 /* BaseViewController.m in Sources */,
 				21434B111EEA8B470024FE96 /* AppDelegate.m in Sources */,
 				21434D7C1EEA91300024FE96 /* GoodsListCell.m in Sources */,
@@ -3391,6 +3498,7 @@
 				21434DBB1EEA91480024FE96 /* GoodsListViewController.m in Sources */,
 				21434CA61EEA91160024FE96 /* EaseUI.m in Sources */,
 				21434D7B1EEA91300024FE96 /* VideoModel.m in Sources */,
+				215346821F57BC4D006159AF /* FundManagementViewController.m in Sources */,
 				21434DB71EEA91480024FE96 /* RDVTabBarItem.m in Sources */,
 				21ED75901F42734700D91E2C /* ShangPinModel.m in Sources */,
 				21B4A0611F46D3FA00EE3BE6 /* ActivityViewController.m in Sources */,
@@ -3398,10 +3506,13 @@
 				21545B761F42D41500CA7C3F /* ZCZBarViewController.mm in Sources */,
 				21434CD41EEA91170024FE96 /* EaseBubbleView+Text.m in Sources */,
 				21434CA01EEA91160024FE96 /* CollectionViewCell.m in Sources */,
+				215346761F57AB51006159AF /* OrderDaiTableViewCell.m in Sources */,
 				21434CAE1EEA91160024FE96 /* EMCDDeviceManagerBase.m in Sources */,
 				21434CC21EEA91170024FE96 /* EaseEmotionEscape.m in Sources */,
 				21434CD51EEA91170024FE96 /* EaseBubbleView+Video.m in Sources */,
+				215346921F57BE41006159AF /* FundManagementCashModel.m in Sources */,
 				21434DB61EEA91480024FE96 /* RDVTabBarController.m in Sources */,
+				215346881F57BC72006159AF /* FundManagementRedPackViewController.m in Sources */,
 				21434CB51EEA91170024FE96 /* EaseConversationModel.m in Sources */,
 				21434C9D1EEA91160024FE96 /* HUD.m in Sources */,
 				212F8D641F4AAB9700832B38 /* LoginTableViewCell.m in Sources */,
@@ -3499,6 +3610,7 @@
 				2174829A1F4182B9004B5769 /* JieShaoViewController.m in Sources */,
 				21434CAA1EEA91160024FE96 /* EMCDDeviceManager+Media.m in Sources */,
 				21434CAD1EEA91160024FE96 /* EMCDDeviceManager+Remind.m in Sources */,
+				2153468B1F57BC7F006159AF /* FundManagementCardViewController.m in Sources */,
 				21434B0E1EEA8B470024FE96 /* main.m in Sources */,
 				21434CBA1EEA91170024FE96 /* NSString+Valid.m in Sources */,
 				21434CC91EEA91170024FE96 /* EaseUsersListViewController.m in Sources */,

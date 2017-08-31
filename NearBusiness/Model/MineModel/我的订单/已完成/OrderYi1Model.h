@@ -10,5 +10,6 @@
 
 @interface OrderYi1Model : NSObject
 @property(nonatomic,copy)NSString* _countPrice;
+@property(nonatomic,copy)NSString* _countNum;
 
 @end

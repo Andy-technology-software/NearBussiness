@@ -44,18 +44,28 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"位置";
+    
     [self createTableView];
+    
     [self makeLocat];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
-                                              initWithImage:[UIImage imageNamed:@""]
-                                              style:UIBarButtonItemStylePlain
-                                              target:self
-                                              action:@selector(rihgtBtnAction)];
-    self.navigationItem.rightBarButtonItem.title = @"确定";
-    
+    [self makeRightNavBtn];
 }
-- (void)rihgtBtnAction{
+
+#pragma mark - 创建导航右按钮
+- (void)makeRightNavBtn{
+    UIButton*rightButton1 = [[UIButton alloc]initWithFrame:CGRectMake(0,0,40,27)];
+    [rightButton1 setTitle:@"确定" forState:UIControlStateNormal];
+    rightButton1.titleLabel.font = [UIFont systemFontOfSize:14];
+    [rightButton1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
+    [rightButton1 addTarget:self action:@selector(editBtnClick)forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem*rightItem1 = [[UIBarButtonItem alloc]initWithCustomView:rightButton1];
+    self.navigationItem.rightBarButtonItem= rightItem1;
+}
+
+#pragma mark - 编辑按钮响应
+- (void)editBtnClick{
     NSLog(@"确定");
     for (int i = 0; i < self.dataSourceArr.count; i++) {
         LocationMapModel* model = self.dataSourceArr[i];
@@ -246,6 +256,7 @@
     }
     [_tableView reloadData];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

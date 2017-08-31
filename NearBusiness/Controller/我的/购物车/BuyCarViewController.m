@@ -40,6 +40,8 @@
     
     [self createTableView];
     
+    [self makeBottomView];
+    
     [self makeData];
 }
 
@@ -48,6 +50,21 @@
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
+#pragma mark - 创建底部按钮
+- (void)makeBottomView{
+    UIButton* payBtn = [MyController createButtonWithFrame:CGRectMake(0, CGRectGetMaxY(_tableView.frame), [MyController getScreenWidth], 40) ImageName:nil Target:self Action:@selector(payBtnClick) Title:@"结算"];
+    [payBtn setBackgroundColor:[MyController colorWithHexString:@"ee4737"]];
+    [payBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    payBtn.titleLabel.font = [UIFont systemFontOfSize:16];
+    [self.view addSubview:payBtn];
+}
+
+#pragma mark - 结算按钮响应
+- (void)payBtnClick{
+    
+}
+
+#pragma mark - 创建导航右按钮
 - (void)makeRightNavBtn{
     UIButton*rightButton1 = [[UIButton alloc]initWithFrame:CGRectMake(0,0,40,27)];
     [rightButton1 setTitle:@"编辑" forState:UIControlStateNormal];
@@ -59,6 +76,7 @@
     self.navigationItem.rightBarButtonItem= rightItem1;
 }
 
+#pragma mark - 编辑按钮响应
 - (void)editBtnClick{
     NSLog(@"编辑");
 }
@@ -66,7 +84,7 @@
 #pragma mark - 初始化tableView
 - (void)createTableView{
     self.automaticallyAdjustsScrollViewInsets = NO;
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, [MyController isIOS7], self.view.frame.size.width, self.view.frame.size.height - [MyController isIOS7]) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, [MyController isIOS7], self.view.frame.size.width, self.view.frame.size.height - [MyController isIOS7] - 40) style:UITableViewStylePlain];
     _tableView.dataSource = self;
     _tableView.delegate = self;
     UIImageView *tableBg = [[UIImageView alloc] initWithImage:nil];
@@ -186,6 +204,43 @@
     return bgView;
 }
 
+
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return   UITableViewCellEditingStyleDelete;
+    
+}
+
+#pragma mark - 先要设Cell可编辑
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+    
+}
+
+#pragma mark - 进入编辑模式，按下出现的编辑按钮后
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView setEditing:NO animated:YES];
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [self.dataSource[indexPath.section] removeObjectAtIndex:indexPath.row];
+        //一个section刷新
+        NSIndexSet *indexSet=[[NSIndexSet alloc]initWithIndex:indexPath.section];
+        [_tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+        
+    }
+}
+
+#pragma mark - 修改编辑按钮文字
+- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return @"删除";
+    
+}
+
+#pragma mark - 设置进入编辑状态时，Cell不会缩进
+- (BOOL)tableView: (UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath{
+    return NO;
+    
+}
+
+
 #pragma mark - 选中一组响应
 - (void)shopBtnClick:(UIButton*)btn{
     self.selectArr[btn.tag] = [NSString stringWithFormat:@"%d",![self.selectArr[btn.tag] intValue]];
@@ -204,7 +259,6 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 40;
 }
-
 
 - (void)makeData{
     self.selectArr = [[NSMutableArray alloc] init];
@@ -225,8 +279,6 @@
     }
     [_tableView reloadData];
 }
-
-
 
 
 - (void)didReceiveMemoryWarning {

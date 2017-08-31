@@ -45,11 +45,14 @@
     
     self.priceLable = [MyController createLabelWithFrame:self.contentView.frame Font:14 Text:nil];
     self.priceLable.textColor = [MyController colorWithHexString:DEFTNAVCOLOR];
+    self.priceLable.numberOfLines = 1;
+    self.priceLable.textAlignment = NSTextAlignmentRight;
     [self.contentView addSubview:self.priceLable];
     
     [self.priceLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.mas_equalTo(-10);
-        make.top.mas_equalTo(18);
+        make.top.mas_equalTo(14);
+        make.width.mas_greaterThanOrEqualTo(51);
     }];
     
     
@@ -61,8 +64,19 @@
     
     [self.titleLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.leftIV.mas_right).mas_offset(10);
-        make.right.mas_equalTo(self.priceLable.mas_left).mas_offset(-3);
+        make.right.mas_equalTo(self.priceLable.mas_left).mas_offset(-5);
         make.top.mas_equalTo(self.priceLable);
+    }];
+    
+    self.numLable = [MyController createLabelWithFrame:self.contentView.frame Font:12 Text:nil];
+    self.numLable.textColor = [MyController colorWithHexString:@"4c4c4c"];
+    self.numLable.textAlignment = NSTextAlignmentRight;
+    [self.contentView addSubview:self.numLable];
+    
+    [self.numLable mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(self.leftIV);
+        make.width.mas_greaterThanOrEqualTo(51);
+        make.right.mas_equalTo(self.priceLable);
     }];
     
     self.desLable = [MyController createLabelWithFrame:self.contentView.frame Font:12 Text:nil];
@@ -73,17 +87,8 @@
     
     [self.desLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.titleLable);
-        make.right.mas_equalTo(self.titleLable);
-        make.top.mas_equalTo(self.titleLable.mas_bottom).mas_offset(10);
-    }];
-    
-    self.numLable = [MyController createLabelWithFrame:self.contentView.frame Font:12 Text:nil];
-    self.numLable.textColor = [MyController colorWithHexString:@"4c4c4c"];
-    [self.contentView addSubview:self.numLable];
-    
-    [self.numLable mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.mas_equalTo(self.numLable.mas_left).mas_offset(-5);
         make.bottom.mas_equalTo(self.leftIV);
-        make.right.mas_equalTo(self.priceLable);
     }];
     
     self.lineView = [[UIView alloc] init];
@@ -109,6 +114,8 @@
     self.desLable.text = model._des;
     
     self.numLable.text = [NSString stringWithFormat:@"X%@",model._num];
+    
+    self.priceLable.text = [NSString stringWithFormat:@"￥%@",model._price];
 }
 
 
