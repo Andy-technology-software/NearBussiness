@@ -19,6 +19,8 @@
 #import "ProductDetails1TableViewCell.h"
 
 #import "ProductDetails2TableViewCell.h"
+
+#import "SendOrderViewController.h"
 @interface ProductDetailsViewController ()<UITableViewDataSource,UITableViewDelegate,ProductDetails0TableViewCellDelegate,ProductDetails2TableViewCellDelegate,MWPhotoBrowserDelegate>{
     UITableView* _tableView;
 }
@@ -181,6 +183,8 @@
 #pragma mark - 购买响应
 - (void)buyBtnClick{
     NSLog(@"购买");
+    SendOrderViewController* vc = [[SendOrderViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)zixunBtnClick{

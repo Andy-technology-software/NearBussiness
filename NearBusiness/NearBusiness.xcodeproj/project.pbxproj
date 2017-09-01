@@ -23,6 +23,13 @@
 		210AAA311F590E6D00EE19BF /* ZixunDetail1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA301F590E6D00EE19BF /* ZixunDetail1TableViewCell.m */; };
 		210AAA341F59111800EE19BF /* ZixunDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA331F59111800EE19BF /* ZixunDetailViewController.m */; };
 		210AAA381F59363D00EE19BF /* UITextView+placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA371F59363D00EE19BF /* UITextView+placeholder.m */; };
+		210AAA3C1F594F7800EE19BF /* SendOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA3B1F594F7800EE19BF /* SendOrderViewController.m */; };
+		210AAA411F594FF300EE19BF /* SendOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA401F594FF300EE19BF /* SendOrderModel.m */; };
+		210AAA441F59500300EE19BF /* SendOrder1Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA431F59500300EE19BF /* SendOrder1Model.m */; };
+		210AAA471F59501000EE19BF /* SendOrder2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA461F59501000EE19BF /* SendOrder2Model.m */; };
+		210AAA4A1F59506300EE19BF /* SendOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA491F59506300EE19BF /* SendOrderTableViewCell.m */; };
+		210AAA4D1F59506800EE19BF /* SendOrder1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA4C1F59506800EE19BF /* SendOrder1TableViewCell.m */; };
+		210AAA501F59506D00EE19BF /* SendOrder2TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA4F1F59506D00EE19BF /* SendOrder2TableViewCell.m */; };
 		2120EDD31F3D5A6000661EBE /* BussinessRecommendationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2120EDD21F3D5A6000661EBE /* BussinessRecommendationModel.m */; };
 		2120EDD61F3D5AB800661EBE /* BussinessRecommendationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2120EDD51F3D5AB800661EBE /* BussinessRecommendationTableViewCell.m */; };
 		2120EE1A1F3D7D8D00661EBE /* atta@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2120EDD81F3D7D8D00661EBE /* atta@2x.png */; };
@@ -465,6 +472,20 @@
 		210AAA331F59111800EE19BF /* ZixunDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZixunDetailViewController.m; sourceTree = "<group>"; };
 		210AAA361F59363D00EE19BF /* UITextView+placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+placeholder.h"; sourceTree = "<group>"; };
 		210AAA371F59363D00EE19BF /* UITextView+placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+placeholder.m"; sourceTree = "<group>"; };
+		210AAA3A1F594F7800EE19BF /* SendOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendOrderViewController.h; sourceTree = "<group>"; };
+		210AAA3B1F594F7800EE19BF /* SendOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendOrderViewController.m; sourceTree = "<group>"; };
+		210AAA3F1F594FF300EE19BF /* SendOrderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendOrderModel.h; sourceTree = "<group>"; };
+		210AAA401F594FF300EE19BF /* SendOrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendOrderModel.m; sourceTree = "<group>"; };
+		210AAA421F59500300EE19BF /* SendOrder1Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendOrder1Model.h; sourceTree = "<group>"; };
+		210AAA431F59500300EE19BF /* SendOrder1Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendOrder1Model.m; sourceTree = "<group>"; };
+		210AAA451F59501000EE19BF /* SendOrder2Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendOrder2Model.h; sourceTree = "<group>"; };
+		210AAA461F59501000EE19BF /* SendOrder2Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendOrder2Model.m; sourceTree = "<group>"; };
+		210AAA481F59506300EE19BF /* SendOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendOrderTableViewCell.h; sourceTree = "<group>"; };
+		210AAA491F59506300EE19BF /* SendOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendOrderTableViewCell.m; sourceTree = "<group>"; };
+		210AAA4B1F59506800EE19BF /* SendOrder1TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendOrder1TableViewCell.h; sourceTree = "<group>"; };
+		210AAA4C1F59506800EE19BF /* SendOrder1TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendOrder1TableViewCell.m; sourceTree = "<group>"; };
+		210AAA4E1F59506D00EE19BF /* SendOrder2TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendOrder2TableViewCell.h; sourceTree = "<group>"; };
+		210AAA4F1F59506D00EE19BF /* SendOrder2TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendOrder2TableViewCell.m; sourceTree = "<group>"; };
 		2120EDD11F3D5A6000661EBE /* BussinessRecommendationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BussinessRecommendationModel.h; sourceTree = "<group>"; };
 		2120EDD21F3D5A6000661EBE /* BussinessRecommendationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BussinessRecommendationModel.m; sourceTree = "<group>"; };
 		2120EDD41F3D5AB800661EBE /* BussinessRecommendationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BussinessRecommendationTableViewCell.h; sourceTree = "<group>"; };
@@ -1307,6 +1328,41 @@
 				210AAA371F59363D00EE19BF /* UITextView+placeholder.m */,
 			);
 			path = MyTextView;
+			sourceTree = "<group>";
+		};
+		210AAA391F594F6700EE19BF /* 确认订单 */ = {
+			isa = PBXGroup;
+			children = (
+				210AAA3A1F594F7800EE19BF /* SendOrderViewController.h */,
+				210AAA3B1F594F7800EE19BF /* SendOrderViewController.m */,
+			);
+			path = "确认订单";
+			sourceTree = "<group>";
+		};
+		210AAA3D1F594FDD00EE19BF /* 确认订单 */ = {
+			isa = PBXGroup;
+			children = (
+				210AAA481F59506300EE19BF /* SendOrderTableViewCell.h */,
+				210AAA491F59506300EE19BF /* SendOrderTableViewCell.m */,
+				210AAA4B1F59506800EE19BF /* SendOrder1TableViewCell.h */,
+				210AAA4C1F59506800EE19BF /* SendOrder1TableViewCell.m */,
+				210AAA4E1F59506D00EE19BF /* SendOrder2TableViewCell.h */,
+				210AAA4F1F59506D00EE19BF /* SendOrder2TableViewCell.m */,
+			);
+			path = "确认订单";
+			sourceTree = "<group>";
+		};
+		210AAA3E1F594FE500EE19BF /* 确认订单 */ = {
+			isa = PBXGroup;
+			children = (
+				210AAA3F1F594FF300EE19BF /* SendOrderModel.h */,
+				210AAA401F594FF300EE19BF /* SendOrderModel.m */,
+				210AAA421F59500300EE19BF /* SendOrder1Model.h */,
+				210AAA431F59500300EE19BF /* SendOrder1Model.m */,
+				210AAA451F59501000EE19BF /* SendOrder2Model.h */,
+				210AAA461F59501000EE19BF /* SendOrder2Model.m */,
+			);
+			path = "确认订单";
 			sourceTree = "<group>";
 		};
 		2120EDCF1F3D5A1400661EBE /* 商家推荐 */ = {
@@ -2421,6 +2477,7 @@
 		21434D401EEA91300024FE96 /* IndexModel */ = {
 			isa = PBXGroup;
 			children = (
+				210AAA3E1F594FE500EE19BF /* 确认订单 */,
 				216AA1D11F56438C0000A19A /* 位置地图 */,
 				21ED75981F427D6D00D91E2C /* 商品详情 */,
 				217482A21F418EBD004B5769 /* 商家详情 */,
@@ -2476,6 +2533,7 @@
 		21434D4B1EEA91300024FE96 /* IndexView */ = {
 			isa = PBXGroup;
 			children = (
+				210AAA3D1F594FDD00EE19BF /* 确认订单 */,
 				21ED75AC1F42A4FD00D91E2C /* 位置地图 */,
 				21ED75991F427D7500D91E2C /* 商品详情 */,
 				2174829E1F418D64004B5769 /* 商家详情 */,
@@ -2807,6 +2865,7 @@
 		215F1D5A1F0B41C400DD4AEE /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				210AAA391F594F6700EE19BF /* 确认订单 */,
 				21ED75B01F42A52E00D91E2C /* 位置地图 */,
 				21ED75941F427C4A00D91E2C /* 商品详情 */,
 				217482941F417F6F004B5769 /* 商家详情 */,
@@ -3671,6 +3730,7 @@
 				21434D531EEA91300024FE96 /* FMDatabaseAdditions.m in Sources */,
 				21434DBF1EEA91480024FE96 /* RDVSecondViewController.m in Sources */,
 				21434CEE1EEA91170024FE96 /* MD5DataSigner.m in Sources */,
+				210AAA4D1F59506800EE19BF /* SendOrder1TableViewCell.m in Sources */,
 				210808AF1F4D52FC00E347E3 /* OrderYi1TableViewCell.m in Sources */,
 				21434CB01EEA91160024FE96 /* wav.mm in Sources */,
 				215346721F57A0B5006159AF /* OrderYi2TableViewCell.m in Sources */,
@@ -3690,6 +3750,7 @@
 				21434CD41EEA91170024FE96 /* EaseBubbleView+Text.m in Sources */,
 				210AAA1D1F58ED8200EE19BF /* SendComTableViewCell.m in Sources */,
 				21434CA01EEA91160024FE96 /* CollectionViewCell.m in Sources */,
+				210AAA471F59501000EE19BF /* SendOrder2Model.m in Sources */,
 				215346761F57AB51006159AF /* OrderDaiTableViewCell.m in Sources */,
 				21434CAE1EEA91160024FE96 /* EMCDDeviceManagerBase.m in Sources */,
 				21434CC21EEA91170024FE96 /* EaseEmotionEscape.m in Sources */,
@@ -3736,6 +3797,7 @@
 				21E535271F56A9F600EC6BF3 /* BuyCarViewController.m in Sources */,
 				21ED759F1F427DA200D91E2C /* ProductDetails1Model.m in Sources */,
 				21434CDA1EEA91170024FE96 /* EaseImageView.m in Sources */,
+				210AAA4A1F59506300EE19BF /* SendOrderTableViewCell.m in Sources */,
 				21434CC11EEA91170024FE96 /* EaseEmojiEmoticons.m in Sources */,
 				21434DB31EEA91480024FE96 /* SingleChatViewController.m in Sources */,
 				21B4A05B1F46D3E500EE3BE6 /* InfoViewController.m in Sources */,
@@ -3751,6 +3813,7 @@
 				210AAA151F58DE2000EE19BF /* Regist1TableViewCell.m in Sources */,
 				210AAA341F59111800EE19BF /* ZixunDetailViewController.m in Sources */,
 				21434CD11EEA91170024FE96 /* EaseBubbleView+Gif.m in Sources */,
+				210AAA501F59506D00EE19BF /* SendOrder2TableViewCell.m in Sources */,
 				210808A31F4D523900E347E3 /* OrderYiModel.m in Sources */,
 				21ED75A81F427EE500D91E2C /* ProductDetails1TableViewCell.m in Sources */,
 				212F8D761F4AD47A00832B38 /* SDPhotoBrowser.m in Sources */,
@@ -3763,6 +3826,7 @@
 				21434CCE1EEA91170024FE96 /* EaseMessageCell.m in Sources */,
 				21B4A0671F46D70F00EE3BE6 /* NearViewController.m in Sources */,
 				217482A51F418ECD004B5769 /* BussinessDetail1Model.m in Sources */,
+				210AAA441F59500300EE19BF /* SendOrder1Model.m in Sources */,
 				210AAA381F59363D00EE19BF /* UITextView+placeholder.m in Sources */,
 				21434DB01EEA91480024FE96 /* ChatListIMViewController.m in Sources */,
 				21434DBA1EEA91480024FE96 /* GoodsDetailViewController.m in Sources */,
@@ -3798,6 +3862,7 @@
 				2174829D1F4182C3004B5769 /* ShangPinViewController.m in Sources */,
 				21434CD81EEA91170024FE96 /* EaseChatToolbar.m in Sources */,
 				210AAA311F590E6D00EE19BF /* ZixunDetail1TableViewCell.m in Sources */,
+				210AAA3C1F594F7800EE19BF /* SendOrderViewController.m in Sources */,
 				21434DC01EEA91480024FE96 /* VideoPlayViewController.m in Sources */,
 				21434CA81EEA91160024FE96 /* EMAudioPlayerUtil.m in Sources */,
 				212F8D6C1F4AD43700832B38 /* SDWeiXinPhotoContainerView.m in Sources */,
@@ -3812,6 +3877,7 @@
 				21ED75BB1F42A90A00D91E2C /* YBPopupMenu.m in Sources */,
 				21434CA21EEA91160024FE96 /* AbstractDotView.m in Sources */,
 				21434CD61EEA91170024FE96 /* EaseBubbleView+Voice.m in Sources */,
+				210AAA411F594FF300EE19BF /* SendOrderModel.m in Sources */,
 				2127372C1F4D160C0067F571 /* MyOrderViewController.m in Sources */,
 				21434D561EEA91300024FE96 /* FMResultSet.m in Sources */,
 				21434CE91EEA91170024FE96 /* AlipayRequestConfig.m in Sources */,
