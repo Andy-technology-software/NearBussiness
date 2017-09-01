@@ -138,7 +138,7 @@
     
     
     UIView* chatView = [MyController viewWithFrame:bottomView.frame];
-    chatView.backgroundColor = [MyController colorWithHexString:@"ee4737"];
+    chatView.backgroundColor = [MyController colorWithHexString:DEFTNAVCOLOR];
     [bottomView addSubview:chatView];
     
     [chatView mas_makeConstraints:^(MASConstraintMaker *make) {

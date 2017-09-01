@@ -28,7 +28,7 @@
     self.ext_dic[@"other_nick_name"] = @"好友";
     self.ext_dic[@"other_head_image"] = @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492145775242&di=92bd02916e550a93ae9e7deca4c8d64c&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F472309f790529822eba0ada1d3ca7bcb0b46d4c5.jpg";
     self.delegate = self;
-    self.navigationController.navigationBar.barTintColor = [MyController colorWithHexString:@"ee4737"];
+    self.navigationController.navigationBar.barTintColor = [MyController colorWithHexString:DEFTNAVCOLOR];
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor],
                                                                     NSFontAttributeName : [UIFont boldSystemFontOfSize:16]};
     //导航透明度

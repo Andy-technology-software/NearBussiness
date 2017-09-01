@@ -79,6 +79,8 @@
 //微信
 #import "MXWechatConfig.h"
 
+#import "UITextView+placeholder.h"
+
 #import "YBPopupMenu.h"
 #define TITLES @[@"入驻", @"扫码付", @"通讯录"]
 #define ICONS  @[@"motify",@"saoyisao",@"pay"]

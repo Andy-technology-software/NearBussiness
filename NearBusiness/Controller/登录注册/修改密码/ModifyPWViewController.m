@@ -1,34 +1,30 @@
 //
-//  SeetingCenterViewController.m
+//  ModifyPWViewController.m
 //  NearBusiness
 //
-//  Created by lingnet on 2017/8/31.
+//  Created by lingnet on 2017/9/1.
 //  Copyright © 2017年 YouCanCallMeAndy. All rights reserved.
 //
 
-#import "SeetingCenterViewController.h"
-
-#import "SeetingCenterModel.h"
-
-#import "SeetingCenterTableViewCell.h"
-
-#import "FeedbackViewController.h"
-
 #import "ModifyPWViewController.h"
-@interface SeetingCenterViewController ()<UITableViewDataSource,UITableViewDelegate>{
+
+#import "RegistModel.h"
+
+#import "RegistTableViewCell.h"
+@interface ModifyPWViewController ()<UITableViewDataSource,UITableViewDelegate,RegistTableViewCellDelegate>{
     UITableView* _tableView;
 }
 @property(nonatomic,retain)NSMutableArray* dataSource;
 
 @end
 
-@implementation SeetingCenterViewController
+@implementation ModifyPWViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"设置中心";
+    self.title = @"修改密码";
     
     self.view.backgroundColor = [MyController colorWithHexString:@"f4f6fa"];
     
@@ -41,7 +37,7 @@
 
 #pragma mark - 创建底部按钮
 - (void)makeBottomView{
-    UIButton* payBtn = [MyController createButtonWithFrame:CGRectMake(0, CGRectGetMaxY(_tableView.frame), [MyController getScreenWidth], 40) ImageName:nil Target:self Action:@selector(outBtnClick) Title:@"退出登录"];
+    UIButton* payBtn = [MyController createButtonWithFrame:CGRectMake(0, CGRectGetMaxY(_tableView.frame), [MyController getScreenWidth], 40) ImageName:nil Target:self Action:@selector(outBtnClick) Title:@"保存"];
     [payBtn setBackgroundColor:[MyController colorWithHexString:DEFTNAVCOLOR]];
     [payBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     payBtn.titleLabel.font = [UIFont systemFontOfSize:16];
@@ -49,12 +45,11 @@
 }
 
 - (void)outBtnClick{
-    [(AppDelegate *)[UIApplication sharedApplication].delegate setLoginRoot];
-}
-
-- (void)viewWillAppear:(BOOL)animated{
-    [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder)
+                                               to:nil
+                                             from:nil
+                                         forEvent:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - 初始化tableView
@@ -80,23 +75,19 @@
 
 #pragma mark - tableVie点击cell
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (2 == indexPath.row) {
-        FeedbackViewController* vc = [[FeedbackViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-    }else if (1 == indexPath.row){
-        ModifyPWViewController* vc = [[ModifyPWViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-    }
+    
 }
 
 #pragma mark - 自定义tableView
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *cellIdentifier = @"SeetingCenterTableViewCell";
-    SeetingCenterTableViewCell* cell0 = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    static NSString *cellIdentifier = @"RegistTableViewCell";
+    RegistTableViewCell* cell0 = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (!cell0) {
-        cell0 = [[SeetingCenterTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell0 = [[RegistTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    SeetingCenterModel *model = nil;
+    cell0.RegistTableViewCellDelegate = self;
+    cell0.indexRow = indexPath.row;
+    RegistModel *model = nil;
     model = self.dataSource[indexPath.row];
     cell0.selectionStyle = UITableViewCellSelectionStyleNone;
     [cell0 configCellWithModel:model];
@@ -105,9 +96,9 @@
 
 #pragma mark - tableView行高
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    SeetingCenterModel* model = self.dataSource[indexPath.row];
-    return [SeetingCenterTableViewCell hyb_heightForTableView:_tableView config:^(UITableViewCell *sourceCell) {
-        SeetingCenterTableViewCell *cell = (SeetingCenterTableViewCell *)sourceCell;
+    RegistModel* model = self.dataSource[indexPath.row];
+    return [RegistTableViewCell hyb_heightForTableView:_tableView config:^(UITableViewCell *sourceCell) {
+        RegistTableViewCell *cell = (RegistTableViewCell *)sourceCell;
         // 配置数据
         [cell configCellWithModel:model];
     }];
@@ -115,15 +106,24 @@
 
 - (void)makeData{
     self.dataSource = [[NSMutableArray alloc] init];
-    NSArray* _arr = [[NSArray alloc] initWithObjects:@"我的资料",@"修改密码",@"用户反馈",@"清除缓存", nil];
+    NSArray* _arr = [[NSArray alloc] initWithObjects:@"原密码",@"新密码",@"确认密码", nil];
+    NSArray* _arr1 = [[NSArray alloc] initWithObjects:@"请输入原密码",@"请输入新密码",@"请输入确认密码", nil];
     for (int i = 0; i < _arr.count; i++) {
-        SeetingCenterModel* model = [[SeetingCenterModel alloc] init];
-        model._title = _arr[i];
+        RegistModel* model = [[RegistModel alloc] init];
+        model._lableText = _arr[i];
+        model._tfText = @"";
+        model._placeText = _arr1[i];
         [self.dataSource addObject:model];
     }
     [_tableView reloadData];
 }
 
+#pragma markr - 返回右边数据
+- (void)sendbackRegistText:(NSString *)text indexRow:(NSInteger)indexRow{
+    RegistModel* model = self.dataSource[indexRow];
+    model._tfText = text;
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

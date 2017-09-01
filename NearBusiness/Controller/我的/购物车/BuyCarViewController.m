@@ -53,7 +53,7 @@
 #pragma mark - 创建底部按钮
 - (void)makeBottomView{
     UIButton* payBtn = [MyController createButtonWithFrame:CGRectMake(0, CGRectGetMaxY(_tableView.frame), [MyController getScreenWidth], 40) ImageName:nil Target:self Action:@selector(payBtnClick) Title:@"结算"];
-    [payBtn setBackgroundColor:[MyController colorWithHexString:@"ee4737"]];
+    [payBtn setBackgroundColor:[MyController colorWithHexString:DEFTNAVCOLOR]];
     [payBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     payBtn.titleLabel.font = [UIFont systemFontOfSize:16];
     [self.view addSubview:payBtn];

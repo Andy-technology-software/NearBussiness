@@ -117,7 +117,7 @@
     
 
     self.loginBtn = [MyController createButtonWithFrame:self.contentView.frame ImageName:nil Target:self Action:@selector(loginBtnClick:) Title:@"登录"];
-    self.loginBtn.backgroundColor = [MyController colorWithHexString:@"ee4737"];
+    self.loginBtn.backgroundColor = [MyController colorWithHexString:DEFTNAVCOLOR];
     [self.loginBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.loginBtn.titleLabel.font = [UIFont systemFontOfSize:16];
     [self.contentView addSubview:self.loginBtn];

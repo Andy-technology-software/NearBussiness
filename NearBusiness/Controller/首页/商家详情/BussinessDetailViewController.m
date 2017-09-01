@@ -32,7 +32,7 @@
     
     [self configureUI];
     
-    self.navigationController.navigationBar.barTintColor = [MyController colorWithHexString:@"ee4737"];
+    self.navigationController.navigationBar.barTintColor = [MyController colorWithHexString:DEFTNAVCOLOR];
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor],
                                                                     NSFontAttributeName : [UIFont boldSystemFontOfSize:16]};
     //导航透明度

@@ -89,7 +89,7 @@
 #pragma mark - 创建顶部视图
 - (void)makeTopView{
     UIView* titleView = [MyController viewWithFrame:CGRectMake(0, 0, [MyController getScreenWidth], [MyController isIOS7])];
-    titleView.backgroundColor = [MyController colorWithHexString:@"ee4737"];
+    titleView.backgroundColor = [MyController colorWithHexString:DEFTNAVCOLOR];
     [self.view addSubview:titleView];
     
     self.titleLable = [MyController createLabelWithFrame:titleView.frame Font:16 Text:@"首页"];

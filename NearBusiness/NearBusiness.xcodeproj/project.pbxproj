@@ -11,6 +11,18 @@
 		210808A91F4D526300E347E3 /* OrderYi1Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 210808A81F4D526300E347E3 /* OrderYi1Model.m */; };
 		210808AC1F4D52F200E347E3 /* OrderYiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 210808AB1F4D52F200E347E3 /* OrderYiTableViewCell.m */; };
 		210808AF1F4D52FC00E347E3 /* OrderYi1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 210808AE1F4D52FC00E347E3 /* OrderYi1TableViewCell.m */; };
+		210AAA0F1F58DDD200EE19BF /* RegistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA0E1F58DDD200EE19BF /* RegistModel.m */; };
+		210AAA121F58DE1700EE19BF /* RegistTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA111F58DE1700EE19BF /* RegistTableViewCell.m */; };
+		210AAA151F58DE2000EE19BF /* Regist1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA141F58DE2000EE19BF /* Regist1TableViewCell.m */; };
+		210AAA1A1F58ED4D00EE19BF /* XRQTextview.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA191F58ED4D00EE19BF /* XRQTextview.m */; };
+		210AAA1D1F58ED8200EE19BF /* SendComTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA1C1F58ED8200EE19BF /* SendComTableViewCell.m */; };
+		210AAA211F58EDE400EE19BF /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA201F58EDE400EE19BF /* FeedbackViewController.m */; };
+		210AAA251F58EF0700EE19BF /* ModifyPWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA241F58EF0700EE19BF /* ModifyPWViewController.m */; };
+		210AAA2B1F59072C00EE19BF /* ZixunDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA2A1F59072C00EE19BF /* ZixunDetailModel.m */; };
+		210AAA2E1F5907D000EE19BF /* ZixunDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA2D1F5907D000EE19BF /* ZixunDetailTableViewCell.m */; };
+		210AAA311F590E6D00EE19BF /* ZixunDetail1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA301F590E6D00EE19BF /* ZixunDetail1TableViewCell.m */; };
+		210AAA341F59111800EE19BF /* ZixunDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA331F59111800EE19BF /* ZixunDetailViewController.m */; };
+		210AAA381F59363D00EE19BF /* UITextView+placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AAA371F59363D00EE19BF /* UITextView+placeholder.m */; };
 		2120EDD31F3D5A6000661EBE /* BussinessRecommendationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2120EDD21F3D5A6000661EBE /* BussinessRecommendationModel.m */; };
 		2120EDD61F3D5AB800661EBE /* BussinessRecommendationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2120EDD51F3D5AB800661EBE /* BussinessRecommendationTableViewCell.m */; };
 		2120EE1A1F3D7D8D00661EBE /* atta@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2120EDD81F3D7D8D00661EBE /* atta@2x.png */; };
@@ -429,6 +441,30 @@
 		210808AB1F4D52F200E347E3 /* OrderYiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderYiTableViewCell.m; sourceTree = "<group>"; };
 		210808AD1F4D52FC00E347E3 /* OrderYi1TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderYi1TableViewCell.h; sourceTree = "<group>"; };
 		210808AE1F4D52FC00E347E3 /* OrderYi1TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderYi1TableViewCell.m; sourceTree = "<group>"; };
+		210AAA0D1F58DDD200EE19BF /* RegistModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistModel.h; sourceTree = "<group>"; };
+		210AAA0E1F58DDD200EE19BF /* RegistModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistModel.m; sourceTree = "<group>"; };
+		210AAA101F58DE1700EE19BF /* RegistTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistTableViewCell.h; sourceTree = "<group>"; };
+		210AAA111F58DE1700EE19BF /* RegistTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistTableViewCell.m; sourceTree = "<group>"; };
+		210AAA131F58DE2000EE19BF /* Regist1TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Regist1TableViewCell.h; sourceTree = "<group>"; };
+		210AAA141F58DE2000EE19BF /* Regist1TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Regist1TableViewCell.m; sourceTree = "<group>"; };
+		210AAA181F58ED4D00EE19BF /* XRQTextview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRQTextview.h; sourceTree = "<group>"; };
+		210AAA191F58ED4D00EE19BF /* XRQTextview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRQTextview.m; sourceTree = "<group>"; };
+		210AAA1B1F58ED8200EE19BF /* SendComTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendComTableViewCell.h; sourceTree = "<group>"; };
+		210AAA1C1F58ED8200EE19BF /* SendComTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendComTableViewCell.m; sourceTree = "<group>"; };
+		210AAA1F1F58EDE400EE19BF /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		210AAA201F58EDE400EE19BF /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
+		210AAA231F58EF0700EE19BF /* ModifyPWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyPWViewController.h; sourceTree = "<group>"; };
+		210AAA241F58EF0700EE19BF /* ModifyPWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyPWViewController.m; sourceTree = "<group>"; };
+		210AAA291F59072C00EE19BF /* ZixunDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZixunDetailModel.h; sourceTree = "<group>"; };
+		210AAA2A1F59072C00EE19BF /* ZixunDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZixunDetailModel.m; sourceTree = "<group>"; };
+		210AAA2C1F5907D000EE19BF /* ZixunDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZixunDetailTableViewCell.h; sourceTree = "<group>"; };
+		210AAA2D1F5907D000EE19BF /* ZixunDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZixunDetailTableViewCell.m; sourceTree = "<group>"; };
+		210AAA2F1F590E6D00EE19BF /* ZixunDetail1TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZixunDetail1TableViewCell.h; sourceTree = "<group>"; };
+		210AAA301F590E6D00EE19BF /* ZixunDetail1TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZixunDetail1TableViewCell.m; sourceTree = "<group>"; };
+		210AAA321F59111800EE19BF /* ZixunDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZixunDetailViewController.h; sourceTree = "<group>"; };
+		210AAA331F59111800EE19BF /* ZixunDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZixunDetailViewController.m; sourceTree = "<group>"; };
+		210AAA361F59363D00EE19BF /* UITextView+placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+placeholder.h"; sourceTree = "<group>"; };
+		210AAA371F59363D00EE19BF /* UITextView+placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+placeholder.m"; sourceTree = "<group>"; };
 		2120EDD11F3D5A6000661EBE /* BussinessRecommendationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BussinessRecommendationModel.h; sourceTree = "<group>"; };
 		2120EDD21F3D5A6000661EBE /* BussinessRecommendationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BussinessRecommendationModel.m; sourceTree = "<group>"; };
 		2120EDD41F3D5AB800661EBE /* BussinessRecommendationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BussinessRecommendationTableViewCell.h; sourceTree = "<group>"; };
@@ -1179,6 +1215,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		210AAA0B1F58DDB100EE19BF /* 注册 */ = {
+			isa = PBXGroup;
+			children = (
+				210AAA101F58DE1700EE19BF /* RegistTableViewCell.h */,
+				210AAA111F58DE1700EE19BF /* RegistTableViewCell.m */,
+				210AAA131F58DE2000EE19BF /* Regist1TableViewCell.h */,
+				210AAA141F58DE2000EE19BF /* Regist1TableViewCell.m */,
+			);
+			path = "注册";
+			sourceTree = "<group>";
+		};
+		210AAA0C1F58DDB900EE19BF /* 注册 */ = {
+			isa = PBXGroup;
+			children = (
+				210AAA0D1F58DDD200EE19BF /* RegistModel.h */,
+				210AAA0E1F58DDD200EE19BF /* RegistModel.m */,
+			);
+			path = "注册";
+			sourceTree = "<group>";
+		};
+		210AAA161F58ECCC00EE19BF /* 反馈 */ = {
+			isa = PBXGroup;
+			children = (
+				210AAA1B1F58ED8200EE19BF /* SendComTableViewCell.h */,
+				210AAA1C1F58ED8200EE19BF /* SendComTableViewCell.m */,
+			);
+			path = "反馈";
+			sourceTree = "<group>";
+		};
+		210AAA171F58ED4D00EE19BF /* ExpandableTextview */ = {
+			isa = PBXGroup;
+			children = (
+				210AAA181F58ED4D00EE19BF /* XRQTextview.h */,
+				210AAA191F58ED4D00EE19BF /* XRQTextview.m */,
+			);
+			path = ExpandableTextview;
+			sourceTree = "<group>";
+		};
+		210AAA1E1F58EDE400EE19BF /* 反馈 */ = {
+			isa = PBXGroup;
+			children = (
+				210AAA1F1F58EDE400EE19BF /* FeedbackViewController.h */,
+				210AAA201F58EDE400EE19BF /* FeedbackViewController.m */,
+			);
+			path = "反馈";
+			sourceTree = "<group>";
+		};
+		210AAA221F58EEF200EE19BF /* 修改密码 */ = {
+			isa = PBXGroup;
+			children = (
+				210AAA231F58EF0700EE19BF /* ModifyPWViewController.h */,
+				210AAA241F58EF0700EE19BF /* ModifyPWViewController.m */,
+			);
+			path = "修改密码";
+			sourceTree = "<group>";
+		};
+		210AAA261F5906E300EE19BF /* 资讯详情 */ = {
+			isa = PBXGroup;
+			children = (
+				210AAA321F59111800EE19BF /* ZixunDetailViewController.h */,
+				210AAA331F59111800EE19BF /* ZixunDetailViewController.m */,
+			);
+			path = "资讯详情";
+			sourceTree = "<group>";
+		};
+		210AAA271F5906F100EE19BF /* 资讯详情 */ = {
+			isa = PBXGroup;
+			children = (
+				210AAA2C1F5907D000EE19BF /* ZixunDetailTableViewCell.h */,
+				210AAA2D1F5907D000EE19BF /* ZixunDetailTableViewCell.m */,
+				210AAA2F1F590E6D00EE19BF /* ZixunDetail1TableViewCell.h */,
+				210AAA301F590E6D00EE19BF /* ZixunDetail1TableViewCell.m */,
+			);
+			path = "资讯详情";
+			sourceTree = "<group>";
+		};
+		210AAA281F5906F800EE19BF /* 资讯详情 */ = {
+			isa = PBXGroup;
+			children = (
+				210AAA291F59072C00EE19BF /* ZixunDetailModel.h */,
+				210AAA2A1F59072C00EE19BF /* ZixunDetailModel.m */,
+			);
+			path = "资讯详情";
+			sourceTree = "<group>";
+		};
+		210AAA351F59363D00EE19BF /* MyTextView */ = {
+			isa = PBXGroup;
+			children = (
+				210AAA361F59363D00EE19BF /* UITextView+placeholder.h */,
+				210AAA371F59363D00EE19BF /* UITextView+placeholder.m */,
+			);
+			path = MyTextView;
+			sourceTree = "<group>";
+		};
 		2120EDCF1F3D5A1400661EBE /* 商家推荐 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1384,6 +1514,7 @@
 		212F8D581F4AAB8400832B38 /* 登录注册 */ = {
 			isa = PBXGroup;
 			children = (
+				210AAA221F58EEF200EE19BF /* 修改密码 */,
 				212F8D591F4AAB8400832B38 /* 注册 */,
 				212F8D5C1F4AAB8400832B38 /* 登录 */,
 			);
@@ -1411,6 +1542,7 @@
 		212F8D611F4AAB9700832B38 /* LoginAndRegist */ = {
 			isa = PBXGroup;
 			children = (
+				210AAA0B1F58DDB100EE19BF /* 注册 */,
 				212F8D621F4AAB9700832B38 /* LoginTableViewCell.h */,
 				212F8D631F4AAB9700832B38 /* LoginTableViewCell.m */,
 			);
@@ -1420,6 +1552,7 @@
 		212F8D651F4AABA700832B38 /* LoginAndRegist */ = {
 			isa = PBXGroup;
 			children = (
+				210AAA0C1F58DDB900EE19BF /* 注册 */,
 				212F8D661F4AABA700832B38 /* LoginAndRegistModel.h */,
 				212F8D671F4AABA700832B38 /* LoginAndRegistModel.m */,
 			);
@@ -1452,6 +1585,7 @@
 		212F8D781F4AD51F00832B38 /* Near */ = {
 			isa = PBXGroup;
 			children = (
+				210AAA271F5906F100EE19BF /* 资讯详情 */,
 				ECB7D6621F4B025B00CD7DA7 /* 视频 */,
 				212F8D791F4AD52800832B38 /* 资讯 */,
 			);
@@ -1472,6 +1606,7 @@
 		212F8D7A1F4AD53500832B38 /* Near */ = {
 			isa = PBXGroup;
 			children = (
+				210AAA281F5906F800EE19BF /* 资讯详情 */,
 				ECB7D6631F4B026200CD7DA7 /* 视频 */,
 				212F8D7C1F4AD55B00832B38 /* 资讯 */,
 			);
@@ -1558,6 +1693,8 @@
 		21434B3F1EEA91160024FE96 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				210AAA351F59363D00EE19BF /* MyTextView */,
+				210AAA171F58ED4D00EE19BF /* ExpandableTextview */,
 				216AA1D51F5653080000A19A /* popShareView */,
 				ECB7D65B1F4AF55100CD7DA7 /* HyphenateFullSDK */,
 				212F8D6D1F4AD47A00832B38 /* SDPhotoBrowser */,
@@ -2562,6 +2699,7 @@
 		215346A71F58056B006159AF /* 设置中心 */ = {
 			isa = PBXGroup;
 			children = (
+				210AAA1E1F58EDE400EE19BF /* 反馈 */,
 				215346B01F5807D7006159AF /* SeetingCenterViewController.h */,
 				215346B11F5807D7006159AF /* SeetingCenterViewController.m */,
 			);
@@ -2571,6 +2709,7 @@
 		215346A81F580575006159AF /* 设置中心 */ = {
 			isa = PBXGroup;
 			children = (
+				210AAA161F58ECCC00EE19BF /* 反馈 */,
 				215346AD1F5805B8006159AF /* SeetingCenterTableViewCell.h */,
 				215346AE1F5805B8006159AF /* SeetingCenterTableViewCell.m */,
 			);
@@ -2689,6 +2828,7 @@
 		215F1D5F1F0B427B00DD4AEE /* 附近 */ = {
 			isa = PBXGroup;
 			children = (
+				210AAA261F5906E300EE19BF /* 资讯详情 */,
 				215F1D601F0B429000DD4AEE /* 附近Index */,
 			);
 			path = "附近";
@@ -3477,11 +3617,13 @@
 				2120EDD61F3D5AB800661EBE /* BussinessRecommendationTableViewCell.m in Sources */,
 				21BE22DA1F4C1EEE00C2387D /* InfoTableViewCell.m in Sources */,
 				21434CD91EEA91170024FE96 /* EaseChatToolbarItem.m in Sources */,
+				210AAA211F58EDE400EE19BF /* FeedbackViewController.m in Sources */,
 				21434D791EEA91300024FE96 /* GoodsListModel.m in Sources */,
 				21434DBC1EEA91480024FE96 /* MyXJYChartViewController.m in Sources */,
 				21434D551EEA91300024FE96 /* FMDatabaseQueue.m in Sources */,
 				21434CC51EEA91170024FE96 /* EaseConversationListViewController.m in Sources */,
 				212F8D7F1F4AD57800832B38 /* ZiXunModel.m in Sources */,
+				210AAA1A1F58ED4D00EE19BF /* XRQTextview.m in Sources */,
 				2153467A1F57B451006159AF /* OrderDaishouTableViewCell.m in Sources */,
 				21434DB21EEA91480024FE96 /* SelfInfoViewController.m in Sources */,
 				21434D081EEA91170024FE96 /* WJDropdownMenu.m in Sources */,
@@ -3519,6 +3661,7 @@
 				21434CED1EEA91170024FE96 /* DataVerifier.m in Sources */,
 				212737341F4D16CB0067F571 /* OrderDaifuViewController.m in Sources */,
 				215F1D721F0B46BC00DD4AEE /* FriendCircleViewController.m in Sources */,
+				210AAA2B1F59072C00EE19BF /* ZixunDetailModel.m in Sources */,
 				21ED75A21F427DAB00D91E2C /* ProductDetails2Model.m in Sources */,
 				21B4A05E1F46D3EF00EE3BE6 /* VideoViewController.m in Sources */,
 				21434CCD1EEA91170024FE96 /* EaseCustomMessageCell.m in Sources */,
@@ -3545,6 +3688,7 @@
 				21434CC81EEA91170024FE96 /* EaseRefreshTableViewController.m in Sources */,
 				21545B761F42D41500CA7C3F /* ZCZBarViewController.mm in Sources */,
 				21434CD41EEA91170024FE96 /* EaseBubbleView+Text.m in Sources */,
+				210AAA1D1F58ED8200EE19BF /* SendComTableViewCell.m in Sources */,
 				21434CA01EEA91160024FE96 /* CollectionViewCell.m in Sources */,
 				215346761F57AB51006159AF /* OrderDaiTableViewCell.m in Sources */,
 				21434CAE1EEA91160024FE96 /* EMCDDeviceManagerBase.m in Sources */,
@@ -3553,6 +3697,7 @@
 				215346921F57BE41006159AF /* FundManagementCashModel.m in Sources */,
 				21434DB61EEA91480024FE96 /* RDVTabBarController.m in Sources */,
 				215346881F57BC72006159AF /* FundManagementRedPackViewController.m in Sources */,
+				210AAA251F58EF0700EE19BF /* ModifyPWViewController.m in Sources */,
 				21434CB51EEA91170024FE96 /* EaseConversationModel.m in Sources */,
 				21434C9D1EEA91160024FE96 /* HUD.m in Sources */,
 				212F8D641F4AAB9700832B38 /* LoginTableViewCell.m in Sources */,
@@ -3581,6 +3726,7 @@
 				21434CDD1EEA91170024FE96 /* EaseFacialView.m in Sources */,
 				21C236AE1F3D433000DDA92B /* Index1TableViewCell.m in Sources */,
 				21434CDB1EEA91170024FE96 /* EaseTextView.m in Sources */,
+				210AAA2E1F5907D000EE19BF /* ZixunDetailTableViewCell.m in Sources */,
 				ECB7D6691F4B028900CD7DA7 /* SDTimeLineCell.m in Sources */,
 				210808AC1F4D52F200E347E3 /* OrderYiTableViewCell.m in Sources */,
 				21434D7D1EEA91300024FE96 /* IndexViewTableViewCell.m in Sources */,
@@ -3602,17 +3748,22 @@
 				21434CF11EEA91170024FE96 /* RSADataSigner.m in Sources */,
 				21434CEC1EEA91170024FE96 /* DataSigner.m in Sources */,
 				21434CB11EEA91160024FE96 /* EMVoiceConverter.mm in Sources */,
+				210AAA151F58DE2000EE19BF /* Regist1TableViewCell.m in Sources */,
+				210AAA341F59111800EE19BF /* ZixunDetailViewController.m in Sources */,
 				21434CD11EEA91170024FE96 /* EaseBubbleView+Gif.m in Sources */,
 				210808A31F4D523900E347E3 /* OrderYiModel.m in Sources */,
 				21ED75A81F427EE500D91E2C /* ProductDetails1TableViewCell.m in Sources */,
 				212F8D761F4AD47A00832B38 /* SDPhotoBrowser.m in Sources */,
 				21434CAC1EEA91160024FE96 /* EMCDDeviceManager+ProximitySensor.m in Sources */,
+				210AAA121F58DE1700EE19BF /* RegistTableViewCell.m in Sources */,
 				21434C9B1EEA91160024FE96 /* BlurEffectMenu.m in Sources */,
+				210AAA0F1F58DDD200EE19BF /* RegistModel.m in Sources */,
 				21434CEA1EEA91170024FE96 /* Order.m in Sources */,
 				2120EE671F3D914700661EBE /* BussinessSearchTableViewCell.m in Sources */,
 				21434CCE1EEA91170024FE96 /* EaseMessageCell.m in Sources */,
 				21B4A0671F46D70F00EE3BE6 /* NearViewController.m in Sources */,
 				217482A51F418ECD004B5769 /* BussinessDetail1Model.m in Sources */,
+				210AAA381F59363D00EE19BF /* UITextView+placeholder.m in Sources */,
 				21434DB01EEA91480024FE96 /* ChatListIMViewController.m in Sources */,
 				21434DBA1EEA91480024FE96 /* GoodsDetailViewController.m in Sources */,
 				21434CFA1EEA91170024FE96 /* TTOpenInAppActivity.m in Sources */,
@@ -3646,6 +3797,7 @@
 				21434CC71EEA91170024FE96 /* EaseMessageViewController.m in Sources */,
 				2174829D1F4182C3004B5769 /* ShangPinViewController.m in Sources */,
 				21434CD81EEA91170024FE96 /* EaseChatToolbar.m in Sources */,
+				210AAA311F590E6D00EE19BF /* ZixunDetail1TableViewCell.m in Sources */,
 				21434DC01EEA91480024FE96 /* VideoPlayViewController.m in Sources */,
 				21434CA81EEA91160024FE96 /* EMAudioPlayerUtil.m in Sources */,
 				212F8D6C1F4AD43700832B38 /* SDWeiXinPhotoContainerView.m in Sources */,

@@ -70,7 +70,7 @@
     
     self.cancelBtn = [MyController createButtonWithFrame:self.contentView.frame ImageName:nil Target:self Action:@selector(cancleBtnClick) Title:@"取消"];
     [self.cancelBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self.cancelBtn setBackgroundColor:[MyController colorWithHexString:@"ee4737"]];
+    [self.cancelBtn setBackgroundColor:[MyController colorWithHexString:DEFTNAVCOLOR]];
     self.cancelBtn.titleLabel.font = [UIFont systemFontOfSize:12];
     //将图层的边框设置为圆脚
     self.cancelBtn.layer.cornerRadius = 6;

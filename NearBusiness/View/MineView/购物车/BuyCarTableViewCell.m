@@ -57,7 +57,7 @@
     
     self.priceLable = [MyController createLabelWithFrame:self.contentView.frame Font:12 Text:nil];
     self.priceLable.textAlignment = NSTextAlignmentRight;
-    self.priceLable.textColor = [MyController colorWithHexString:@"ee4737"];
+    self.priceLable.textColor = [MyController colorWithHexString:DEFTNAVCOLOR];
     [self.contentView addSubview:self.priceLable];
     
     [self.priceLable mas_makeConstraints:^(MASConstraintMaker *make) {

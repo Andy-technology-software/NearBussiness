@@ -135,7 +135,7 @@
     }];
     
     UIView* chatView = [MyController viewWithFrame:bottomView.frame];
-    chatView.backgroundColor = [MyController colorWithHexString:@"ee4737"];
+    chatView.backgroundColor = [MyController colorWithHexString:DEFTNAVCOLOR];
     [bottomView addSubview:chatView];
     
     [chatView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -160,7 +160,7 @@
     }];
     
     UIButton* buyBtn = [MyController createButtonWithFrame:chatView.frame ImageName:nil Target:self Action:@selector(buyBtnClick) Title:@"购买"];
-    [buyBtn setBackgroundColor:[MyController colorWithHexString:@"ee4737"]];
+    [buyBtn setBackgroundColor:[MyController colorWithHexString:DEFTNAVCOLOR]];
     [buyBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     buyBtn.titleLabel.font = [UIFont systemFontOfSize:16];
     [chatView addSubview:buyBtn];

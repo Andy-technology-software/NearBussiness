@@ -32,7 +32,7 @@
     
     [self configureUI];
     
-    self.navigationController.navigationBar.barTintColor = [MyController colorWithHexString:@"ee4737"];
+    self.navigationController.navigationBar.barTintColor = [MyController colorWithHexString:DEFTNAVCOLOR];
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor],
                                                                     NSFontAttributeName : [UIFont boldSystemFontOfSize:16]};
     //导航透明度
@@ -65,6 +65,7 @@
     self.navigationItem.rightBarButtonItem= rightItem1;
     
 }
+
 - (void)searchBtnClick{
     
 }
@@ -76,7 +77,7 @@
 
 #pragma mark - YBPopupMenuDelegate
 - (void)ybPopupMenuDidSelectedAtIndex:(NSInteger)index ybPopupMenu:(YBPopupMenu *)ybPopupMenu {
-    NSLog(@"点击了 %@ 选项",TITLES[index]);
+    NSLog(@"点击了 %@ 选项",SENDTITLES[index]);
     if (1 == index) {
         
     }

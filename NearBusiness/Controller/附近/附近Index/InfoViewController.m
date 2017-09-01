@@ -11,6 +11,8 @@
 #import "ZiXunTableViewCell.h"
 
 #import "SDTimeLineCellModel.h"
+
+#import "ZixunDetailViewController.h"
 @interface InfoViewController ()<ZiXunTableViewCellDelegate,UITableViewDataSource,UITableViewDelegate>{
     UITableView* _tableView;
 }
@@ -178,7 +180,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    ZixunDetailViewController* vc = [[ZixunDetailViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
