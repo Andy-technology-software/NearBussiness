@@ -87,7 +87,6 @@
                 NSError *error = [NSError errorWithDomain:errorDomainValue code:[responseObject[@"statusCode"]intValue] userInfo:@{NSURLErrorFailingURLStringErrorKey:[MyController returnStr:responseObject[@"msg"]]}];
                 !failure?:failure(error);
             }
-            
         }
         else{
             NSString *errorDomainValue = @"RequestError";

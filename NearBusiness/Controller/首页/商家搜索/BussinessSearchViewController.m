@@ -19,6 +19,10 @@
 @property (nonatomic,weak)WJDropdownMenu *menu;
 @property (nonatomic,strong)NSMutableArray *data;
 
+@property(nonatomic,assign)NSInteger pageIndex;
+
+@property(nonatomic,retain)NSMutableArray* dataSource1;
+
 @end
 
 @implementation BussinessSearchViewController
@@ -40,6 +44,8 @@
     [self makeMenu];
     self.dataSource = [[NSMutableArray alloc] init];
     [self makeData];
+    
+    [_tableView.mj_header beginRefreshing];
 }
 
 #pragma mark - 创建删选菜单
@@ -70,7 +76,25 @@
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.showsVerticalScrollIndicator = NO;
     //_tableView.backgroundColor = [UIColor colorWithRed:190 green:30 blue:96 alpha:1];
+    _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self headerRefresh];
+    }];
+    _tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        [self footerRefresh];
+    }];
     [self.view addSubview:_tableView];
+}
+#pragma mark - 下拉刷新
+- (void)headerRefresh{
+    self.pageIndex = 1;
+    [self postData];
+    
+}
+
+#pragma mark - 上拉加载
+- (void)footerRefresh{
+    self.pageIndex ++;
+    [self postData];
 }
 
 #pragma mark - tableView行数
@@ -210,6 +234,30 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+- (void)postData {
+    self.dataSource1 = [[NSMutableArray alloc] init];
+    [requestService postOrderListWithUserid:@"402881b85e4b5fbe015e4b730ee60005" pageIndex:[NSString stringWithFormat:@"%ld",self.pageIndex] pageSize:@"10" complate:^(id responseObject) {
+        NSLog(@"%@",responseObject[@"data"]);
+        NSArray* arr = [MyController arraryWithJsonString:responseObject[@"data"]];
+        for (NSDictionary* dic in arr) {
+            BussinessSearchModel *model = [BussinessSearchModel mj_objectWithKeyValues:dic];
+            [self.dataSource1 addObject:model];
+        }
+        
+        NSLog(@"-----%d",self.dataSource1.count);
+        for (int i = 0; i < self.dataSource1.count; i++) {
+            BussinessSearchModel *model = self.dataSource1[i];
+            NSLog(@"%@\n",model.zhjg);
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+    
+    [_tableView.mj_header endRefreshing];
+    [_tableView.mj_footer endRefreshing];
+}
 /*
  #pragma mark - Navigation
  
